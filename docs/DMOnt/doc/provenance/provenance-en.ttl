@@ -1,0 +1,16 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<http://orange.com/research/dm/2.0.0> a prov:Entity;
+	 dc:title "DMOnt : Device Management Ontology";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.
+:agent0 a prov:Agent; foaf:name "Cyrille Bareau (https://dblp.org/pid/52/1343.html)".
+:agent1 a prov:Agent; foaf:name "François Aïssaoui (https://orcid.org/0000-0001-6772-2161)".
+:agent2 a prov:Agent; foaf:name "Marc Douet (https://www.researchgate.net/profile/Marc-Douet)".
+:agent3 a prov:Agent; foaf:name "Samuel Berlemont (https://orcid.org/0000-0003-0788-9837)".

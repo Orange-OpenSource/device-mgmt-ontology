@@ -1,0 +1,511 @@
+<http://orange.com/research/dm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://orange.com/research/dm> <http://www.w3.org/2002/07/owl#versionIRI> <http://orange.com/research/dm/2.0.0> .
+<http://orange.com/research/dm> <http://www.w3.org/2002/07/owl#imports> <https://saref.etsi.org/core/v3.2.1/> .
+<http://orange.com/research/dm> <http://purl.org/dc/terms/creator> "Cyrille Bareau (https://dblp.org/pid/52/1343.html)" .
+<http://orange.com/research/dm> <http://purl.org/dc/terms/creator> "François Aïssaoui (https://orcid.org/0000-0001-6772-2161)" .
+<http://orange.com/research/dm> <http://purl.org/dc/terms/creator> "Marc Douet (https://www.researchgate.net/profile/Marc-Douet)" .
+<http://orange.com/research/dm> <http://purl.org/dc/terms/creator> "Samuel Berlemont (https://orcid.org/0000-0003-0788-9837)" .
+<http://orange.com/research/dm> <http://purl.org/dc/terms/description> "The ontology aims to define concepts within the Device Management domain, facilitating the remote administration of devices and ensuring their proper functioning. It addresses challenges related to the heterogeneity of management protocols by representing execution paths for commands and modeling the information exchanged between devices and the management system.\n\nThis ontology is developed as a SAREF extension."@en .
+<http://orange.com/research/dm> <http://purl.org/dc/terms/publisher> <https://www.orange.com/> .
+<http://orange.com/research/dm> <http://purl.org/dc/terms/title> "DMOnt : Device Management Ontology"@en .
+<http://orange.com/research/dm> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dm" .
+<http://orange.com/research/dm> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://orange.com/research/dm#" .
+<http://orange.com/research/dm> <http://www.w3.org/2000/01/rdf-schema#comment> "Device Management Ontology"@en .
+<http://orange.com/research/dm> <http://www.w3.org/2002/07/owl#versionInfo> "2.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://orange.com/research/dm#connectsClient
+<http://orange.com/research/dm#connectsClient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://orange.com/research/dm#connectsClient> <http://www.w3.org/2002/07/owl#inverseOf> <http://orange.com/research/dm#isClientConnectedThrough> .
+<http://orange.com/research/dm#connectsClient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://orange.com/research/dm#Connection> .
+<http://orange.com/research/dm#connectsClient> <http://www.w3.org/2000/01/rdf-schema#range> <http://orange.com/research/dm#Client> .
+# 
+# http://orange.com/research/dm#connectsServer
+<http://orange.com/research/dm#connectsServer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://orange.com/research/dm#connectsServer> <http://www.w3.org/2002/07/owl#inverseOf> <http://orange.com/research/dm#isServerConnectedThrough> .
+<http://orange.com/research/dm#connectsServer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://orange.com/research/dm#Connection> .
+<http://orange.com/research/dm#connectsServer> <http://www.w3.org/2000/01/rdf-schema#range> <http://orange.com/research/dm#Server> .
+# 
+# http://orange.com/research/dm#enablesManagementService
+<http://orange.com/research/dm#enablesManagementService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://orange.com/research/dm#enablesManagementService> <http://www.w3.org/2002/07/owl#inverseOf> <http://orange.com/research/dm#hasConnection> .
+<http://orange.com/research/dm#enablesManagementService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://orange.com/research/dm#Connection> .
+<http://orange.com/research/dm#enablesManagementService> <http://www.w3.org/2000/01/rdf-schema#range> <http://orange.com/research/dm#ManagementService> .
+# 
+# http://orange.com/research/dm#hasConnection
+<http://orange.com/research/dm#hasConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://orange.com/research/dm#hasConnection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://orange.com/research/dm#ManagementService> .
+<http://orange.com/research/dm#hasConnection> <http://www.w3.org/2000/01/rdf-schema#range> <http://orange.com/research/dm#Connection> .
+# 
+# http://orange.com/research/dm#isClientConnectedThrough
+<http://orange.com/research/dm#isClientConnectedThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://orange.com/research/dm#isClientConnectedThrough> <http://www.w3.org/2000/01/rdf-schema#domain> <http://orange.com/research/dm#Client> .
+<http://orange.com/research/dm#isClientConnectedThrough> <http://www.w3.org/2000/01/rdf-schema#range> <http://orange.com/research/dm#Connection> .
+# 
+# http://orange.com/research/dm#isServerConnectedThrough
+<http://orange.com/research/dm#isServerConnectedThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://orange.com/research/dm#isServerConnectedThrough> <http://www.w3.org/2000/01/rdf-schema#domain> <http://orange.com/research/dm#Server> .
+<http://orange.com/research/dm#isServerConnectedThrough> <http://www.w3.org/2000/01/rdf-schema#range> <http://orange.com/research/dm#Connection> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://orange.com/research/dm#Client
+<http://orange.com/research/dm#Client> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#Client> <http://www.w3.org/2000/01/rdf-schema#comment> "Software entity which represents a Device by exposing its DM Functions to one or more DM Server(s). \n\nIt is responsible for the triggering of the DM Functions when a Command targetting the represented Device is received by the Server. The Client is also responsible for the reporting of the results of the Function execution to the Server.\n\nThe Client has an identifier that is unique only relatively to each Server it is connected to."@en .
+<http://orange.com/research/dm#Client> <http://www.w3.org/2000/01/rdf-schema#label> "Client"@en .
+# 
+# http://orange.com/research/dm#Connection
+<http://orange.com/research/dm#Connection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#Connection> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract representation of the connection between a Client and a Server. It does not necessarily imply that a persistent connection is established between the entities - such as a TCP connection. It represents the link and the capability of the Server to interact with the Client.\n\nFor instance, the Client has been authenticated by the Server with a certificate, and/or the client has received a configuration for access rights to its functions for the Server."@en .
+# 
+# http://orange.com/research/dm#DatamodelParameterCommandCategory
+<http://orange.com/research/dm#DatamodelParameterCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#DatamodelParameterCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://orange.com/research/dm#DeviceManagementCommandCategory> .
+<http://orange.com/research/dm#DatamodelParameterCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Datamodel Parameter Command Category"@en .
+# 
+# http://orange.com/research/dm#DeviceControlCommandCategory
+<http://orange.com/research/dm#DeviceControlCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#DeviceControlCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://orange.com/research/dm#DeviceManagementCommandCategory> .
+<http://orange.com/research/dm#DeviceControlCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Device Control Command Category"@en .
+# 
+# http://orange.com/research/dm#DeviceIdentityCommandCategory
+<http://orange.com/research/dm#DeviceIdentityCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#DeviceIdentityCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://orange.com/research/dm#DeviceManagementCommandCategory> .
+<http://orange.com/research/dm#DeviceIdentityCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Device Identity Command Category"@en .
+# 
+# http://orange.com/research/dm#DeviceManagementCommandCategory
+<http://orange.com/research/dm#DeviceManagementCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#DeviceManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Command> .
+<http://orange.com/research/dm#DeviceManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of Commands that are specific to the Device Management domain."@en .
+<http://orange.com/research/dm#DeviceManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Device Management Command Category"@en .
+# 
+# http://orange.com/research/dm#DeviceManagementFunctionCategory
+<http://orange.com/research/dm#DeviceManagementFunctionCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#DeviceManagementFunctionCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Function> .
+<http://orange.com/research/dm#DeviceManagementFunctionCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of Functions related to the Device Management domain.\n\nThese Functions correspond to the capabilities of the Device to perform its own diagnostics, maintenance, configuration, monitoring and control."@en .
+<http://orange.com/research/dm#DeviceManagementFunctionCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Device Management Function Category"@en .
+# 
+# http://orange.com/research/dm#DeviceManagementState
+<http://orange.com/research/dm#DeviceManagementState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#DeviceManagementState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/State> .
+<http://orange.com/research/dm#DeviceManagementState> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a class of states for Device Management."@en .
+# 
+# http://orange.com/research/dm#DeviceModule
+<http://orange.com/research/dm#DeviceModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#DeviceModule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<http://orange.com/research/dm#DeviceModule> <http://www.w3.org/2000/01/rdf-schema#comment> "A DeviceModule is an executable software entity on the Device, i.e., a DeviceModule may be activated and deactivated on demand through dedicated Functions.\n\nAs such, the DeviceModule implements specific Functions that are available to the Device when the DeviceModule is activated.\n\nA DeviceModule is supported by a DevicePackage: deleting the corresponding DevicePackage will in turn remove the DeviceModule and its related Functions."@en .
+<http://orange.com/research/dm#DeviceModule> <http://www.w3.org/2000/01/rdf-schema#label> "Device Module"@en .
+# 
+# http://orange.com/research/dm#DeviceModuleState
+<http://orange.com/research/dm#DeviceModuleState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#DeviceModuleState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://orange.com/research/dm#DeviceManagementState> .
+<http://orange.com/research/dm#DeviceModuleState> <http://www.w3.org/2002/07/owl#disjointWith> <http://orange.com/research/dm#DevicePackageState> .
+<http://orange.com/research/dm#DeviceModuleState> <http://www.w3.org/2000/01/rdf-schema#comment> "State of a DeviceModule"@en .
+<http://orange.com/research/dm#DeviceModuleState> <http://www.w3.org/2000/01/rdf-schema#label> "Device Module State"@en .
+# 
+# http://orange.com/research/dm#DevicePackage
+<http://orange.com/research/dm#DevicePackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#DevicePackage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<http://orange.com/research/dm#DevicePackage> <http://www.w3.org/2000/01/rdf-schema#comment> "A DevicePackage is an archive file that may contain resource files, code, libraries or executable files.\nIt is a resource that the Device should retrieve or receive from an external source.\n\nA DevicePackage is only actionable once it has been downloaded and installed.\n\nIt may allow a Device to support additional Functions by instantiating a DeviceModule.\n\nA DevicePackage may be uninstalled and then removed from the Device."@en .
+<http://orange.com/research/dm#DevicePackage> <http://www.w3.org/2000/01/rdf-schema#label> "Device Package"@en .
+# 
+# http://orange.com/research/dm#DevicePackageState
+<http://orange.com/research/dm#DevicePackageState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#DevicePackageState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://orange.com/research/dm#DeviceManagementState> .
+<http://orange.com/research/dm#DevicePackageState> <http://www.w3.org/2000/01/rdf-schema#comment> "State of a DevicePackage"@en .
+<http://orange.com/research/dm#DevicePackageState> <http://www.w3.org/2000/01/rdf-schema#label> "Device Package State"@en .
+# 
+# http://orange.com/research/dm#FirmwareManagementCommandCategory
+<http://orange.com/research/dm#FirmwareManagementCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#FirmwareManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://orange.com/research/dm#DeviceManagementCommandCategory> .
+<http://orange.com/research/dm#FirmwareManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Firmware Management Command Category"@en .
+# 
+# http://orange.com/research/dm#ManageableDevice
+<http://orange.com/research/dm#ManageableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#ManageableDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Device> .
+<http://orange.com/research/dm#ManageableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible object that has at least one Device Management Function.\n\nThis class extends the saref:Device class, it is a Feature of Interest by definition."@en .
+<http://orange.com/research/dm#ManageableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Manageable Device"@en .
+# 
+# http://orange.com/research/dm#ManagementService
+<http://orange.com/research/dm#ManagementService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#ManagementService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Service> .
+<http://orange.com/research/dm#ManagementService> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Service that represents functions or functions of interest of the Device Management Function Category.\n\nThe ManagementService exposes these functions through a Connection, between a Client and a Server."@en .
+# 
+# http://orange.com/research/dm#ModuleManagementCommandCategory
+<http://orange.com/research/dm#ModuleManagementCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#ModuleManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://orange.com/research/dm#DeviceManagementCommandCategory> .
+<http://orange.com/research/dm#ModuleManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Module Management Command Category"@en .
+# 
+# http://orange.com/research/dm#PackageManagementCommandCategory
+<http://orange.com/research/dm#PackageManagementCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#PackageManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://orange.com/research/dm#DeviceManagementCommandCategory> .
+<http://orange.com/research/dm#PackageManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Package Management Command Category"@en .
+# 
+# http://orange.com/research/dm#Server
+<http://orange.com/research/dm#Server> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#Server> <http://www.w3.org/2000/01/rdf-schema#comment> "A DM Server is the software entity which is responsible for performing DM operations on a fleet of Devices. It exposes the set of available operations to an entity that needs to trigger an operation, such as a manufacturer or a Customer Care service. \n\nThe DM Server is a endpoint, generally secured, with which DM Clients communicate. \n\nThe protocol used between Server and Client is not in the scope of this ontology. It can follow a DM standard such as CWMP or LWM2M, or be completely proprietary."@en .
+# 
+# http://orange.com/research/dm#SupportedDatamodelCommandCategory
+<http://orange.com/research/dm#SupportedDatamodelCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://orange.com/research/dm#SupportedDatamodelCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://orange.com/research/dm#DeviceManagementCommandCategory> .
+<http://orange.com/research/dm#SupportedDatamodelCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Supported Datamodel Command Category"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://orange.com/research/dm#DatamodelParameterCreationCommand
+<http://orange.com/research/dm#DatamodelParameterCreationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DatamodelParameterCreationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DatamodelParameterCommandCategory> .
+# 
+# http://orange.com/research/dm#DatamodelParameterDeletionCommand
+<http://orange.com/research/dm#DatamodelParameterDeletionCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DatamodelParameterDeletionCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DatamodelParameterCommandCategory> .
+# 
+# http://orange.com/research/dm#DatamodelParameterFunction
+<http://orange.com/research/dm#DatamodelParameterFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DatamodelParameterFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DeviceManagementFunctionCategory> .
+<http://orange.com/research/dm#DatamodelParameterFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#DatamodelParameterCreationCommand> .
+<http://orange.com/research/dm#DatamodelParameterFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#DatamodelParameterDeletionCommand> .
+<http://orange.com/research/dm#DatamodelParameterFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#DatamodelParameterOperateCommand> .
+<http://orange.com/research/dm#DatamodelParameterFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#DatamodelParameterUpdateCommand> .
+# 
+# http://orange.com/research/dm#DatamodelParameterInstanceName
+<http://orange.com/research/dm#DatamodelParameterInstanceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DatamodelParameterInstanceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#DatamodelParameterInstanceName> <http://www.w3.org/2004/02/skos/core#narrower> <http://orange.com/research/dm#DatamodelParameterInstanceProperty> .
+# 
+# http://orange.com/research/dm#DatamodelParameterInstanceProperty
+<http://orange.com/research/dm#DatamodelParameterInstanceProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DatamodelParameterInstanceProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#DatamodelParameterInstanceProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of a Datamodel Parameter Instance.\n\nThese parameter instances represent the actionable capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client.\n\nIt should not be confused with the Supported Datamodel Parameter, which represents the abstract capabilities of the Device."@en .
+# 
+# http://orange.com/research/dm#DatamodelParameterInstanceValue
+<http://orange.com/research/dm#DatamodelParameterInstanceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DatamodelParameterInstanceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#DatamodelParameterInstanceValue> <http://www.w3.org/2004/02/skos/core#narrower> <http://orange.com/research/dm#DatamodelParameterInstanceProperty> .
+# 
+# http://orange.com/research/dm#DatamodelParameterOperateCommand
+<http://orange.com/research/dm#DatamodelParameterOperateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DatamodelParameterOperateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DatamodelParameterCommandCategory> .
+# 
+# http://orange.com/research/dm#DatamodelParameterRetrievalCommand
+<http://orange.com/research/dm#DatamodelParameterRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DatamodelParameterRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DatamodelParameterCommandCategory> .
+# 
+# http://orange.com/research/dm#DatamodelParameterUpdateCommand
+<http://orange.com/research/dm#DatamodelParameterUpdateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DatamodelParameterUpdateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DatamodelParameterCommandCategory> .
+# 
+# http://orange.com/research/dm#DeviceControlFunction
+<http://orange.com/research/dm#DeviceControlFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DeviceControlFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DeviceManagementFunctionCategory> .
+<http://orange.com/research/dm#DeviceControlFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#RebootCommand> .
+<http://orange.com/research/dm#DeviceControlFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#ResetCommand> .
+# 
+# http://orange.com/research/dm#DeviceIdentityFunction
+<http://orange.com/research/dm#DeviceIdentityFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DeviceIdentityFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DeviceManagementFunctionCategory> .
+<http://orange.com/research/dm#DeviceIdentityFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#DeviceInfoRetrievalCommand> .
+# 
+# http://orange.com/research/dm#DeviceIdentityProperty
+<http://orange.com/research/dm#DeviceIdentityProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DeviceIdentityProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#DeviceIdentityProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of a Device Identity."@en .
+# 
+# http://orange.com/research/dm#DeviceInfoRetrievalCommand
+<http://orange.com/research/dm#DeviceInfoRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DeviceInfoRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DeviceIdentityCommandCategory> .
+# 
+# http://orange.com/research/dm#DeviceModuleActivated
+<http://orange.com/research/dm#DeviceModuleActivated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DeviceModuleActivated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DeviceModuleState> .
+# 
+# http://orange.com/research/dm#DeviceModuleDeactivated
+<http://orange.com/research/dm#DeviceModuleDeactivated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DeviceModuleDeactivated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DeviceModuleState> .
+# 
+# http://orange.com/research/dm#DevicePackageDownloaded
+<http://orange.com/research/dm#DevicePackageDownloaded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DevicePackageDownloaded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DevicePackageState> .
+# 
+# http://orange.com/research/dm#DevicePackageDownloading
+<http://orange.com/research/dm#DevicePackageDownloading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DevicePackageDownloading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DevicePackageState> .
+# 
+# http://orange.com/research/dm#DevicePackageInstalled
+<http://orange.com/research/dm#DevicePackageInstalled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DevicePackageInstalled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DevicePackageState> .
+# 
+# http://orange.com/research/dm#DevicePackageInstalling
+<http://orange.com/research/dm#DevicePackageInstalling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DevicePackageInstalling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DevicePackageState> .
+# 
+# http://orange.com/research/dm#DevicePackageUninstalled
+<http://orange.com/research/dm#DevicePackageUninstalled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DevicePackageUninstalled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DevicePackageState> .
+# 
+# http://orange.com/research/dm#DevicePackageUninstalling
+<http://orange.com/research/dm#DevicePackageUninstalling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DevicePackageUninstalling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DevicePackageState> .
+# 
+# http://orange.com/research/dm#DevicePackageValidated
+<http://orange.com/research/dm#DevicePackageValidated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#DevicePackageValidated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DevicePackageState> .
+# 
+# http://orange.com/research/dm#FirmwareInformationRetrievalCommand
+<http://orange.com/research/dm#FirmwareInformationRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#FirmwareInformationRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#FirmwareManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#FirmwareManagementFunction
+<http://orange.com/research/dm#FirmwareManagementFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#FirmwareManagementFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DeviceManagementFunctionCategory> .
+<http://orange.com/research/dm#FirmwareManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#FirmwareInformationRetrievalCommand> .
+<http://orange.com/research/dm#FirmwareManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#FirmwareUpdateCommand> .
+# 
+# http://orange.com/research/dm#FirmwareProperty
+<http://orange.com/research/dm#FirmwareProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#FirmwareProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#FirmwareProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of the firmware of the device.\n\nThe device firmware is the running base software for the device, which is automatically loaded into memory and executed at boot."@en .
+# 
+# http://orange.com/research/dm#FirmwareUpdateCommand
+<http://orange.com/research/dm#FirmwareUpdateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#FirmwareUpdateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#FirmwareManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#FirmwareVersion
+<http://orange.com/research/dm#FirmwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#FirmwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#FirmwareVersion> <http://www.w3.org/2004/02/skos/core#narrower> <http://orange.com/research/dm#FirmwareProperty> .
+# 
+# http://orange.com/research/dm#HardwareVersion
+<http://orange.com/research/dm#HardwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#HardwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#HardwareVersion> <http://www.w3.org/2004/02/skos/core#narrower> <http://orange.com/research/dm#DeviceIdentityProperty> .
+# 
+# http://orange.com/research/dm#Manufacturer
+<http://orange.com/research/dm#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#Manufacturer> <http://www.w3.org/2004/02/skos/core#narrower> <http://orange.com/research/dm#DeviceIdentityProperty> .
+# 
+# http://orange.com/research/dm#ModelName
+<http://orange.com/research/dm#ModelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#ModelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#ModelName> <http://www.w3.org/2004/02/skos/core#narrower> <http://orange.com/research/dm#DeviceIdentityProperty> .
+# 
+# http://orange.com/research/dm#ModelNumber
+<http://orange.com/research/dm#ModelNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#ModelNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#ModelNumber> <http://www.w3.org/2004/02/skos/core#narrower> <http://orange.com/research/dm#DeviceIdentityProperty> .
+# 
+# http://orange.com/research/dm#ModuleActivationCommand
+<http://orange.com/research/dm#ModuleActivationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#ModuleActivationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#ModuleManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#ModuleDeactivationCommand
+<http://orange.com/research/dm#ModuleDeactivationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#ModuleDeactivationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#ModuleManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#ModuleDiscoveryCommand
+<http://orange.com/research/dm#ModuleDiscoveryCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#ModuleDiscoveryCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#ModuleManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#ModuleInformationRetrievalCommand
+<http://orange.com/research/dm#ModuleInformationRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#ModuleInformationRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#ModuleManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#ModuleManagementFunction
+<http://orange.com/research/dm#ModuleManagementFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#ModuleManagementFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DeviceManagementFunctionCategory> .
+<http://orange.com/research/dm#ModuleManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#ModuleActivationCommand> .
+<http://orange.com/research/dm#ModuleManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#ModuleDeactivationCommand> .
+<http://orange.com/research/dm#ModuleManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#ModuleDiscoveryCommand> .
+<http://orange.com/research/dm#ModuleManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#ModuleInformationRetrievalCommand> .
+# 
+# http://orange.com/research/dm#ModuleName
+<http://orange.com/research/dm#ModuleName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#ModuleName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#ModuleName> <http://www.w3.org/2004/02/skos/core#narrower> <http://orange.com/research/dm#ModuleProperty> .
+# 
+# http://orange.com/research/dm#ModuleProperty
+<http://orange.com/research/dm#ModuleProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#ModuleProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#ModuleProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of a DeviceModule"@en .
+# 
+# http://orange.com/research/dm#ModuleVersion
+<http://orange.com/research/dm#ModuleVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#ModuleVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#ModuleVersion> <http://www.w3.org/2004/02/skos/core#narrower> <http://orange.com/research/dm#ModuleProperty> .
+# 
+# http://orange.com/research/dm#PackageCreationCommand
+<http://orange.com/research/dm#PackageCreationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#PackageCreationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#PackageManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#PackageDeletionCommand
+<http://orange.com/research/dm#PackageDeletionCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#PackageDeletionCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#PackageManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#PackageDiscoveryCommand
+<http://orange.com/research/dm#PackageDiscoveryCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#PackageDiscoveryCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#PackageManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#PackageInformationRetrievalCommand
+<http://orange.com/research/dm#PackageInformationRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#PackageInformationRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#PackageManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#PackageInstallCommand
+<http://orange.com/research/dm#PackageInstallCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#PackageInstallCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#PackageManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#PackageManagementFunction
+<http://orange.com/research/dm#PackageManagementFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#PackageManagementFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DeviceManagementFunctionCategory> .
+<http://orange.com/research/dm#PackageManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#PackageCreationCommand> .
+<http://orange.com/research/dm#PackageManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#PackageDeletionCommand> .
+<http://orange.com/research/dm#PackageManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#PackageDiscoveryCommand> .
+<http://orange.com/research/dm#PackageManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#PackageInformationRetrievalCommand> .
+<http://orange.com/research/dm#PackageManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#PackageInstallCommand> .
+<http://orange.com/research/dm#PackageManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#PackageUninstallCommand> .
+<http://orange.com/research/dm#PackageManagementFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#PackageUpdateCommand> .
+# 
+# http://orange.com/research/dm#PackageName
+<http://orange.com/research/dm#PackageName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#PackageName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+# 
+# http://orange.com/research/dm#PackageProperty
+<http://orange.com/research/dm#PackageProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#PackageProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#PackageProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of a DevicePackage"@en .
+# 
+# http://orange.com/research/dm#PackageUninstallCommand
+<http://orange.com/research/dm#PackageUninstallCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#PackageUninstallCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#PackageManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#PackageUpdateCommand
+<http://orange.com/research/dm#PackageUpdateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#PackageUpdateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#PackageManagementCommandCategory> .
+# 
+# http://orange.com/research/dm#PackageVersion
+<http://orange.com/research/dm#PackageVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#PackageVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+# 
+# http://orange.com/research/dm#RebootCommand
+<http://orange.com/research/dm#RebootCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#RebootCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DeviceControlCommandCategory> .
+# 
+# http://orange.com/research/dm#ResetCommand
+<http://orange.com/research/dm#ResetCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#ResetCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DeviceControlCommandCategory> .
+# 
+# http://orange.com/research/dm#SerialNumber
+<http://orange.com/research/dm#SerialNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#SerialNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#SerialNumber> <http://www.w3.org/2004/02/skos/core#narrower> <http://orange.com/research/dm#DeviceIdentityProperty> .
+# 
+# http://orange.com/research/dm#SupportedDatamodelFunction
+<http://orange.com/research/dm#SupportedDatamodelFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#SupportedDatamodelFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#DeviceManagementFunctionCategory> .
+<http://orange.com/research/dm#SupportedDatamodelFunction> <https://saref.etsi.org/core/hasCommand> <http://orange.com/research/dm#SupportedDatamodelRetrievalCommand> .
+# 
+# http://orange.com/research/dm#SupportedDatamodelParameterName
+<http://orange.com/research/dm#SupportedDatamodelParameterName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#SupportedDatamodelParameterName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+# 
+# http://orange.com/research/dm#SupportedDatamodelParameterProperty
+<http://orange.com/research/dm#SupportedDatamodelParameterProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#SupportedDatamodelParameterProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<http://orange.com/research/dm#SupportedDatamodelParameterProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of a Supported Datamodel Parameter.\n\nThese parameters represent the capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client.\n\nIt should not be confused with the Datamodel Parameter Instance, which represents the actionable capabilities of the Device." .
+# 
+# http://orange.com/research/dm#SupportedDatamodelParameterType
+<http://orange.com/research/dm#SupportedDatamodelParameterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#SupportedDatamodelParameterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+# 
+# http://orange.com/research/dm#SupportedDatamodelRetrievalCommand
+<http://orange.com/research/dm#SupportedDatamodelRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://orange.com/research/dm#SupportedDatamodelRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://orange.com/research/dm#SupportedDatamodelCommandCategory> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#SupportedDatamodelCommandCategory> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#PackageManagementCommandCategory> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#ModuleManagementCommandCategory> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#FirmwareManagementCommandCategory> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#DeviceIdentityCommandCategory> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#DeviceControlCommandCategory> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#DatamodelParameterCommandCategory> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid9 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#SupportedDatamodelFunction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#PackageManagementFunction> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#ModuleManagementFunction> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#FirmwareManagementFunction> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#DeviceIdentityFunction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#DeviceControlFunction> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#DatamodelParameterFunction> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid17 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#FirmwareUpdateCommand> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://orange.com/research/dm#FirmwareInformationRetrievalCommand> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

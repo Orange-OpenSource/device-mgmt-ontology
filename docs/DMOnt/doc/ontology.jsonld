@@ -1,0 +1,762 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://orange.com/research/dm#DatamodelParameterCommandCategory"
+    }, {
+      "@id" : "http://orange.com/research/dm#DeviceControlCommandCategory"
+    }, {
+      "@id" : "http://orange.com/research/dm#DeviceIdentityCommandCategory"
+    }, {
+      "@id" : "http://orange.com/research/dm#FirmwareManagementCommandCategory"
+    }, {
+      "@id" : "http://orange.com/research/dm#ModuleManagementCommandCategory"
+    }, {
+      "@id" : "http://orange.com/research/dm#PackageManagementCommandCategory"
+    }, {
+      "@id" : "http://orange.com/research/dm#SupportedDatamodelCommandCategory"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://orange.com/research/dm#FirmwareInformationRetrievalCommand"
+    }, {
+      "@id" : "http://orange.com/research/dm#FirmwareUpdateCommand"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://orange.com/research/dm#DatamodelParameterFunction"
+    }, {
+      "@id" : "http://orange.com/research/dm#DeviceControlFunction"
+    }, {
+      "@id" : "http://orange.com/research/dm#DeviceIdentityFunction"
+    }, {
+      "@id" : "http://orange.com/research/dm#FirmwareManagementFunction"
+    }, {
+      "@id" : "http://orange.com/research/dm#ModuleManagementFunction"
+    }, {
+      "@id" : "http://orange.com/research/dm#PackageManagementFunction"
+    }, {
+      "@id" : "http://orange.com/research/dm#SupportedDatamodelFunction"
+    } ]
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Cyrille Bareau (https://dblp.org/pid/52/1343.html)"
+  }, {
+    "@value" : "François Aïssaoui (https://orcid.org/0000-0001-6772-2161)"
+  }, {
+    "@value" : "Marc Douet (https://www.researchgate.net/profile/Marc-Douet)"
+  }, {
+    "@value" : "Samuel Berlemont (https://orcid.org/0000-0003-0788-9837)"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The ontology aims to define concepts within the Device Management domain, facilitating the remote administration of devices and ensuring their proper functioning. It addresses challenges related to the heterogeneity of management protocols by representing execution paths for commands and modeling the information exchanged between devices and the management system.\n\nThis ontology is developed as a SAREF extension."
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://www.orange.com/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "DMOnt : Device Management Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "dm"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://orange.com/research/dm#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device Management Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://saref.etsi.org/core/v3.2.1/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://orange.com/research/dm/2.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "2.0.0"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#Client",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Software entity which represents a Device by exposing its DM Functions to one or more DM Server(s). \n\nIt is responsible for the triggering of the DM Functions when a Command targetting the represented Device is received by the Server. The Client is also responsible for the reporting of the results of the Function execution to the Server.\n\nThe Client has an identifier that is unique only relatively to each Server it is connected to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Client"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#Connection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract representation of the connection between a Client and a Server. It does not necessarily imply that a persistent connection is established between the entities - such as a TCP connection. It represents the link and the capability of the Server to interact with the Client.\n\nFor instance, the Client has been authenticated by the Server with a certificate, and/or the client has received a configuration for access rights to its functions for the Server."
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DatamodelParameterCommandCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Datamodel Parameter Command Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DatamodelParameterCreationCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DatamodelParameterCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DatamodelParameterDeletionCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DatamodelParameterCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DatamodelParameterFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementFunctionCategory"
+  } ],
+  "https://saref.etsi.org/core/hasCommand" : [ {
+    "@id" : "http://orange.com/research/dm#DatamodelParameterCreationCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#DatamodelParameterDeletionCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#DatamodelParameterOperateCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#DatamodelParameterUpdateCommand"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DatamodelParameterInstanceName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://orange.com/research/dm#DatamodelParameterInstanceProperty"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DatamodelParameterInstanceProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property kind that represents the properties of a Datamodel Parameter Instance.\n\nThese parameter instances represent the actionable capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client.\n\nIt should not be confused with the Supported Datamodel Parameter, which represents the abstract capabilities of the Device."
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DatamodelParameterInstanceValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://orange.com/research/dm#DatamodelParameterInstanceProperty"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DatamodelParameterOperateCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DatamodelParameterCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DatamodelParameterRetrievalCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DatamodelParameterCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DatamodelParameterUpdateCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DatamodelParameterCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceControlCommandCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device Control Command Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceControlFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementFunctionCategory"
+  } ],
+  "https://saref.etsi.org/core/hasCommand" : [ {
+    "@id" : "http://orange.com/research/dm#RebootCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#ResetCommand"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceIdentityCommandCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device Identity Command Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceIdentityFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementFunctionCategory"
+  } ],
+  "https://saref.etsi.org/core/hasCommand" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceInfoRetrievalCommand"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceIdentityProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property kind that represents the properties of a Device Identity."
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceInfoRetrievalCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceIdentityCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceManagementCommandCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category of Commands that are specific to the Device Management domain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device Management Command Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Command"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceManagementFunctionCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category of Functions related to the Device Management domain.\n\nThese Functions correspond to the capabilities of the Device to perform its own diagnostics, maintenance, configuration, monitoring and control."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device Management Function Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Function"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceManagementState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is a class of states for Device Management."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/State"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A DeviceModule is an executable software entity on the Device, i.e., a DeviceModule may be activated and deactivated on demand through dedicated Functions.\n\nAs such, the DeviceModule implements specific Functions that are available to the Device when the DeviceModule is activated.\n\nA DeviceModule is supported by a DevicePackage: deleting the corresponding DevicePackage will in turn remove the DeviceModule and its related Functions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceModuleActivated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceModuleState"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceModuleDeactivated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceModuleState"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DeviceModuleState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State of a DeviceModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device Module State"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementState"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://orange.com/research/dm#DevicePackageState"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DevicePackage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A DevicePackage is an archive file that may contain resource files, code, libraries or executable files.\nIt is a resource that the Device should retrieve or receive from an external source.\n\nA DevicePackage is only actionable once it has been downloaded and installed.\n\nIt may allow a Device to support additional Functions by instantiating a DeviceModule.\n\nA DevicePackage may be uninstalled and then removed from the Device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device Package"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DevicePackageDownloaded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DevicePackageState"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DevicePackageDownloading",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DevicePackageState"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DevicePackageInstalled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DevicePackageState"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DevicePackageInstalling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DevicePackageState"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DevicePackageState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State of a DevicePackage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device Package State"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementState"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DevicePackageUninstalled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DevicePackageState"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DevicePackageUninstalling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DevicePackageState"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#DevicePackageValidated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DevicePackageState"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#FirmwareInformationRetrievalCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#FirmwareManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#FirmwareManagementCommandCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Firmware Management Command Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#FirmwareManagementFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementFunctionCategory"
+  } ],
+  "https://saref.etsi.org/core/hasCommand" : [ {
+    "@id" : "http://orange.com/research/dm#FirmwareInformationRetrievalCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#FirmwareUpdateCommand"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#FirmwareProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property kind that represents the properties of the firmware of the device.\n\nThe device firmware is the running base software for the device, which is automatically loaded into memory and executed at boot."
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#FirmwareUpdateCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#FirmwareManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#FirmwareVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://orange.com/research/dm#FirmwareProperty"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#HardwareVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceIdentityProperty"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ManageableDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A tangible object that has at least one Device Management Function.\n\nThis class extends the saref:Device class, it is a Feature of Interest by definition."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Manageable Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ManagementService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A saref:Service that represents functions or functions of interest of the Device Management Function Category.\n\nThe ManagementService exposes these functions through a Connection, between a Client and a Server."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceIdentityProperty"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ModelName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceIdentityProperty"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ModelNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceIdentityProperty"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ModuleActivationCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#ModuleManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ModuleDeactivationCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#ModuleManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ModuleDiscoveryCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#ModuleManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ModuleInformationRetrievalCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#ModuleManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ModuleManagementCommandCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Module Management Command Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ModuleManagementFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementFunctionCategory"
+  } ],
+  "https://saref.etsi.org/core/hasCommand" : [ {
+    "@id" : "http://orange.com/research/dm#ModuleActivationCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#ModuleDeactivationCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#ModuleDiscoveryCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#ModuleInformationRetrievalCommand"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ModuleName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://orange.com/research/dm#ModuleProperty"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ModuleProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property kind that represents the properties of a DeviceModule"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ModuleVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://orange.com/research/dm#ModuleProperty"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#PackageCreationCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#PackageManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#PackageDeletionCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#PackageManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#PackageDiscoveryCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#PackageManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#PackageInformationRetrievalCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#PackageManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#PackageInstallCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#PackageManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#PackageManagementCommandCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package Management Command Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#PackageManagementFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementFunctionCategory"
+  } ],
+  "https://saref.etsi.org/core/hasCommand" : [ {
+    "@id" : "http://orange.com/research/dm#PackageCreationCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#PackageDeletionCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#PackageDiscoveryCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#PackageInformationRetrievalCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#PackageInstallCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#PackageUninstallCommand"
+  }, {
+    "@id" : "http://orange.com/research/dm#PackageUpdateCommand"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#PackageName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ]
+}, {
+  "@id" : "http://orange.com/research/dm#PackageProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property kind that represents the properties of a DevicePackage"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#PackageUninstallCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#PackageManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#PackageUpdateCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#PackageManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#PackageVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ]
+}, {
+  "@id" : "http://orange.com/research/dm#RebootCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceControlCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#ResetCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceControlCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#SerialNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceIdentityProperty"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#Server",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A DM Server is the software entity which is responsible for performing DM operations on a fleet of Devices. It exposes the set of available operations to an entity that needs to trigger an operation, such as a manufacturer or a Customer Care service. \n\nThe DM Server is a endpoint, generally secured, with which DM Clients communicate. \n\nThe protocol used between Server and Client is not in the scope of this ontology. It can follow a DM standard such as CWMP or LWM2M, or be completely proprietary."
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#SupportedDatamodelCommandCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Supported Datamodel Command Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#SupportedDatamodelFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#DeviceManagementFunctionCategory"
+  } ],
+  "https://saref.etsi.org/core/hasCommand" : [ {
+    "@id" : "http://orange.com/research/dm#SupportedDatamodelRetrievalCommand"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#SupportedDatamodelParameterName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ]
+}, {
+  "@id" : "http://orange.com/research/dm#SupportedDatamodelParameterProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property kind that represents the properties of a Supported Datamodel Parameter.\n\nThese parameters represent the capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client.\n\nIt should not be confused with the Datamodel Parameter Instance, which represents the actionable capabilities of the Device."
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#SupportedDatamodelParameterType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ]
+}, {
+  "@id" : "http://orange.com/research/dm#SupportedDatamodelRetrievalCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://orange.com/research/dm#SupportedDatamodelCommandCategory"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#connectsClient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://orange.com/research/dm#Connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://orange.com/research/dm#Client"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://orange.com/research/dm#isClientConnectedThrough"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#connectsServer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://orange.com/research/dm#Connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://orange.com/research/dm#Server"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://orange.com/research/dm#isServerConnectedThrough"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#enablesManagementService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://orange.com/research/dm#Connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://orange.com/research/dm#ManagementService"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://orange.com/research/dm#hasConnection"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#hasConnection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://orange.com/research/dm#ManagementService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://orange.com/research/dm#Connection"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#isClientConnectedThrough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://orange.com/research/dm#Client"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://orange.com/research/dm#Connection"
+  } ]
+}, {
+  "@id" : "http://orange.com/research/dm#isServerConnectedThrough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://orange.com/research/dm#Server"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://orange.com/research/dm#Connection"
+  } ]
+} ]

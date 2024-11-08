@@ -1,0 +1,970 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://orange.com/research/dm#"
+     xml:base="http://orange.com/research/dm"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="https://saref.etsi.org/core/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://orange.com/research/dm">
+        <owl:versionIRI rdf:resource="http://orange.com/research/dm/2.0.0"/>
+        <owl:imports rdf:resource="https://saref.etsi.org/core/v3.2.1/"/>
+        <terms:creator>Cyrille Bareau (https://dblp.org/pid/52/1343.html)</terms:creator>
+        <terms:creator>François Aïssaoui (https://orcid.org/0000-0001-6772-2161)</terms:creator>
+        <terms:creator>Marc Douet (https://www.researchgate.net/profile/Marc-Douet)</terms:creator>
+        <terms:creator>Samuel Berlemont (https://orcid.org/0000-0003-0788-9837)</terms:creator>
+        <terms:description xml:lang="en">The ontology aims to define concepts within the Device Management domain, facilitating the remote administration of devices and ensuring their proper functioning. It addresses challenges related to the heterogeneity of management protocols by representing execution paths for commands and modeling the information exchanged between devices and the management system.
+
+This ontology is developed as a SAREF extension.</terms:description>
+        <terms:publisher rdf:resource="https://www.orange.com/"/>
+        <terms:title xml:lang="en">DMOnt : Device Management Ontology</terms:title>
+        <vann:preferredNamespacePrefix>dm</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://orange.com/research/dm#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">Device Management Ontology</rdfs:comment>
+        <owl:versionInfo>2.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://orange.com/research/dm#connectsClient -->
+
+
+    <owl:ObjectProperty rdf:about="http://orange.com/research/dm#connectsClient">
+        <owl:inverseOf rdf:resource="http://orange.com/research/dm#isClientConnectedThrough"/>
+        <rdfs:domain rdf:resource="http://orange.com/research/dm#Connection"/>
+        <rdfs:range rdf:resource="http://orange.com/research/dm#Client"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://orange.com/research/dm#connectsServer -->
+
+
+    <owl:ObjectProperty rdf:about="http://orange.com/research/dm#connectsServer">
+        <owl:inverseOf rdf:resource="http://orange.com/research/dm#isServerConnectedThrough"/>
+        <rdfs:domain rdf:resource="http://orange.com/research/dm#Connection"/>
+        <rdfs:range rdf:resource="http://orange.com/research/dm#Server"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://orange.com/research/dm#enablesManagementService -->
+
+
+    <owl:ObjectProperty rdf:about="http://orange.com/research/dm#enablesManagementService">
+        <owl:inverseOf rdf:resource="http://orange.com/research/dm#hasConnection"/>
+        <rdfs:domain rdf:resource="http://orange.com/research/dm#Connection"/>
+        <rdfs:range rdf:resource="http://orange.com/research/dm#ManagementService"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://orange.com/research/dm#hasConnection -->
+
+
+    <owl:ObjectProperty rdf:about="http://orange.com/research/dm#hasConnection">
+        <rdfs:domain rdf:resource="http://orange.com/research/dm#ManagementService"/>
+        <rdfs:range rdf:resource="http://orange.com/research/dm#Connection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://orange.com/research/dm#isClientConnectedThrough -->
+
+
+    <owl:ObjectProperty rdf:about="http://orange.com/research/dm#isClientConnectedThrough">
+        <rdfs:domain rdf:resource="http://orange.com/research/dm#Client"/>
+        <rdfs:range rdf:resource="http://orange.com/research/dm#Connection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://orange.com/research/dm#isServerConnectedThrough -->
+
+
+    <owl:ObjectProperty rdf:about="http://orange.com/research/dm#isServerConnectedThrough">
+        <rdfs:domain rdf:resource="http://orange.com/research/dm#Server"/>
+        <rdfs:range rdf:resource="http://orange.com/research/dm#Connection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://orange.com/research/dm#Client -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#Client">
+        <rdfs:comment xml:lang="en">Software entity which represents a Device by exposing its DM Functions to one or more DM Server(s). 
+
+It is responsible for the triggering of the DM Functions when a Command targetting the represented Device is received by the Server. The Client is also responsible for the reporting of the results of the Function execution to the Server.
+
+The Client has an identifier that is unique only relatively to each Server it is connected to.</rdfs:comment>
+        <rdfs:label xml:lang="en">Client</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#Connection -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#Connection">
+        <rdfs:comment xml:lang="en">Abstract representation of the connection between a Client and a Server. It does not necessarily imply that a persistent connection is established between the entities - such as a TCP connection. It represents the link and the capability of the Server to interact with the Client.
+
+For instance, the Client has been authenticated by the Server with a certificate, and/or the client has received a configuration for access rights to its functions for the Server.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#DatamodelParameterCommandCategory -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#DatamodelParameterCommandCategory">
+        <rdfs:subClassOf rdf:resource="http://orange.com/research/dm#DeviceManagementCommandCategory"/>
+        <rdfs:label xml:lang="en">Datamodel Parameter Command Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceControlCommandCategory -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#DeviceControlCommandCategory">
+        <rdfs:subClassOf rdf:resource="http://orange.com/research/dm#DeviceManagementCommandCategory"/>
+        <rdfs:label xml:lang="en">Device Control Command Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceIdentityCommandCategory -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#DeviceIdentityCommandCategory">
+        <rdfs:subClassOf rdf:resource="http://orange.com/research/dm#DeviceManagementCommandCategory"/>
+        <rdfs:label xml:lang="en">Device Identity Command Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceManagementCommandCategory -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#DeviceManagementCommandCategory">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+        <rdfs:comment xml:lang="en">Category of Commands that are specific to the Device Management domain.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device Management Command Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceManagementFunctionCategory -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#DeviceManagementFunctionCategory">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Function"/>
+        <rdfs:comment xml:lang="en">Category of Functions related to the Device Management domain.
+
+These Functions correspond to the capabilities of the Device to perform its own diagnostics, maintenance, configuration, monitoring and control.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device Management Function Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceManagementState -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#DeviceManagementState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/State"/>
+        <rdfs:comment xml:lang="en">This is a class of states for Device Management.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceModule -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#DeviceModule">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+        <rdfs:comment xml:lang="en">A DeviceModule is an executable software entity on the Device, i.e., a DeviceModule may be activated and deactivated on demand through dedicated Functions.
+
+As such, the DeviceModule implements specific Functions that are available to the Device when the DeviceModule is activated.
+
+A DeviceModule is supported by a DevicePackage: deleting the corresponding DevicePackage will in turn remove the DeviceModule and its related Functions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device Module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceModuleState -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#DeviceModuleState">
+        <rdfs:subClassOf rdf:resource="http://orange.com/research/dm#DeviceManagementState"/>
+        <owl:disjointWith rdf:resource="http://orange.com/research/dm#DevicePackageState"/>
+        <rdfs:comment xml:lang="en">State of a DeviceModule</rdfs:comment>
+        <rdfs:label xml:lang="en">Device Module State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#DevicePackage -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#DevicePackage">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+        <rdfs:comment xml:lang="en">A DevicePackage is an archive file that may contain resource files, code, libraries or executable files.
+It is a resource that the Device should retrieve or receive from an external source.
+
+A DevicePackage is only actionable once it has been downloaded and installed.
+
+It may allow a Device to support additional Functions by instantiating a DeviceModule.
+
+A DevicePackage may be uninstalled and then removed from the Device.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device Package</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#DevicePackageState -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#DevicePackageState">
+        <rdfs:subClassOf rdf:resource="http://orange.com/research/dm#DeviceManagementState"/>
+        <rdfs:comment xml:lang="en">State of a DevicePackage</rdfs:comment>
+        <rdfs:label xml:lang="en">Device Package State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#FirmwareManagementCommandCategory -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#FirmwareManagementCommandCategory">
+        <rdfs:subClassOf rdf:resource="http://orange.com/research/dm#DeviceManagementCommandCategory"/>
+        <rdfs:label xml:lang="en">Firmware Management Command Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#ManageableDevice -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#ManageableDevice">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Device"/>
+        <rdfs:comment xml:lang="en">A tangible object that has at least one Device Management Function.
+
+This class extends the saref:Device class, it is a Feature of Interest by definition.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manageable Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#ManagementService -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#ManagementService">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Service"/>
+        <rdfs:comment xml:lang="en">A saref:Service that represents functions or functions of interest of the Device Management Function Category.
+
+The ManagementService exposes these functions through a Connection, between a Client and a Server.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#ModuleManagementCommandCategory -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#ModuleManagementCommandCategory">
+        <rdfs:subClassOf rdf:resource="http://orange.com/research/dm#DeviceManagementCommandCategory"/>
+        <rdfs:label xml:lang="en">Module Management Command Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#PackageManagementCommandCategory -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#PackageManagementCommandCategory">
+        <rdfs:subClassOf rdf:resource="http://orange.com/research/dm#DeviceManagementCommandCategory"/>
+        <rdfs:label xml:lang="en">Package Management Command Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#Server -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#Server">
+        <rdfs:comment xml:lang="en">A DM Server is the software entity which is responsible for performing DM operations on a fleet of Devices. It exposes the set of available operations to an entity that needs to trigger an operation, such as a manufacturer or a Customer Care service. 
+
+The DM Server is a endpoint, generally secured, with which DM Clients communicate. 
+
+The protocol used between Server and Client is not in the scope of this ontology. It can follow a DM standard such as CWMP or LWM2M, or be completely proprietary.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://orange.com/research/dm#SupportedDatamodelCommandCategory -->
+
+
+    <owl:Class rdf:about="http://orange.com/research/dm#SupportedDatamodelCommandCategory">
+        <rdfs:subClassOf rdf:resource="http://orange.com/research/dm#DeviceManagementCommandCategory"/>
+        <rdfs:label xml:lang="en">Supported Datamodel Command Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://orange.com/research/dm#DatamodelParameterCreationCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DatamodelParameterCreationCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DatamodelParameterCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DatamodelParameterDeletionCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DatamodelParameterDeletionCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DatamodelParameterCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DatamodelParameterFunction -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DatamodelParameterFunction">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DeviceManagementFunctionCategory"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#DatamodelParameterCreationCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#DatamodelParameterDeletionCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#DatamodelParameterOperateCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#DatamodelParameterUpdateCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DatamodelParameterInstanceName -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DatamodelParameterInstanceName">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <skos:narrower rdf:resource="http://orange.com/research/dm#DatamodelParameterInstanceProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DatamodelParameterInstanceProperty -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DatamodelParameterInstanceProperty">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <rdfs:comment xml:lang="en">Property kind that represents the properties of a Datamodel Parameter Instance.
+
+These parameter instances represent the actionable capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client.
+
+It should not be confused with the Supported Datamodel Parameter, which represents the abstract capabilities of the Device.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DatamodelParameterInstanceValue -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DatamodelParameterInstanceValue">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <skos:narrower rdf:resource="http://orange.com/research/dm#DatamodelParameterInstanceProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DatamodelParameterOperateCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DatamodelParameterOperateCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DatamodelParameterCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DatamodelParameterRetrievalCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DatamodelParameterRetrievalCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DatamodelParameterCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DatamodelParameterUpdateCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DatamodelParameterUpdateCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DatamodelParameterCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceControlFunction -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DeviceControlFunction">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DeviceManagementFunctionCategory"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#RebootCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#ResetCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceIdentityFunction -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DeviceIdentityFunction">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DeviceManagementFunctionCategory"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#DeviceInfoRetrievalCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceIdentityProperty -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DeviceIdentityProperty">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <rdfs:comment xml:lang="en">Property kind that represents the properties of a Device Identity.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceInfoRetrievalCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DeviceInfoRetrievalCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DeviceIdentityCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceModuleActivated -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DeviceModuleActivated">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DeviceModuleState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DeviceModuleDeactivated -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DeviceModuleDeactivated">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DeviceModuleState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DevicePackageDownloaded -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DevicePackageDownloaded">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DevicePackageState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DevicePackageDownloading -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DevicePackageDownloading">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DevicePackageState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DevicePackageInstalled -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DevicePackageInstalled">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DevicePackageState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DevicePackageInstalling -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DevicePackageInstalling">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DevicePackageState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DevicePackageUninstalled -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DevicePackageUninstalled">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DevicePackageState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DevicePackageUninstalling -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DevicePackageUninstalling">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DevicePackageState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#DevicePackageValidated -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#DevicePackageValidated">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DevicePackageState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#FirmwareInformationRetrievalCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#FirmwareInformationRetrievalCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#FirmwareManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#FirmwareManagementFunction -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#FirmwareManagementFunction">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DeviceManagementFunctionCategory"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#FirmwareInformationRetrievalCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#FirmwareUpdateCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#FirmwareProperty -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#FirmwareProperty">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <rdfs:comment xml:lang="en">Property kind that represents the properties of the firmware of the device.
+
+The device firmware is the running base software for the device, which is automatically loaded into memory and executed at boot.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#FirmwareUpdateCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#FirmwareUpdateCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#FirmwareManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#FirmwareVersion -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#FirmwareVersion">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <skos:narrower rdf:resource="http://orange.com/research/dm#FirmwareProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#HardwareVersion -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#HardwareVersion">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <skos:narrower rdf:resource="http://orange.com/research/dm#DeviceIdentityProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#Manufacturer -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#Manufacturer">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <skos:narrower rdf:resource="http://orange.com/research/dm#DeviceIdentityProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#ModelName -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#ModelName">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <skos:narrower rdf:resource="http://orange.com/research/dm#DeviceIdentityProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#ModelNumber -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#ModelNumber">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <skos:narrower rdf:resource="http://orange.com/research/dm#DeviceIdentityProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#ModuleActivationCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#ModuleActivationCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#ModuleManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#ModuleDeactivationCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#ModuleDeactivationCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#ModuleManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#ModuleDiscoveryCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#ModuleDiscoveryCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#ModuleManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#ModuleInformationRetrievalCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#ModuleInformationRetrievalCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#ModuleManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#ModuleManagementFunction -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#ModuleManagementFunction">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DeviceManagementFunctionCategory"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#ModuleActivationCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#ModuleDeactivationCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#ModuleDiscoveryCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#ModuleInformationRetrievalCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#ModuleName -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#ModuleName">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <skos:narrower rdf:resource="http://orange.com/research/dm#ModuleProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#ModuleProperty -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#ModuleProperty">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <rdfs:comment xml:lang="en">Property kind that represents the properties of a DeviceModule</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#ModuleVersion -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#ModuleVersion">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <skos:narrower rdf:resource="http://orange.com/research/dm#ModuleProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#PackageCreationCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#PackageCreationCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#PackageManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#PackageDeletionCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#PackageDeletionCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#PackageManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#PackageDiscoveryCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#PackageDiscoveryCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#PackageManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#PackageInformationRetrievalCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#PackageInformationRetrievalCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#PackageManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#PackageInstallCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#PackageInstallCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#PackageManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#PackageManagementFunction -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#PackageManagementFunction">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DeviceManagementFunctionCategory"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#PackageCreationCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#PackageDeletionCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#PackageDiscoveryCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#PackageInformationRetrievalCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#PackageInstallCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#PackageUninstallCommand"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#PackageUpdateCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#PackageName -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#PackageName">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#PackageProperty -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#PackageProperty">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <rdfs:comment xml:lang="en">Property kind that represents the properties of a DevicePackage</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#PackageUninstallCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#PackageUninstallCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#PackageManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#PackageUpdateCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#PackageUpdateCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#PackageManagementCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#PackageVersion -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#PackageVersion">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#RebootCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#RebootCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DeviceControlCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#ResetCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#ResetCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DeviceControlCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#SerialNumber -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#SerialNumber">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <skos:narrower rdf:resource="http://orange.com/research/dm#DeviceIdentityProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#SupportedDatamodelFunction -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#SupportedDatamodelFunction">
+        <rdf:type rdf:resource="http://orange.com/research/dm#DeviceManagementFunctionCategory"/>
+        <core:hasCommand rdf:resource="http://orange.com/research/dm#SupportedDatamodelRetrievalCommand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#SupportedDatamodelParameterName -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#SupportedDatamodelParameterName">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#SupportedDatamodelParameterProperty -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#SupportedDatamodelParameterProperty">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+        <rdfs:comment>Property kind that represents the properties of a Supported Datamodel Parameter.
+
+These parameters represent the capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client.
+
+It should not be confused with the Datamodel Parameter Instance, which represents the actionable capabilities of the Device.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#SupportedDatamodelParameterType -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#SupportedDatamodelParameterType">
+        <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://orange.com/research/dm#SupportedDatamodelRetrievalCommand -->
+
+
+    <owl:NamedIndividual rdf:about="http://orange.com/research/dm#SupportedDatamodelRetrievalCommand">
+        <rdf:type rdf:resource="http://orange.com/research/dm#SupportedDatamodelCommandCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://orange.com/research/dm#DatamodelParameterCommandCategory"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#DeviceControlCommandCategory"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#DeviceIdentityCommandCategory"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#FirmwareManagementCommandCategory"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#ModuleManagementCommandCategory"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#PackageManagementCommandCategory"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#SupportedDatamodelCommandCategory"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://orange.com/research/dm#DatamodelParameterFunction"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#DeviceControlFunction"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#DeviceIdentityFunction"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#FirmwareManagementFunction"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#ModuleManagementFunction"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#PackageManagementFunction"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#SupportedDatamodelFunction"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://orange.com/research/dm#FirmwareInformationRetrievalCommand"/>
+            <rdf:Description rdf:about="http://orange.com/research/dm#FirmwareUpdateCommand"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
