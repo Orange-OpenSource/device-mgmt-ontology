@@ -1,17 +1,17 @@
-@prefix : <http://orange.com/research/dm#> .
-@prefix dm: <http://orange.com/research/dm#> .
+@prefix : <https://w3id.org/dmont/ontology#> .
+@prefix dm: <https://w3id.org/dmont/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dm_proxy: <http://orange.com/research/dm-proxy#> .
-@base <http://orange.com/research/dm_proxy> .
+@prefix dm_proxy: <https://w3id.org/dmont/ontology-proxy#> .
+@base <https://w3id.org/dmont/ontology_proxy> .
 
-<http://orange.com/research/dm_proxy> rdf:type owl:Ontology ;
-                                       owl:versionIRI <http://orange.com/research/dm_proxy/1.2.0> ;
-                                       owl:imports <http://orange.com/research/dm> ;
+<https://w3id.org/dmont/ontology_proxy> rdf:type owl:Ontology ;
+                                       owl:versionIRI <https://w3id.org/dmont/ontology_proxy/1.2.0> ;
+                                       owl:imports <https://w3id.org/dmont/ontology> ;
                                        dcterms:description "This ontology extends the base Device Management ontology with the concept of device proxification. This enables one to provide a device management connectivity for a device without a native DM stack. Usually, this proxy is hosted on another device that is able to communicate with stackless device."@en ;
                                        dcterms:title "IoT DM Proxy Ontology"@en ;
                                        owl:priorVersion "1.1.0" ;
@@ -21,20 +21,20 @@
 #    Object Properties
 #################################################################
 
-###  http://orange.com/research/dm#compliesWith
+###  https://w3id.org/dmont/ontology#compliesWith
 dm:compliesWith rdf:type owl:ObjectProperty .
 
 
-###  http://orange.com/research/dm#hasCharacteristic
+###  https://w3id.org/dmont/ontology#hasCharacteristic
 dm:hasCharacteristic rdf:type owl:ObjectProperty .
 
 
-###  http://orange.com/research/dm#hasConnectivity
+###  https://w3id.org/dmont/ontology#hasConnectivity
 dm:hasConnectivity rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf dm:hasCharacteristic .
 
 
-###  http://orange.com/research/dm#hasConstraint
+###  https://w3id.org/dmont/ontology#hasConstraint
 dm:hasConstraint rdf:type owl:ObjectProperty .
 
 
@@ -42,16 +42,16 @@ dm:hasConstraint rdf:type owl:ObjectProperty .
 #    Classes
 #################################################################
 
-###  http://orange.com/research/dm#BluetoothConnectivity
+###  https://w3id.org/dmont/ontology#BluetoothConnectivity
 dm:BluetoothConnectivity rdf:type owl:Class ;
                          rdfs:subClassOf dm:Connectivity .
 
 
-###  http://orange.com/research/dm#Characteristic
+###  https://w3id.org/dmont/ontology#Characteristic
 dm:Characteristic rdf:type owl:Class .
 
 
-###  http://orange.com/research/dm#Connectivity
+###  https://w3id.org/dmont/ontology#Connectivity
 dm:Connectivity rdf:type owl:Class ;
                 rdfs:subClassOf [ rdf:type owl:Class ;
                                   owl:unionOf ( dm:Characteristic
@@ -60,11 +60,11 @@ dm:Connectivity rdf:type owl:Class ;
                                 ] .
 
 
-###  http://orange.com/research/dm#Constraint
+###  https://w3id.org/dmont/ontology#Constraint
 dm:Constraint rdf:type owl:Class .
 
 
-###  http://orange.com/research/dm#Device
+###  https://w3id.org/dmont/ontology#Device
 dm:Device rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty dm:hasConnectivity ;
@@ -72,7 +72,7 @@ dm:Device rdf:type owl:Class ;
                           ] .
 
 
-###  http://orange.com/research/dm#Function
+###  https://w3id.org/dmont/ontology#Function
 dm:Function rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
                               owl:onProperty dm:hasConstraint ;
@@ -80,18 +80,18 @@ dm:Function rdf:type owl:Class ;
                             ] .
 
 
-###  http://orange.com/research/dm#WifiConnectivity
+###  https://w3id.org/dmont/ontology#WifiConnectivity
 dm:WifiConnectivity rdf:type owl:Class ;
                     rdfs:subClassOf dm:Connectivity .
 
 
-###  http://orange.com/research/dm_proxy#EmbeddedClient
+###  https://w3id.org/dmont/ontology_proxy#EmbeddedClient
 :EmbeddedClient rdf:type owl:Class ;
                 rdfs:subClassOf dm:Client ;
                 rdfs:comment "The Embedded Client is a software entity which exposes DM functions for the device where it is hosted, to one or more DM server(s)."@en .
 
 
-###  http://orange.com/research/dm_proxy#Proxy
+###  https://w3id.org/dmont/ontology_proxy#Proxy
 :Proxy rdf:type owl:Class ;
        rdfs:subClassOf dm:Client ,
                        dm:Module ,

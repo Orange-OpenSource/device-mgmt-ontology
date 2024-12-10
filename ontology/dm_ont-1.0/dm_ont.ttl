@@ -1,4 +1,4 @@
-@prefix : <http://orange.com/research/dm#> .
+@prefix : <https://w3id.org/dmont/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,14 +6,14 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://orange.com/research/dm> .
+@base <https://w3id.org/dmont/ontology> .
 
-<http://orange.com/research/dm> rdf:type owl:Ontology ;
-                                 owl:versionIRI <http://orange.com/research/dm/1.2.0> ;
+<https://w3id.org/dmont/ontology> rdf:type owl:Ontology ;
+                                 owl:versionIRI <https://w3id.org/dmont/ontology/1.2.0> ;
                                  dcterms:description "This ontology describes Device Management (DM) concepts for the IoT. It defines the capabilities in DM terms for the devices, and how to access them."@en ;
                                  dcterms:title "IoT DM Ontology"@en ;
                                  vann:preferredNamespacePrefix "dm" ;
-                                 vann:preferredNamespaceUri "http://orange.com/research/dm#"@en ;
+                                 vann:preferredNamespaceUri "https://w3id.org/dmont/ontology#"@en ;
                                  owl:backwardCompatibleWith "1.1.0" ;
                                  owl:priorVersion "1.1.0" ;
                                  owl:versionInfo "1.2.0" .
@@ -42,21 +42,21 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://orange.com/research/dm#enablesCommand
+###  https://w3id.org/dmont/ontology#enablesCommand
 :enablesCommand rdf:type owl:ObjectProperty ;
                 owl:inverseOf :isEnabledBy ;
                 rdfs:domain :Client ;
                 rdfs:range :Command .
 
 
-###  http://orange.com/research/dm#hasClientConnection
+###  https://w3id.org/dmont/ontology#hasClientConnection
 :hasClientConnection rdf:type owl:ObjectProperty ;
                      owl:inverseOf :isConnectedTo ;
                      rdfs:domain :Server ;
                      rdfs:range :Client .
 
 
-###  http://orange.com/research/dm#hasCommand
+###  https://w3id.org/dmont/ontology#hasCommand
 :hasCommand rdf:type owl:ObjectProperty ;
             owl:inverseOf :isCommandOf ,
                           :triggersExecution ;
@@ -64,21 +64,21 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
             rdfs:range :Command .
 
 
-###  http://orange.com/research/dm#hasFunction
+###  https://w3id.org/dmont/ontology#hasFunction
 :hasFunction rdf:type owl:ObjectProperty ;
              owl:inverseOf :isFunctionOf ;
              rdfs:domain :Device ;
              rdfs:range :Function .
 
 
-###  http://orange.com/research/dm#isCommandOf
+###  https://w3id.org/dmont/ontology#isCommandOf
 :isCommandOf rdf:type owl:ObjectProperty ;
              owl:equivalentProperty :triggersExecution ;
              rdfs:domain :Command ;
              rdfs:range :Function .
 
 
-###  http://orange.com/research/dm#isConnectedTo
+###  https://w3id.org/dmont/ontology#isConnectedTo
 :isConnectedTo rdf:type owl:ObjectProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Client ;
@@ -86,55 +86,55 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                rdfs:comment "Represents the connection between a Client and a Server that is responsible for the Client."@en .
 
 
-###  http://orange.com/research/dm#isEnabledBy
+###  https://w3id.org/dmont/ontology#isEnabledBy
 :isEnabledBy rdf:type owl:ObjectProperty ;
              rdfs:domain :Command ;
              rdfs:range :Client .
 
 
-###  http://orange.com/research/dm#isExecutedOn
+###  https://w3id.org/dmont/ontology#isExecutedOn
 :isExecutedOn rdf:type owl:ObjectProperty ;
               rdfs:domain :Client ;
               rdfs:range :Device .
 
 
-###  http://orange.com/research/dm#isFunctionOf
+###  https://w3id.org/dmont/ontology#isFunctionOf
 :isFunctionOf rdf:type owl:ObjectProperty ;
               rdfs:domain :Function ;
               rdfs:range :Device .
 
 
-###  http://orange.com/research/dm#isInstalledOn
+###  https://w3id.org/dmont/ontology#isInstalledOn
 :isInstalledOn rdf:type owl:ObjectProperty ;
                rdfs:domain :DevicePackage ;
                rdfs:range :Device .
 
 
-###  http://orange.com/research/dm#isRepresentedBy
+###  https://w3id.org/dmont/ontology#isRepresentedBy
 :isRepresentedBy rdf:type owl:ObjectProperty ;
                  owl:inverseOf :representsDevice ;
                  rdfs:domain :Device ;
                  rdfs:range :Client .
 
 
-###  http://orange.com/research/dm#reliesOn
+###  https://w3id.org/dmont/ontology#reliesOn
 :reliesOn rdf:type owl:ObjectProperty ;
           rdfs:comment "Link a Proxy to the device characteristics it uses to enable a set of commands for another device."@en .
 
 
-###  http://orange.com/research/dm#representsDevice
+###  https://w3id.org/dmont/ontology#representsDevice
 :representsDevice rdf:type owl:ObjectProperty ;
                   rdfs:domain :Client ;
                   rdfs:range :Device .
 
 
-###  http://orange.com/research/dm#triggersExecution
+###  https://w3id.org/dmont/ontology#triggersExecution
 :triggersExecution rdf:type owl:ObjectProperty ;
                    rdfs:domain :Function ;
                    rdfs:range :Command .
 
 
-###  http://orange.com/research/dm#usesProtocol
+###  https://w3id.org/dmont/ontology#usesProtocol
 :usesProtocol rdf:type owl:ObjectProperty ,
                        owl:FunctionalProperty .
 
@@ -143,18 +143,18 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
-###  http://orange.com/research/dm#hasClientId
+###  https://w3id.org/dmont/ontology#hasClientId
 :hasClientId rdf:type owl:DatatypeProperty ;
              rdfs:domain :Client ;
              rdfs:range xsd:string .
 
 
-###  http://orange.com/research/dm#hasDatamodelType
+###  https://w3id.org/dmont/ontology#hasDatamodelType
 :hasDatamodelType rdf:type owl:DatatypeProperty ;
                   rdfs:range xsd:string .
 
 
-###  http://orange.com/research/dm#hasDeviceId
+###  https://w3id.org/dmont/ontology#hasDeviceId
 :hasDeviceId rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Device ;
@@ -162,56 +162,56 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
              rdfs:comment "The Device ID correspond to a unique identifier for the device serialized in a String."@en .
 
 
-###  http://orange.com/research/dm#hasDeviceProfile
+###  https://w3id.org/dmont/ontology#hasDeviceProfile
 :hasDeviceProfile rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Device .
 
 
-###  http://orange.com/research/dm#hasDeviceType
+###  https://w3id.org/dmont/ontology#hasDeviceType
 :hasDeviceType rdf:type owl:DatatypeProperty ;
                rdfs:domain :Device .
 
 
-###  http://orange.com/research/dm#hasEndpoint
+###  https://w3id.org/dmont/ontology#hasEndpoint
 :hasEndpoint rdf:type owl:DatatypeProperty ;
              rdfs:range xsd:string .
 
 
-###  http://orange.com/research/dm#hasFriendlyName
+###  https://w3id.org/dmont/ontology#hasFriendlyName
 :hasFriendlyName rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:string .
 
 
-###  http://orange.com/research/dm#hasHardwareVersion
+###  https://w3id.org/dmont/ontology#hasHardwareVersion
 :hasHardwareVersion rdf:type owl:DatatypeProperty .
 
 
-###  http://orange.com/research/dm#hasMacAddress
+###  https://w3id.org/dmont/ontology#hasMacAddress
 :hasMacAddress rdf:type owl:DatatypeProperty ;
                rdfs:domain :Device .
 
 
-###  http://orange.com/research/dm#hasManufacturer
+###  https://w3id.org/dmont/ontology#hasManufacturer
 :hasManufacturer rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Device .
 
 
-###  http://orange.com/research/dm#hasModelName
+###  https://w3id.org/dmont/ontology#hasModelName
 :hasModelName rdf:type owl:DatatypeProperty .
 
 
-###  http://orange.com/research/dm#hasModelNumber
+###  https://w3id.org/dmont/ontology#hasModelNumber
 :hasModelNumber rdf:type owl:DatatypeProperty .
 
 
-###  http://orange.com/research/dm#hasSerialNumber
+###  https://w3id.org/dmont/ontology#hasSerialNumber
 :hasSerialNumber rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :Device ;
                  rdfs:range xsd:string .
 
 
-###  http://orange.com/research/dm#hasServerId
+###  https://w3id.org/dmont/ontology#hasServerId
 :hasServerId rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Server ;
@@ -222,21 +222,21 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  http://orange.com/research/dm#Activate_Firmware
+###  https://w3id.org/dmont/ontology#Activate_Firmware
 :Activate_Firmware rdf:type owl:Class ;
                    rdfs:subClassOf :Firmware_Command .
 
 
-###  http://orange.com/research/dm#Activate_Module
+###  https://w3id.org/dmont/ontology#Activate_Module
 :Activate_Module rdf:type owl:Class ;
                  rdfs:subClassOf :Module_Command .
 
 
-###  http://orange.com/research/dm#Characteristic
+###  https://w3id.org/dmont/ontology#Characteristic
 :Characteristic rdf:type owl:Class .
 
 
-###  http://orange.com/research/dm#Client
+###  https://w3id.org/dmont/ontology#Client
 :Client rdf:type owl:Class ;
         rdfs:subClassOf [ rdf:type owl:Restriction ;
                           owl:onProperty :enablesCommand ;
@@ -271,7 +271,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
         rdfs:comment "The Client is a software entity which exposes DM functions for a single device to one or more DM server(s)."@en .
 
 
-###  http://orange.com/research/dm#Command
+###  https://w3id.org/dmont/ontology#Command
 :Command rdf:type owl:Class ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
                            owl:onProperty :triggersExecution ;
@@ -287,78 +287,78 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                              ) .
 
 
-###  http://orange.com/research/dm#ComplexCommand
+###  https://w3id.org/dmont/ontology#ComplexCommand
 :ComplexCommand rdf:type owl:Class ;
                 rdfs:subClassOf :Command ;
                 owl:disjointWith :UnitCommand .
 
 
-###  http://orange.com/research/dm#Create_Module
+###  https://w3id.org/dmont/ontology#Create_Module
 :Create_Module rdf:type owl:Class ;
                rdfs:subClassOf :Module_Command .
 
 
-###  http://orange.com/research/dm#Create_Package
+###  https://w3id.org/dmont/ontology#Create_Package
 :Create_Package rdf:type owl:Class ;
                 rdfs:subClassOf :Package_Command .
 
 
-###  http://orange.com/research/dm#Datamodel_Management
+###  https://w3id.org/dmont/ontology#Datamodel_Management
 :Datamodel_Management rdf:type owl:Class ;
                       rdfs:subClassOf :Function .
 
 
-###  http://orange.com/research/dm#Datamodel_Parameters_Creation
+###  https://w3id.org/dmont/ontology#Datamodel_Parameters_Creation
 :Datamodel_Parameters_Creation rdf:type owl:Class ;
                                rdfs:subClassOf :Datamodel_Parameters_Management .
 
 
-###  http://orange.com/research/dm#Datamodel_Parameters_Deletion
+###  https://w3id.org/dmont/ontology#Datamodel_Parameters_Deletion
 :Datamodel_Parameters_Deletion rdf:type owl:Class ;
                                rdfs:subClassOf :Datamodel_Parameters_Management .
 
 
-###  http://orange.com/research/dm#Datamodel_Parameters_Discovery
+###  https://w3id.org/dmont/ontology#Datamodel_Parameters_Discovery
 :Datamodel_Parameters_Discovery rdf:type owl:Class ;
                                 rdfs:subClassOf :Datamodel_Parameters_Management .
 
 
-###  http://orange.com/research/dm#Datamodel_Parameters_Management
+###  https://w3id.org/dmont/ontology#Datamodel_Parameters_Management
 :Datamodel_Parameters_Management rdf:type owl:Class ;
                                  rdfs:subClassOf :Datamodel_Management .
 
 
-###  http://orange.com/research/dm#Datamodel_Parameters_Operation
+###  https://w3id.org/dmont/ontology#Datamodel_Parameters_Operation
 :Datamodel_Parameters_Operation rdf:type owl:Class ;
                                 rdfs:subClassOf :Datamodel_Parameters_Management .
 
 
-###  http://orange.com/research/dm#Datamodel_Parameters_Retrieval
+###  https://w3id.org/dmont/ontology#Datamodel_Parameters_Retrieval
 :Datamodel_Parameters_Retrieval rdf:type owl:Class ;
                                 rdfs:subClassOf :Datamodel_Parameters_Management .
 
 
-###  http://orange.com/research/dm#Datamodel_Parameters_Update
+###  https://w3id.org/dmont/ontology#Datamodel_Parameters_Update
 :Datamodel_Parameters_Update rdf:type owl:Class ;
                              rdfs:subClassOf :Datamodel_Parameters_Management .
 
 
-###  http://orange.com/research/dm#Deactivate_Module
+###  https://w3id.org/dmont/ontology#Deactivate_Module
 :Deactivate_Module rdf:type owl:Class ;
                    rdfs:subClassOf :Module_Command .
 
 
-###  http://orange.com/research/dm#Delete_Module
+###  https://w3id.org/dmont/ontology#Delete_Module
 :Delete_Module rdf:type owl:Class ;
                rdfs:subClassOf :Module_Command .
 
 
-###  http://orange.com/research/dm#Delete_Package
+###  https://w3id.org/dmont/ontology#Delete_Package
 :Delete_Package rdf:type owl:Class ;
                 rdfs:subClassOf :Package_Command .
 
 
-###  http://orange.com/research/dm#Device
+###  https://w3id.org/dmont/ontology#Device
 :Device rdf:type owl:Class ;
         rdfs:subClassOf [ rdf:type owl:Restriction ;
                           owl:onProperty :hasFunction ;
@@ -371,84 +371,84 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
         rdfs:label "Device"@en .
 
 
-###  http://orange.com/research/dm#DevicePackage
+###  https://w3id.org/dmont/ontology#DevicePackage
 :DevicePackage rdf:type owl:Class ;
                rdfs:subClassOf :Package .
 
 
-###  http://orange.com/research/dm#Device_Control
+###  https://w3id.org/dmont/ontology#Device_Control
 :Device_Control rdf:type owl:Class ;
                 rdfs:subClassOf :Function .
 
 
-###  http://orange.com/research/dm#Device_Control_Command
+###  https://w3id.org/dmont/ontology#Device_Control_Command
 :Device_Control_Command rdf:type owl:Class ;
                         rdfs:subClassOf :Command .
 
 
-###  http://orange.com/research/dm#Device_Identity
+###  https://w3id.org/dmont/ontology#Device_Identity
 :Device_Identity rdf:type owl:Class ;
                  rdfs:subClassOf :Function .
 
 
-###  http://orange.com/research/dm#Device_Identity_Command
+###  https://w3id.org/dmont/ontology#Device_Identity_Command
 :Device_Identity_Command rdf:type owl:Class ;
                          rdfs:subClassOf :Command .
 
 
-###  http://orange.com/research/dm#Device_Info_Retrieval
+###  https://w3id.org/dmont/ontology#Device_Info_Retrieval
 :Device_Info_Retrieval rdf:type owl:Class ;
                        rdfs:subClassOf :Device_Identity .
 
 
-###  http://orange.com/research/dm#Discover_Modules
+###  https://w3id.org/dmont/ontology#Discover_Modules
 :Discover_Modules rdf:type owl:Class ;
                   rdfs:subClassOf :Module_Command .
 
 
-###  http://orange.com/research/dm#Discover_Packages
+###  https://w3id.org/dmont/ontology#Discover_Packages
 :Discover_Packages rdf:type owl:Class ;
                    rdfs:subClassOf :Package_Command .
 
 
-###  http://orange.com/research/dm#DmProtocol
+###  https://w3id.org/dmont/ontology#DmProtocol
 :DmProtocol rdf:type owl:Class ;
             rdfs:subClassOf :Protocol ;
             rdfs:comment "A Device Management protocol, used between several entities (server, client, agent, controller) to exchange information about the physical device and request the execution of maintenance operations."@en ;
             rdfs:label "Device Management Protocol"@en .
 
 
-###  http://orange.com/research/dm#Download_Package
+###  https://w3id.org/dmont/ontology#Download_Package
 :Download_Package rdf:type owl:Class ;
                   rdfs:subClassOf :Package_Command .
 
 
-###  http://orange.com/research/dm#Firmware_Activation
+###  https://w3id.org/dmont/ontology#Firmware_Activation
 :Firmware_Activation rdf:type owl:Class ;
                      rdfs:subClassOf :Firmware_Management .
 
 
-###  http://orange.com/research/dm#Firmware_Command
+###  https://w3id.org/dmont/ontology#Firmware_Command
 :Firmware_Command rdf:type owl:Class ;
                   rdfs:subClassOf :Command .
 
 
-###  http://orange.com/research/dm#Firmware_Info_Retrieval
+###  https://w3id.org/dmont/ontology#Firmware_Info_Retrieval
 :Firmware_Info_Retrieval rdf:type owl:Class ;
                          rdfs:subClassOf :Firmware_Management .
 
 
-###  http://orange.com/research/dm#Firmware_Management
+###  https://w3id.org/dmont/ontology#Firmware_Management
 :Firmware_Management rdf:type owl:Class ;
                      rdfs:subClassOf :Function .
 
 
-###  http://orange.com/research/dm#Firmware_Update_Function
+###  https://w3id.org/dmont/ontology#Firmware_Update_Function
 :Firmware_Update_Function rdf:type owl:Class ;
                           rdfs:subClassOf :Firmware_Management .
 
 
-###  http://orange.com/research/dm#Function
+###  https://w3id.org/dmont/ontology#Function
 :Function rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty :isFunctionOf ;
@@ -464,152 +464,152 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                            :Service .
 
 
-###  http://orange.com/research/dm#Host
+###  https://w3id.org/dmont/ontology#Host
 :Host rdf:type owl:Class ;
       rdfs:subClassOf :Device ;
       owl:disjointWith :Server ,
                        :Service .
 
 
-###  http://orange.com/research/dm#Module
+###  https://w3id.org/dmont/ontology#Module
 :Module rdf:type owl:Class .
 
 
-###  http://orange.com/research/dm#Module_Activation
+###  https://w3id.org/dmont/ontology#Module_Activation
 :Module_Activation rdf:type owl:Class ;
                    rdfs:subClassOf :Module_Management .
 
 
-###  http://orange.com/research/dm#Module_Command
+###  https://w3id.org/dmont/ontology#Module_Command
 :Module_Command rdf:type owl:Class ;
                 rdfs:subClassOf :Command .
 
 
-###  http://orange.com/research/dm#Module_Creation
+###  https://w3id.org/dmont/ontology#Module_Creation
 :Module_Creation rdf:type owl:Class ;
                  rdfs:subClassOf :Module_Management .
 
 
-###  http://orange.com/research/dm#Module_Deactivation
+###  https://w3id.org/dmont/ontology#Module_Deactivation
 :Module_Deactivation rdf:type owl:Class ;
                      rdfs:subClassOf :Module_Management .
 
 
-###  http://orange.com/research/dm#Module_Deletion
+###  https://w3id.org/dmont/ontology#Module_Deletion
 :Module_Deletion rdf:type owl:Class ;
                  rdfs:subClassOf :Module_Management .
 
 
-###  http://orange.com/research/dm#Module_Discovery
+###  https://w3id.org/dmont/ontology#Module_Discovery
 :Module_Discovery rdf:type owl:Class ;
                   rdfs:subClassOf :Module_Management .
 
 
-###  http://orange.com/research/dm#Module_Info_Retrieval
+###  https://w3id.org/dmont/ontology#Module_Info_Retrieval
 :Module_Info_Retrieval rdf:type owl:Class ;
                        rdfs:subClassOf :Module_Management .
 
 
-###  http://orange.com/research/dm#Module_Management
+###  https://w3id.org/dmont/ontology#Module_Management
 :Module_Management rdf:type owl:Class ;
                    rdfs:subClassOf :Function .
 
 
-###  http://orange.com/research/dm#Package
+###  https://w3id.org/dmont/ontology#Package
 :Package rdf:type owl:Class .
 
 
-###  http://orange.com/research/dm#Package_Command
+###  https://w3id.org/dmont/ontology#Package_Command
 :Package_Command rdf:type owl:Class ;
                  rdfs:subClassOf :Command .
 
 
-###  http://orange.com/research/dm#Package_Creation
+###  https://w3id.org/dmont/ontology#Package_Creation
 :Package_Creation rdf:type owl:Class ;
                   rdfs:subClassOf :Package_Management .
 
 
-###  http://orange.com/research/dm#Package_Deletion
+###  https://w3id.org/dmont/ontology#Package_Deletion
 :Package_Deletion rdf:type owl:Class ;
                   rdfs:subClassOf :Package_Management .
 
 
-###  http://orange.com/research/dm#Package_Discovery
+###  https://w3id.org/dmont/ontology#Package_Discovery
 :Package_Discovery rdf:type owl:Class ;
                    rdfs:subClassOf :Package_Management .
 
 
-###  http://orange.com/research/dm#Package_Download_Function
+###  https://w3id.org/dmont/ontology#Package_Download_Function
 :Package_Download_Function rdf:type owl:Class ;
                            rdfs:subClassOf :Package_Management .
 
 
-###  http://orange.com/research/dm#Package_Info_Retrieval
+###  https://w3id.org/dmont/ontology#Package_Info_Retrieval
 :Package_Info_Retrieval rdf:type owl:Class ;
                         rdfs:subClassOf :Package_Management .
 
 
-###  http://orange.com/research/dm#Package_Management
+###  https://w3id.org/dmont/ontology#Package_Management
 :Package_Management rdf:type owl:Class ;
                     rdfs:subClassOf :Function .
 
 
-###  http://orange.com/research/dm#Package_Update
+###  https://w3id.org/dmont/ontology#Package_Update
 :Package_Update rdf:type owl:Class ;
                 rdfs:subClassOf :Package_Management .
 
 
-###  http://orange.com/research/dm#PlatformPackage
+###  https://w3id.org/dmont/ontology#PlatformPackage
 :PlatformPackage rdf:type owl:Class ;
                  rdfs:subClassOf :Package .
 
 
-###  http://orange.com/research/dm#Protocol
+###  https://w3id.org/dmont/ontology#Protocol
 :Protocol rdf:type owl:Class ;
           rdfs:comment "A communication protocol used between devices to communicate, it may define a set of data models used for information exchange and/or a set of network protocols to perform those exchanges."@en .
 
 
-###  http://orange.com/research/dm#Reboot_Command
+###  https://w3id.org/dmont/ontology#Reboot_Command
 :Reboot_Command rdf:type owl:Class ;
                 rdfs:subClassOf :Device_Control_Command .
 
 
-###  http://orange.com/research/dm#Reboot_Function
+###  https://w3id.org/dmont/ontology#Reboot_Function
 :Reboot_Function rdf:type owl:Class ;
                  rdfs:subClassOf :Device_Control .
 
 
-###  http://orange.com/research/dm#Reset_Command
+###  https://w3id.org/dmont/ontology#Reset_Command
 :Reset_Command rdf:type owl:Class ;
                rdfs:subClassOf :Device_Control_Command .
 
 
-###  http://orange.com/research/dm#Reset_Function
+###  https://w3id.org/dmont/ontology#Reset_Function
 :Reset_Function rdf:type owl:Class ;
                 rdfs:subClassOf :Device_Control .
 
 
-###  http://orange.com/research/dm#Retrieve_Device_Info
+###  https://w3id.org/dmont/ontology#Retrieve_Device_Info
 :Retrieve_Device_Info rdf:type owl:Class ;
                       rdfs:subClassOf :Device_Identity_Command .
 
 
-###  http://orange.com/research/dm#Retrieve_Firmware_Info
+###  https://w3id.org/dmont/ontology#Retrieve_Firmware_Info
 :Retrieve_Firmware_Info rdf:type owl:Class ;
                         rdfs:subClassOf :Firmware_Command .
 
 
-###  http://orange.com/research/dm#Retrieve_Module_Info
+###  https://w3id.org/dmont/ontology#Retrieve_Module_Info
 :Retrieve_Module_Info rdf:type owl:Class ;
                       rdfs:subClassOf :Module_Command .
 
 
-###  http://orange.com/research/dm#Retrieve_Package_Info
+###  https://w3id.org/dmont/ontology#Retrieve_Package_Info
 :Retrieve_Package_Info rdf:type owl:Class ;
                        rdfs:subClassOf :Package_Command .
 
 
-###  http://orange.com/research/dm#Server
+###  https://w3id.org/dmont/ontology#Server
 :Server rdf:type owl:Class ;
         rdfs:subClassOf [ rdf:type owl:Restriction ;
                           owl:onProperty :hasClientConnection ;
@@ -618,29 +618,29 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
         owl:disjointWith :Service .
 
 
-###  http://orange.com/research/dm#Service
+###  https://w3id.org/dmont/ontology#Service
 :Service rdf:type owl:Class ;
          rdfs:comment """This class has been created as a placeholder. 
 The concept has not yet been defined properly in the ontology, nor has been aligned with similar concepts from other ontologies.
 However, the necessity to represent a Service is clearly present and shall be developped in the future."""@en .
 
 
-###  http://orange.com/research/dm#Supported_Datamodel_DIscovery
+###  https://w3id.org/dmont/ontology#Supported_Datamodel_DIscovery
 :Supported_Datamodel_DIscovery rdf:type owl:Class ;
                                rdfs:subClassOf :Supported_Datamodel_Management .
 
 
-###  http://orange.com/research/dm#Supported_Datamodel_Management
+###  https://w3id.org/dmont/ontology#Supported_Datamodel_Management
 :Supported_Datamodel_Management rdf:type owl:Class ;
                                 rdfs:subClassOf :Datamodel_Management .
 
 
-###  http://orange.com/research/dm#Supported_Datamodel_Retrieval
+###  https://w3id.org/dmont/ontology#Supported_Datamodel_Retrieval
 :Supported_Datamodel_Retrieval rdf:type owl:Class ;
                                rdfs:subClassOf :Supported_Datamodel_Management .
 
 
-###  http://orange.com/research/dm#UnitCommand
+###  https://w3id.org/dmont/ontology#UnitCommand
 :UnitCommand rdf:type owl:Class ;
              rdfs:subClassOf :Command ,
                              [ rdf:type owl:Restriction ;
@@ -649,7 +649,7 @@ However, the necessity to represent a Service is clearly present and shall be de
                              ] .
 
 
-###  http://orange.com/research/dm#Update_Firmware
+###  https://w3id.org/dmont/ontology#Update_Firmware
 :Update_Firmware rdf:type owl:Class ;
                  rdfs:subClassOf :Firmware_Command .
 
@@ -658,18 +658,18 @@ However, the necessity to represent a Service is clearly present and shall be de
 #    Individuals
 #################################################################
 
-###  http://orange.com/research/dm#CWMP
+###  https://w3id.org/dmont/ontology#CWMP
 :CWMP rdf:type owl:NamedIndividual ,
                :DmProtocol ;
       :hasFriendlyName "TR-069"^^xsd:string .
 
 
-###  http://orange.com/research/dm#LWM2M
+###  https://w3id.org/dmont/ontology#LWM2M
 :LWM2M rdf:type owl:NamedIndividual ,
                 :DmProtocol .
 
 
-###  http://orange.com/research/dm#USP
+###  https://w3id.org/dmont/ontology#USP
 :USP rdf:type owl:NamedIndividual ,
               :DmProtocol .
 
@@ -678,7 +678,7 @@ However, the necessity to represent a Service is clearly present and shall be de
 #    Annotations
 #################################################################
 
-<http://orange.com/research/dm_proxy#Proxy> rdfs:comment "The proxy is a software entity which exposes DM functions for a single device, different from the one it is hosted on, to one or more DM server(s)."@en .
+<https://w3id.org/dmont/ontology_proxy#Proxy> rdfs:comment "The proxy is a software entity which exposes DM functions for a single device, different from the one it is hosted on, to one or more DM server(s)."@en .
 
 
 #################################################################

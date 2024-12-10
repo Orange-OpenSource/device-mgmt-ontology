@@ -3,29 +3,29 @@ This section provides details for each class and property defined by DMOnt : Dev
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
-  <li><a href="#Client" title="http://orange.com/research/dm#Client">Client</a></li>
-  <li><a href="#Connection" title="http://orange.com/research/dm#Connection"> <span>Connection</span> </a></li>
-  <li><a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a></li>
-  <li><a href="#DeviceControlCommandCategory" title="http://orange.com/research/dm#DeviceControlCommandCategory">Device Control Command Category</a></li>
-  <li><a href="#DeviceIdentityCommandCategory" title="http://orange.com/research/dm#DeviceIdentityCommandCategory">Device Identity Command Category</a></li>
-  <li><a href="#DeviceManagementCommandCategory" title="http://orange.com/research/dm#DeviceManagementCommandCategory">Device Management Command Category</a></li>
-  <li><a href="#DeviceManagementFunctionCategory" title="http://orange.com/research/dm#DeviceManagementFunctionCategory">Device Management Function Category</a></li>
-  <li><a href="#DeviceManagementState" title="http://orange.com/research/dm#DeviceManagementState"> <span>Device Management State</span> </a></li>
-  <li><a href="#DeviceModule" title="http://orange.com/research/dm#DeviceModule">Device Module</a></li>
-  <li><a href="#DeviceModuleState" title="http://orange.com/research/dm#DeviceModuleState">Device Module State</a></li>
-  <li><a href="#DevicePackage" title="http://orange.com/research/dm#DevicePackage">Device Package</a></li>
-  <li><a href="#DevicePackageState" title="http://orange.com/research/dm#DevicePackageState">Device Package State</a></li>
-  <li><a href="#FirmwareManagementCommandCategory" title="http://orange.com/research/dm#FirmwareManagementCommandCategory">Firmware Management Command Category</a></li>
-  <li><a href="#ManageableDevice" title="http://orange.com/research/dm#ManageableDevice">Manageable Device</a></li>
-  <li><a href="#ManagementService" title="http://orange.com/research/dm#ManagementService"> <span>Management Service</span> </a></li>
-  <li><a href="#ModuleManagementCommandCategory" title="http://orange.com/research/dm#ModuleManagementCommandCategory">Module Management Command Category</a></li>
-  <li><a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a></li>
-  <li><a href="#Server" title="http://orange.com/research/dm#Server"> <span>Server</span> </a></li>
-  <li><a href="#SupportedDatamodelCommandCategory" title="http://orange.com/research/dm#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a></li>
+  <li><a href="#Client" title="https://w3id.org/dmont/ontology#Client">Client</a></li>
+  <li><a href="#Connection" title="https://w3id.org/dmont/ontology#Connection"> <span>Connection</span> </a></li>
+  <li><a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a></li>
+  <li><a href="#DeviceControlCommandCategory" title="https://w3id.org/dmont/ontology#DeviceControlCommandCategory">Device Control Command Category</a></li>
+  <li><a href="#DeviceIdentityCommandCategory" title="https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory">Device Identity Command Category</a></li>
+  <li><a href="#DeviceManagementCommandCategory" title="https://w3id.org/dmont/ontology#DeviceManagementCommandCategory">Device Management Command Category</a></li>
+  <li><a href="#DeviceManagementFunctionCategory" title="https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory">Device Management Function Category</a></li>
+  <li><a href="#DeviceManagementState" title="https://w3id.org/dmont/ontology#DeviceManagementState"> <span>Device Management State</span> </a></li>
+  <li><a href="#DeviceModule" title="https://w3id.org/dmont/ontology#DeviceModule">Device Module</a></li>
+  <li><a href="#DeviceModuleState" title="https://w3id.org/dmont/ontology#DeviceModuleState">Device Module State</a></li>
+  <li><a href="#DevicePackage" title="https://w3id.org/dmont/ontology#DevicePackage">Device Package</a></li>
+  <li><a href="#DevicePackageState" title="https://w3id.org/dmont/ontology#DevicePackageState">Device Package State</a></li>
+  <li><a href="#FirmwareManagementCommandCategory" title="https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory">Firmware Management Command Category</a></li>
+  <li><a href="#ManageableDevice" title="https://w3id.org/dmont/ontology#ManageableDevice">Manageable Device</a></li>
+  <li><a href="#ManagementService" title="https://w3id.org/dmont/ontology#ManagementService"> <span>Management Service</span> </a></li>
+  <li><a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a></li>
+  <li><a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a></li>
+  <li><a href="#Server" title="https://w3id.org/dmont/ontology#Server"> <span>Server</span> </a></li>
+  <li><a href="#SupportedDatamodelCommandCategory" title="https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a></li>
  </ul>
  <div class="entity" id="Client">
   <h3>Client<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#Client</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#Client</p>
   <div class="comment">
    <span class="markdown">Software entity which represents a Device by exposing its DM Functions to one or more DM Server(s). It is responsible for the triggering of the DM Functions when a Command targetting the represented Device is received by the Server. The Client is also responsible for the reporting of the results of the Function execution to the Server. The Client has an identifier that is unique only relatively to each Server it is connected to.</span>
   </div>
@@ -34,19 +34,19 @@ This section provides details for each class and property defined by DMOnt : Dev
     is in domain of
    </dt>
    <dd>
-    <a href="#isClientConnectedThrough" title="http://orange.com/research/dm#isClientConnectedThrough">is Client Connected Through</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#isClientConnectedThrough" title="https://w3id.org/dmont/ontology#isClientConnectedThrough">is Client Connected Through</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#connectsClient" title="http://orange.com/research/dm#connectsClient">connects Client</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#connectsClient" title="https://w3id.org/dmont/ontology#connectsClient">connects Client</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="Connection">
   <h3>Connection<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#Connection</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#Connection</p>
   <div class="comment">
    <span class="markdown">Abstract representation of the connection between a Client and a Server. It does not necessarily imply that a persistent connection is established between the entities - such as a TCP connection. It represents the link and the capability of the Server to interact with the Client. For instance, the Client has been authenticated by the Server with a certificate, and/or the client has received a configuration for access rights to its functions for the Server.</span>
   </div>
@@ -55,91 +55,91 @@ This section provides details for each class and property defined by DMOnt : Dev
     is in domain of
    </dt>
    <dd>
-    <a href="#connectsClient" title="http://orange.com/research/dm#connectsClient">connects Client</a> <sup class="type-op" title="object property">op</sup>, <a href="#connectsServer" title="http://orange.com/research/dm#connectsServer">connects Server</a> <sup class="type-op" title="object property">op</sup>, <a href="#enablesManagementService" title="http://orange.com/research/dm#enablesManagementService">enables Management Service</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#connectsClient" title="https://w3id.org/dmont/ontology#connectsClient">connects Client</a> <sup class="type-op" title="object property">op</sup>, <a href="#connectsServer" title="https://w3id.org/dmont/ontology#connectsServer">connects Server</a> <sup class="type-op" title="object property">op</sup>, <a href="#enablesManagementService" title="https://w3id.org/dmont/ontology#enablesManagementService">enables Management Service</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#hasConnection" title="http://orange.com/research/dm#hasConnection">has Connection</a> <sup class="type-op" title="object property">op</sup>, <a href="#isClientConnectedThrough" title="http://orange.com/research/dm#isClientConnectedThrough">is Client Connected Through</a> <sup class="type-op" title="object property">op</sup>, <a href="#isServerConnectedThrough" title="http://orange.com/research/dm#isServerConnectedThrough">is Server Connected Through</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasConnection" title="https://w3id.org/dmont/ontology#hasConnection">has Connection</a> <sup class="type-op" title="object property">op</sup>, <a href="#isClientConnectedThrough" title="https://w3id.org/dmont/ontology#isClientConnectedThrough">is Client Connected Through</a> <sup class="type-op" title="object property">op</sup>, <a href="#isServerConnectedThrough" title="https://w3id.org/dmont/ontology#isServerConnectedThrough">is Server Connected Through</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterCommandCategory">
   <h3>Datamodel Parameter Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DatamodelParameterCommandCategory</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory</p>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="#DeviceManagementCommandCategory" title="http://orange.com/research/dm#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementCommandCategory" title="https://w3id.org/dmont/ontology#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has members
    </dt>
    <dd>
-    <a href="#DatamodelParameterCreationCommand" title="http://orange.com/research/dm#DatamodelParameterCreationCommand">Datamodel Parameter Creation Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterDeletionCommand" title="http://orange.com/research/dm#DatamodelParameterDeletionCommand">Datamodel Parameter Deletion Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterOperateCommand" title="http://orange.com/research/dm#DatamodelParameterOperateCommand">Datamodel Parameter Operate Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterRetrievalCommand" title="http://orange.com/research/dm#DatamodelParameterRetrievalCommand">Datamodel Parameter Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterUpdateCommand" title="http://orange.com/research/dm#DatamodelParameterUpdateCommand">Datamodel Parameter Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#DatamodelParameterCreationCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand">Datamodel Parameter Creation Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterDeletionCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand">Datamodel Parameter Deletion Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterOperateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand">Datamodel Parameter Operate Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterRetrievalCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand">Datamodel Parameter Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterUpdateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand">Datamodel Parameter Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
    </dt>
    <dd>
-    <a href="#DeviceControlCommandCategory" title="http://orange.com/research/dm#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="http://orange.com/research/dm#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="http://orange.com/research/dm#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="http://orange.com/research/dm#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="http://orange.com/research/dm#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceControlCommandCategory" title="https://w3id.org/dmont/ontology#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceControlCommandCategory">
   <h3>Device Control Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceControlCommandCategory</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceControlCommandCategory</p>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="#DeviceManagementCommandCategory" title="http://orange.com/research/dm#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementCommandCategory" title="https://w3id.org/dmont/ontology#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has members
    </dt>
    <dd>
-    <a href="#RebootCommand" title="http://orange.com/research/dm#RebootCommand">Reboot Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ResetCommand" title="http://orange.com/research/dm#ResetCommand">Reset Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#RebootCommand" title="https://w3id.org/dmont/ontology#RebootCommand">Reboot Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ResetCommand" title="https://w3id.org/dmont/ontology#ResetCommand">Reset Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
    </dt>
    <dd>
-    <a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="http://orange.com/research/dm#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="http://orange.com/research/dm#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="http://orange.com/research/dm#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="http://orange.com/research/dm#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceIdentityCommandCategory">
   <h3>Device Identity Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceIdentityCommandCategory</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory</p>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="#DeviceManagementCommandCategory" title="http://orange.com/research/dm#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementCommandCategory" title="https://w3id.org/dmont/ontology#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has members
    </dt>
    <dd>
-    <a href="#DeviceInfoRetrievalCommand" title="http://orange.com/research/dm#DeviceInfoRetrievalCommand">Device Info Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#DeviceInfoRetrievalCommand" title="https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand">Device Info Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
    </dt>
    <dd>
-    <a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceControlCommandCategory" title="http://orange.com/research/dm#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="http://orange.com/research/dm#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="http://orange.com/research/dm#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="http://orange.com/research/dm#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceControlCommandCategory" title="https://w3id.org/dmont/ontology#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceManagementCommandCategory">
   <h3>Device Management Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceManagementCommandCategory</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceManagementCommandCategory</p>
   <div class="comment">
    <span class="markdown">Category of Commands that are specific to the Device Management domain.</span>
   </div>
@@ -154,13 +154,13 @@ This section provides details for each class and property defined by DMOnt : Dev
     has sub-classes
    </dt>
    <dd>
-    <a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceControlCommandCategory" title="http://orange.com/research/dm#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="http://orange.com/research/dm#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="http://orange.com/research/dm#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="http://orange.com/research/dm#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="http://orange.com/research/dm#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceControlCommandCategory" title="https://w3id.org/dmont/ontology#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceManagementFunctionCategory">
   <h3>Device Management Function Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceManagementFunctionCategory</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory</p>
   <div class="comment">
    <span class="markdown">Category of Functions related to the Device Management domain. These Functions correspond to the capabilities of the Device to perform its own diagnostics, maintenance, configuration, monitoring and control.</span>
   </div>
@@ -175,13 +175,13 @@ This section provides details for each class and property defined by DMOnt : Dev
     has members
    </dt>
    <dd>
-    <a href="#DatamodelParameterFunction" title="http://orange.com/research/dm#DatamodelParameterFunction">Datamodel Parameter Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceControlFunction" title="http://orange.com/research/dm#DeviceControlFunction">Device Control Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceIdentityFunction" title="http://orange.com/research/dm#DeviceIdentityFunction">Device Identity Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FirmwareManagementFunction" title="http://orange.com/research/dm#FirmwareManagementFunction">Firmware Management Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleManagementFunction" title="http://orange.com/research/dm#ModuleManagementFunction">Module Management Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageManagementFunction" title="http://orange.com/research/dm#PackageManagementFunction">Package Management Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#SupportedDatamodelFunction" title="http://orange.com/research/dm#SupportedDatamodelFunction">Supported Datamodel Function</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#DatamodelParameterFunction" title="https://w3id.org/dmont/ontology#DatamodelParameterFunction">Datamodel Parameter Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceControlFunction" title="https://w3id.org/dmont/ontology#DeviceControlFunction">Device Control Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceIdentityFunction" title="https://w3id.org/dmont/ontology#DeviceIdentityFunction">Device Identity Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FirmwareManagementFunction" title="https://w3id.org/dmont/ontology#FirmwareManagementFunction">Firmware Management Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleManagementFunction" title="https://w3id.org/dmont/ontology#ModuleManagementFunction">Module Management Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageManagementFunction" title="https://w3id.org/dmont/ontology#PackageManagementFunction">Package Management Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#SupportedDatamodelFunction" title="https://w3id.org/dmont/ontology#SupportedDatamodelFunction">Supported Datamodel Function</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceManagementState">
   <h3>Device Management State<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceManagementState</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceManagementState</p>
   <div class="comment">
    <span class="markdown">This is a class of states for Device Management.</span>
   </div>
@@ -196,13 +196,13 @@ This section provides details for each class and property defined by DMOnt : Dev
     has sub-classes
    </dt>
    <dd>
-    <a href="#DeviceModuleState" title="http://orange.com/research/dm#DeviceModuleState">Device Module State</a> <sup class="type-c" title="class">c</sup>, <a href="#DevicePackageState" title="http://orange.com/research/dm#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceModuleState" title="https://w3id.org/dmont/ontology#DeviceModuleState">Device Module State</a> <sup class="type-c" title="class">c</sup>, <a href="#DevicePackageState" title="https://w3id.org/dmont/ontology#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceModule">
   <h3>Device Module<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceModule</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceModule</p>
   <div class="comment">
    <span class="markdown">A DeviceModule is an executable software entity on the Device, i.e., a DeviceModule may be activated and deactivated on demand through dedicated Functions. As such, the DeviceModule implements specific Functions that are available to the Device when the DeviceModule is activated. A DeviceModule is supported by a DevicePackage: deleting the corresponding DevicePackage will in turn remove the DeviceModule and its related Functions.</span>
   </div>
@@ -217,7 +217,7 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="DeviceModuleState">
   <h3>Device Module State<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceModuleState</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceModuleState</p>
   <div class="comment">
    <span class="markdown">State of a DeviceModule</span>
   </div>
@@ -226,25 +226,25 @@ This section provides details for each class and property defined by DMOnt : Dev
     has super-classes
    </dt>
    <dd>
-    <a href="#DeviceManagementState" title="http://orange.com/research/dm#DeviceManagementState">Device Management State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementState" title="https://w3id.org/dmont/ontology#DeviceManagementState">Device Management State</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has members
    </dt>
    <dd>
-    <a href="#DeviceModuleActivated" title="http://orange.com/research/dm#DeviceModuleActivated">Device Module Activated</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceModuleDeactivated" title="http://orange.com/research/dm#DeviceModuleDeactivated">Device Module Deactivated</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#DeviceModuleActivated" title="https://w3id.org/dmont/ontology#DeviceModuleActivated">Device Module Activated</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceModuleDeactivated" title="https://w3id.org/dmont/ontology#DeviceModuleDeactivated">Device Module Deactivated</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
    </dt>
    <dd>
-    <a href="#DevicePackageState" title="http://orange.com/research/dm#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DevicePackageState" title="https://w3id.org/dmont/ontology#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DevicePackage">
   <h3>Device Package<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DevicePackage</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackage</p>
   <div class="comment">
    <span class="markdown">A DevicePackage is an archive file that may contain resource files, code, libraries or executable files. It is a resource that the Device should retrieve or receive from an external source. A DevicePackage is only actionable once it has been downloaded and installed. It may allow a Device to support additional Functions by instantiating a DeviceModule. A DevicePackage may be uninstalled and then removed from the Device.</span>
   </div>
@@ -259,7 +259,7 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="DevicePackageState">
   <h3>Device Package State<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DevicePackageState</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageState</p>
   <div class="comment">
    <span class="markdown">State of a DevicePackage</span>
   </div>
@@ -268,49 +268,49 @@ This section provides details for each class and property defined by DMOnt : Dev
     has super-classes
    </dt>
    <dd>
-    <a href="#DeviceManagementState" title="http://orange.com/research/dm#DeviceManagementState">Device Management State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementState" title="https://w3id.org/dmont/ontology#DeviceManagementState">Device Management State</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has members
    </dt>
    <dd>
-    <a href="#DevicePackageDownloaded" title="http://orange.com/research/dm#DevicePackageDownloaded">Device Package Downloaded</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageDownloading" title="http://orange.com/research/dm#DevicePackageDownloading">Device Package Downloading</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageInstalled" title="http://orange.com/research/dm#DevicePackageInstalled">Device Package Installed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageInstalling" title="http://orange.com/research/dm#DevicePackageInstalling">Device Package Installing</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageUninstalled" title="http://orange.com/research/dm#DevicePackageUninstalled">Device Package Uninstalled</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageUninstalling" title="http://orange.com/research/dm#DevicePackageUninstalling">Device Package Uninstalling</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageValidated" title="http://orange.com/research/dm#DevicePackageValidated">Device Package Validated</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#DevicePackageDownloaded" title="https://w3id.org/dmont/ontology#DevicePackageDownloaded">Device Package Downloaded</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageDownloading" title="https://w3id.org/dmont/ontology#DevicePackageDownloading">Device Package Downloading</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageInstalled" title="https://w3id.org/dmont/ontology#DevicePackageInstalled">Device Package Installed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageInstalling" title="https://w3id.org/dmont/ontology#DevicePackageInstalling">Device Package Installing</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageUninstalled" title="https://w3id.org/dmont/ontology#DevicePackageUninstalled">Device Package Uninstalled</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageUninstalling" title="https://w3id.org/dmont/ontology#DevicePackageUninstalling">Device Package Uninstalling</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageValidated" title="https://w3id.org/dmont/ontology#DevicePackageValidated">Device Package Validated</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
    </dt>
    <dd>
-    <a href="#DeviceModuleState" title="http://orange.com/research/dm#DeviceModuleState">Device Module State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceModuleState" title="https://w3id.org/dmont/ontology#DeviceModuleState">Device Module State</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="FirmwareManagementCommandCategory">
   <h3>Firmware Management Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#FirmwareManagementCommandCategory</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory</p>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="#DeviceManagementCommandCategory" title="http://orange.com/research/dm#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementCommandCategory" title="https://w3id.org/dmont/ontology#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has members
    </dt>
    <dd>
-    <a href="#FirmwareInformationRetrievalCommand" title="http://orange.com/research/dm#FirmwareInformationRetrievalCommand">Firmware Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FirmwareUpdateCommand" title="http://orange.com/research/dm#FirmwareUpdateCommand">Firmware Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#FirmwareInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand">Firmware Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FirmwareUpdateCommand" title="https://w3id.org/dmont/ontology#FirmwareUpdateCommand">Firmware Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
    </dt>
    <dd>
-    <a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceControlCommandCategory" title="http://orange.com/research/dm#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="http://orange.com/research/dm#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="http://orange.com/research/dm#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="http://orange.com/research/dm#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceControlCommandCategory" title="https://w3id.org/dmont/ontology#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ManageableDevice">
   <h3>Manageable Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ManageableDevice</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ManageableDevice</p>
   <div class="comment">
    <span class="markdown">A tangible object that has at least one Device Management Function. This class extends the saref:Device class, it is a Feature of Interest by definition.</span>
   </div>
@@ -325,7 +325,7 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="ManagementService">
   <h3>Management Service<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ManagementService</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ManagementService</p>
   <div class="comment">
    <span class="markdown">A saref:Service that represents functions or functions of interest of the Device Management Function Category. The ManagementService exposes these functions through a Connection, between a Client and a Server.</span>
   </div>
@@ -340,67 +340,67 @@ This section provides details for each class and property defined by DMOnt : Dev
     is in domain of
    </dt>
    <dd>
-    <a href="#hasConnection" title="http://orange.com/research/dm#hasConnection">has Connection</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasConnection" title="https://w3id.org/dmont/ontology#hasConnection">has Connection</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#enablesManagementService" title="http://orange.com/research/dm#enablesManagementService">enables Management Service</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#enablesManagementService" title="https://w3id.org/dmont/ontology#enablesManagementService">enables Management Service</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModuleManagementCommandCategory">
   <h3>Module Management Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ModuleManagementCommandCategory</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleManagementCommandCategory</p>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="#DeviceManagementCommandCategory" title="http://orange.com/research/dm#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementCommandCategory" title="https://w3id.org/dmont/ontology#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has members
    </dt>
    <dd>
-    <a href="#ModuleActivationCommand" title="http://orange.com/research/dm#ModuleActivationCommand">Module Activation Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleDeactivationCommand" title="http://orange.com/research/dm#ModuleDeactivationCommand">Module Deactivation Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleDiscoveryCommand" title="http://orange.com/research/dm#ModuleDiscoveryCommand">Module Discovery Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleInformationRetrievalCommand" title="http://orange.com/research/dm#ModuleInformationRetrievalCommand">Module Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#ModuleActivationCommand" title="https://w3id.org/dmont/ontology#ModuleActivationCommand">Module Activation Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleDeactivationCommand" title="https://w3id.org/dmont/ontology#ModuleDeactivationCommand">Module Deactivation Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleDiscoveryCommand" title="https://w3id.org/dmont/ontology#ModuleDiscoveryCommand">Module Discovery Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand">Module Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
    </dt>
    <dd>
-    <a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceControlCommandCategory" title="http://orange.com/research/dm#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="http://orange.com/research/dm#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="http://orange.com/research/dm#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="http://orange.com/research/dm#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceControlCommandCategory" title="https://w3id.org/dmont/ontology#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="PackageManagementCommandCategory">
   <h3>Package Management Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#PackageManagementCommandCategory</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageManagementCommandCategory</p>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="#DeviceManagementCommandCategory" title="http://orange.com/research/dm#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementCommandCategory" title="https://w3id.org/dmont/ontology#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has members
    </dt>
    <dd>
-    <a href="#PackageCreationCommand" title="http://orange.com/research/dm#PackageCreationCommand">Package Creation Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageDeletionCommand" title="http://orange.com/research/dm#PackageDeletionCommand">Package Deletion Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageDiscoveryCommand" title="http://orange.com/research/dm#PackageDiscoveryCommand">Package Discovery Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageInformationRetrievalCommand" title="http://orange.com/research/dm#PackageInformationRetrievalCommand">Package Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageInstallCommand" title="http://orange.com/research/dm#PackageInstallCommand">Package Install Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageUninstallCommand" title="http://orange.com/research/dm#PackageUninstallCommand">Package Uninstall Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageUpdateCommand" title="http://orange.com/research/dm#PackageUpdateCommand">Package Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#PackageCreationCommand" title="https://w3id.org/dmont/ontology#PackageCreationCommand">Package Creation Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageDeletionCommand" title="https://w3id.org/dmont/ontology#PackageDeletionCommand">Package Deletion Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageDiscoveryCommand" title="https://w3id.org/dmont/ontology#PackageDiscoveryCommand">Package Discovery Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand">Package Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageInstallCommand" title="https://w3id.org/dmont/ontology#PackageInstallCommand">Package Install Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageUninstallCommand" title="https://w3id.org/dmont/ontology#PackageUninstallCommand">Package Uninstall Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageUpdateCommand" title="https://w3id.org/dmont/ontology#PackageUpdateCommand">Package Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
    </dt>
    <dd>
-    <a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceControlCommandCategory" title="http://orange.com/research/dm#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="http://orange.com/research/dm#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="http://orange.com/research/dm#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="http://orange.com/research/dm#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="http://orange.com/research/dm#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceControlCommandCategory" title="https://w3id.org/dmont/ontology#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportedDatamodelCommandCategory" title="https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="Server">
   <h3>Server<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#Server</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#Server</p>
   <div class="comment">
    <span class="markdown">A DM Server is the software entity which is responsible for performing DM operations on a fleet of Devices. It exposes the set of available operations to an entity that needs to trigger an operation, such as a manufacturer or a Customer Care service. The DM Server is a endpoint, generally secured, with which DM Clients communicate. The protocol used between Server and Client is not in the scope of this ontology. It can follow a DM standard such as CWMP or LWM2M, or be completely proprietary.</span>
   </div>
@@ -409,202 +409,202 @@ This section provides details for each class and property defined by DMOnt : Dev
     is in domain of
    </dt>
    <dd>
-    <a href="#isServerConnectedThrough" title="http://orange.com/research/dm#isServerConnectedThrough">is Server Connected Through</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#isServerConnectedThrough" title="https://w3id.org/dmont/ontology#isServerConnectedThrough">is Server Connected Through</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#connectsServer" title="http://orange.com/research/dm#connectsServer">connects Server</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#connectsServer" title="https://w3id.org/dmont/ontology#connectsServer">connects Server</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="SupportedDatamodelCommandCategory">
   <h3>Supported Datamodel Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#SupportedDatamodelCommandCategory</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory</p>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="#DeviceManagementCommandCategory" title="http://orange.com/research/dm#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementCommandCategory" title="https://w3id.org/dmont/ontology#DeviceManagementCommandCategory">Device Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has members
    </dt>
    <dd>
-    <a href="#SupportedDatamodelRetrievalCommand" title="http://orange.com/research/dm#SupportedDatamodelRetrievalCommand">Supported Datamodel Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#SupportedDatamodelRetrievalCommand" title="https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand">Supported Datamodel Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
    </dt>
    <dd>
-    <a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceControlCommandCategory" title="http://orange.com/research/dm#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="http://orange.com/research/dm#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="http://orange.com/research/dm#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="http://orange.com/research/dm#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceControlCommandCategory" title="https://w3id.org/dmont/ontology#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceIdentityCommandCategory" title="https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#FirmwareManagementCommandCategory" title="https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>, <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
-  <li><a href="#connectsClient" title="http://orange.com/research/dm#connectsClient"> <span>connects Client</span> </a></li>
-  <li><a href="#connectsServer" title="http://orange.com/research/dm#connectsServer"> <span>connects Server</span> </a></li>
-  <li><a href="#enablesManagementService" title="http://orange.com/research/dm#enablesManagementService"> <span>enables Management Service</span> </a></li>
-  <li><a href="#hasConnection" title="http://orange.com/research/dm#hasConnection"> <span>has Connection</span> </a></li>
-  <li><a href="#isClientConnectedThrough" title="http://orange.com/research/dm#isClientConnectedThrough"> <span>is Client Connected Through</span> </a></li>
-  <li><a href="#isServerConnectedThrough" title="http://orange.com/research/dm#isServerConnectedThrough"> <span>is Server Connected Through</span> </a></li>
+  <li><a href="#connectsClient" title="https://w3id.org/dmont/ontology#connectsClient"> <span>connects Client</span> </a></li>
+  <li><a href="#connectsServer" title="https://w3id.org/dmont/ontology#connectsServer"> <span>connects Server</span> </a></li>
+  <li><a href="#enablesManagementService" title="https://w3id.org/dmont/ontology#enablesManagementService"> <span>enables Management Service</span> </a></li>
+  <li><a href="#hasConnection" title="https://w3id.org/dmont/ontology#hasConnection"> <span>has Connection</span> </a></li>
+  <li><a href="#isClientConnectedThrough" title="https://w3id.org/dmont/ontology#isClientConnectedThrough"> <span>is Client Connected Through</span> </a></li>
+  <li><a href="#isServerConnectedThrough" title="https://w3id.org/dmont/ontology#isServerConnectedThrough"> <span>is Server Connected Through</span> </a></li>
  </ul>
  <div class="entity" id="connectsClient">
   <h3>connects Client<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#connectsClient</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#connectsClient</p>
   <div class="description">
    <dl>
     <dt>
      has domain
     </dt>
     <dd>
-     <a href="#Connection" title="http://orange.com/research/dm#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Connection" title="https://w3id.org/dmont/ontology#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#Client" title="http://orange.com/research/dm#Client">Client</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Client" title="https://w3id.org/dmont/ontology#Client">Client</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
     </dt>
     <dd>
-     <a href="#isClientConnectedThrough" title="http://orange.com/research/dm#isClientConnectedThrough">is Client Connected Through</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#isClientConnectedThrough" title="https://w3id.org/dmont/ontology#isClientConnectedThrough">is Client Connected Through</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="connectsServer">
   <h3>connects Server<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#connectsServer</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#connectsServer</p>
   <div class="description">
    <dl>
     <dt>
      has domain
     </dt>
     <dd>
-     <a href="#Connection" title="http://orange.com/research/dm#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Connection" title="https://w3id.org/dmont/ontology#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#Server" title="http://orange.com/research/dm#Server">Server</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Server" title="https://w3id.org/dmont/ontology#Server">Server</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
     </dt>
     <dd>
-     <a href="#isServerConnectedThrough" title="http://orange.com/research/dm#isServerConnectedThrough">is Server Connected Through</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#isServerConnectedThrough" title="https://w3id.org/dmont/ontology#isServerConnectedThrough">is Server Connected Through</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="enablesManagementService">
   <h3>enables Management Service<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#enablesManagementService</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#enablesManagementService</p>
   <div class="description">
    <dl>
     <dt>
      has domain
     </dt>
     <dd>
-     <a href="#Connection" title="http://orange.com/research/dm#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Connection" title="https://w3id.org/dmont/ontology#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#ManagementService" title="http://orange.com/research/dm#ManagementService">Management Service</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ManagementService" title="https://w3id.org/dmont/ontology#ManagementService">Management Service</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
     </dt>
     <dd>
-     <a href="#hasConnection" title="http://orange.com/research/dm#hasConnection">has Connection</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#hasConnection" title="https://w3id.org/dmont/ontology#hasConnection">has Connection</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="hasConnection">
   <h3>has Connection<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#hasConnection</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#hasConnection</p>
   <div class="description">
    <dl>
     <dt>
      has domain
     </dt>
     <dd>
-     <a href="#ManagementService" title="http://orange.com/research/dm#ManagementService">Management Service</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ManagementService" title="https://w3id.org/dmont/ontology#ManagementService">Management Service</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#Connection" title="http://orange.com/research/dm#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Connection" title="https://w3id.org/dmont/ontology#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
     </dt>
     <dd>
-     <a href="#enablesManagementService" title="http://orange.com/research/dm#enablesManagementService">enables Management Service</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#enablesManagementService" title="https://w3id.org/dmont/ontology#enablesManagementService">enables Management Service</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="isClientConnectedThrough">
   <h3>is Client Connected Through<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#isClientConnectedThrough</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#isClientConnectedThrough</p>
   <div class="description">
    <dl>
     <dt>
      has domain
     </dt>
     <dd>
-     <a href="#Client" title="http://orange.com/research/dm#Client">Client</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Client" title="https://w3id.org/dmont/ontology#Client">Client</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#Connection" title="http://orange.com/research/dm#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Connection" title="https://w3id.org/dmont/ontology#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
     </dt>
     <dd>
-     <a href="#connectsClient" title="http://orange.com/research/dm#connectsClient">connects Client</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#connectsClient" title="https://w3id.org/dmont/ontology#connectsClient">connects Client</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="isServerConnectedThrough">
   <h3>is Server Connected Through<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#isServerConnectedThrough</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#isServerConnectedThrough</p>
   <div class="description">
    <dl>
     <dt>
      has domain
     </dt>
     <dd>
-     <a href="#Server" title="http://orange.com/research/dm#Server">Server</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Server" title="https://w3id.org/dmont/ontology#Server">Server</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#Connection" title="http://orange.com/research/dm#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Connection" title="https://w3id.org/dmont/ontology#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
     </dt>
     <dd>
-     <a href="#connectsServer" title="http://orange.com/research/dm#connectsServer">connects Server</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#connectsServer" title="https://w3id.org/dmont/ontology#connectsServer">connects Server</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -612,119 +612,119 @@ This section provides details for each class and property defined by DMOnt : Dev
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
  <h3 id="namedindividuals" class="list">Named Individuals</h3>
  <ul class="hlist">
-  <li><a href="#DatamodelParameterCreationCommand" title="http://orange.com/research/dm#DatamodelParameterCreationCommand"> <span>Datamodel Parameter Creation Command</span> </a></li>
-  <li><a href="#DatamodelParameterDeletionCommand" title="http://orange.com/research/dm#DatamodelParameterDeletionCommand"> <span>Datamodel Parameter Deletion Command</span> </a></li>
-  <li><a href="#DatamodelParameterFunction" title="http://orange.com/research/dm#DatamodelParameterFunction"> <span>Datamodel Parameter Function</span> </a></li>
-  <li><a href="#DatamodelParameterInstanceName" title="http://orange.com/research/dm#DatamodelParameterInstanceName"> <span>Datamodel Parameter Instance Name</span> </a></li>
-  <li><a href="#DatamodelParameterInstanceProperty" title="http://orange.com/research/dm#DatamodelParameterInstanceProperty"> <span>Datamodel Parameter Instance Property</span> </a></li>
-  <li><a href="#DatamodelParameterInstanceValue" title="http://orange.com/research/dm#DatamodelParameterInstanceValue"> <span>Datamodel Parameter Instance Value</span> </a></li>
-  <li><a href="#DatamodelParameterOperateCommand" title="http://orange.com/research/dm#DatamodelParameterOperateCommand"> <span>Datamodel Parameter Operate Command</span> </a></li>
-  <li><a href="#DatamodelParameterRetrievalCommand" title="http://orange.com/research/dm#DatamodelParameterRetrievalCommand"> <span>Datamodel Parameter Retrieval Command</span> </a></li>
-  <li><a href="#DatamodelParameterUpdateCommand" title="http://orange.com/research/dm#DatamodelParameterUpdateCommand"> <span>Datamodel Parameter Update Command</span> </a></li>
-  <li><a href="#DeviceControlFunction" title="http://orange.com/research/dm#DeviceControlFunction"> <span>Device Control Function</span> </a></li>
-  <li><a href="#DeviceIdentityFunction" title="http://orange.com/research/dm#DeviceIdentityFunction"> <span>Device Identity Function</span> </a></li>
-  <li><a href="#DeviceIdentityProperty" title="http://orange.com/research/dm#DeviceIdentityProperty"> <span>Device Identity Property</span> </a></li>
-  <li><a href="#DeviceInfoRetrievalCommand" title="http://orange.com/research/dm#DeviceInfoRetrievalCommand"> <span>Device Info Retrieval Command</span> </a></li>
-  <li><a href="#DeviceModuleActivated" title="http://orange.com/research/dm#DeviceModuleActivated"> <span>Device Module Activated</span> </a></li>
-  <li><a href="#DeviceModuleDeactivated" title="http://orange.com/research/dm#DeviceModuleDeactivated"> <span>Device Module Deactivated</span> </a></li>
-  <li><a href="#DevicePackageDownloaded" title="http://orange.com/research/dm#DevicePackageDownloaded"> <span>Device Package Downloaded</span> </a></li>
-  <li><a href="#DevicePackageDownloading" title="http://orange.com/research/dm#DevicePackageDownloading"> <span>Device Package Downloading</span> </a></li>
-  <li><a href="#DevicePackageInstalled" title="http://orange.com/research/dm#DevicePackageInstalled"> <span>Device Package Installed</span> </a></li>
-  <li><a href="#DevicePackageInstalling" title="http://orange.com/research/dm#DevicePackageInstalling"> <span>Device Package Installing</span> </a></li>
-  <li><a href="#DevicePackageUninstalled" title="http://orange.com/research/dm#DevicePackageUninstalled"> <span>Device Package Uninstalled</span> </a></li>
-  <li><a href="#DevicePackageUninstalling" title="http://orange.com/research/dm#DevicePackageUninstalling"> <span>Device Package Uninstalling</span> </a></li>
-  <li><a href="#DevicePackageValidated" title="http://orange.com/research/dm#DevicePackageValidated"> <span>Device Package Validated</span> </a></li>
-  <li><a href="#FirmwareInformationRetrievalCommand" title="http://orange.com/research/dm#FirmwareInformationRetrievalCommand"> <span>Firmware Information Retrieval Command</span> </a></li>
-  <li><a href="#FirmwareManagementFunction" title="http://orange.com/research/dm#FirmwareManagementFunction"> <span>Firmware Management Function</span> </a></li>
-  <li><a href="#FirmwareProperty" title="http://orange.com/research/dm#FirmwareProperty"> <span>Firmware Property</span> </a></li>
-  <li><a href="#FirmwareUpdateCommand" title="http://orange.com/research/dm#FirmwareUpdateCommand"> <span>Firmware Update Command</span> </a></li>
-  <li><a href="#FirmwareVersion" title="http://orange.com/research/dm#FirmwareVersion"> <span>Firmware Version</span> </a></li>
-  <li><a href="#HardwareVersion" title="http://orange.com/research/dm#HardwareVersion"> <span>Hardware Version</span> </a></li>
-  <li><a href="#Manufacturer" title="http://orange.com/research/dm#Manufacturer"> <span>Manufacturer</span> </a></li>
-  <li><a href="#ModelName" title="http://orange.com/research/dm#ModelName"> <span>Model Name</span> </a></li>
-  <li><a href="#ModelNumber" title="http://orange.com/research/dm#ModelNumber"> <span>Model Number</span> </a></li>
-  <li><a href="#ModuleActivationCommand" title="http://orange.com/research/dm#ModuleActivationCommand"> <span>Module Activation Command</span> </a></li>
-  <li><a href="#ModuleDeactivationCommand" title="http://orange.com/research/dm#ModuleDeactivationCommand"> <span>Module Deactivation Command</span> </a></li>
-  <li><a href="#ModuleDiscoveryCommand" title="http://orange.com/research/dm#ModuleDiscoveryCommand"> <span>Module Discovery Command</span> </a></li>
-  <li><a href="#ModuleInformationRetrievalCommand" title="http://orange.com/research/dm#ModuleInformationRetrievalCommand"> <span>Module Information Retrieval Command</span> </a></li>
-  <li><a href="#ModuleManagementFunction" title="http://orange.com/research/dm#ModuleManagementFunction"> <span>Module Management Function</span> </a></li>
-  <li><a href="#ModuleName" title="http://orange.com/research/dm#ModuleName"> <span>Module Name</span> </a></li>
-  <li><a href="#ModuleProperty" title="http://orange.com/research/dm#ModuleProperty"> <span>Module Property</span> </a></li>
-  <li><a href="#ModuleVersion" title="http://orange.com/research/dm#ModuleVersion"> <span>Module Version</span> </a></li>
-  <li><a href="#PackageCreationCommand" title="http://orange.com/research/dm#PackageCreationCommand"> <span>Package Creation Command</span> </a></li>
-  <li><a href="#PackageDeletionCommand" title="http://orange.com/research/dm#PackageDeletionCommand"> <span>Package Deletion Command</span> </a></li>
-  <li><a href="#PackageDiscoveryCommand" title="http://orange.com/research/dm#PackageDiscoveryCommand"> <span>Package Discovery Command</span> </a></li>
-  <li><a href="#PackageInformationRetrievalCommand" title="http://orange.com/research/dm#PackageInformationRetrievalCommand"> <span>Package Information Retrieval Command</span> </a></li>
-  <li><a href="#PackageInstallCommand" title="http://orange.com/research/dm#PackageInstallCommand"> <span>Package Install Command</span> </a></li>
-  <li><a href="#PackageManagementFunction" title="http://orange.com/research/dm#PackageManagementFunction"> <span>Package Management Function</span> </a></li>
-  <li><a href="#PackageName" title="http://orange.com/research/dm#PackageName"> <span>Package Name</span> </a></li>
-  <li><a href="#PackageProperty" title="http://orange.com/research/dm#PackageProperty"> <span>Package Property</span> </a></li>
-  <li><a href="#PackageUninstallCommand" title="http://orange.com/research/dm#PackageUninstallCommand"> <span>Package Uninstall Command</span> </a></li>
-  <li><a href="#PackageUpdateCommand" title="http://orange.com/research/dm#PackageUpdateCommand"> <span>Package Update Command</span> </a></li>
-  <li><a href="#PackageVersion" title="http://orange.com/research/dm#PackageVersion"> <span>Package Version</span> </a></li>
-  <li><a href="#RebootCommand" title="http://orange.com/research/dm#RebootCommand"> <span>Reboot Command</span> </a></li>
-  <li><a href="#ResetCommand" title="http://orange.com/research/dm#ResetCommand"> <span>Reset Command</span> </a></li>
-  <li><a href="#SerialNumber" title="http://orange.com/research/dm#SerialNumber"> <span>Serial Number</span> </a></li>
-  <li><a href="#SupportedDatamodelFunction" title="http://orange.com/research/dm#SupportedDatamodelFunction"> <span>Supported Datamodel Function</span> </a></li>
-  <li><a href="#SupportedDatamodelParameterName" title="http://orange.com/research/dm#SupportedDatamodelParameterName"> <span>Supported Datamodel Parameter Name</span> </a></li>
-  <li><a href="#SupportedDatamodelParameterProperty" title="http://orange.com/research/dm#SupportedDatamodelParameterProperty"> <span>Supported Datamodel Parameter Property</span> </a></li>
-  <li><a href="#SupportedDatamodelParameterType" title="http://orange.com/research/dm#SupportedDatamodelParameterType"> <span>Supported Datamodel Parameter Type</span> </a></li>
-  <li><a href="#SupportedDatamodelRetrievalCommand" title="http://orange.com/research/dm#SupportedDatamodelRetrievalCommand"> <span>Supported Datamodel Retrieval Command</span> </a></li>
+  <li><a href="#DatamodelParameterCreationCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand"> <span>Datamodel Parameter Creation Command</span> </a></li>
+  <li><a href="#DatamodelParameterDeletionCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand"> <span>Datamodel Parameter Deletion Command</span> </a></li>
+  <li><a href="#DatamodelParameterFunction" title="https://w3id.org/dmont/ontology#DatamodelParameterFunction"> <span>Datamodel Parameter Function</span> </a></li>
+  <li><a href="#DatamodelParameterInstanceName" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceName"> <span>Datamodel Parameter Instance Name</span> </a></li>
+  <li><a href="#DatamodelParameterInstanceProperty" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty"> <span>Datamodel Parameter Instance Property</span> </a></li>
+  <li><a href="#DatamodelParameterInstanceValue" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceValue"> <span>Datamodel Parameter Instance Value</span> </a></li>
+  <li><a href="#DatamodelParameterOperateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand"> <span>Datamodel Parameter Operate Command</span> </a></li>
+  <li><a href="#DatamodelParameterRetrievalCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand"> <span>Datamodel Parameter Retrieval Command</span> </a></li>
+  <li><a href="#DatamodelParameterUpdateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand"> <span>Datamodel Parameter Update Command</span> </a></li>
+  <li><a href="#DeviceControlFunction" title="https://w3id.org/dmont/ontology#DeviceControlFunction"> <span>Device Control Function</span> </a></li>
+  <li><a href="#DeviceIdentityFunction" title="https://w3id.org/dmont/ontology#DeviceIdentityFunction"> <span>Device Identity Function</span> </a></li>
+  <li><a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty"> <span>Device Identity Property</span> </a></li>
+  <li><a href="#DeviceInfoRetrievalCommand" title="https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand"> <span>Device Info Retrieval Command</span> </a></li>
+  <li><a href="#DeviceModuleActivated" title="https://w3id.org/dmont/ontology#DeviceModuleActivated"> <span>Device Module Activated</span> </a></li>
+  <li><a href="#DeviceModuleDeactivated" title="https://w3id.org/dmont/ontology#DeviceModuleDeactivated"> <span>Device Module Deactivated</span> </a></li>
+  <li><a href="#DevicePackageDownloaded" title="https://w3id.org/dmont/ontology#DevicePackageDownloaded"> <span>Device Package Downloaded</span> </a></li>
+  <li><a href="#DevicePackageDownloading" title="https://w3id.org/dmont/ontology#DevicePackageDownloading"> <span>Device Package Downloading</span> </a></li>
+  <li><a href="#DevicePackageInstalled" title="https://w3id.org/dmont/ontology#DevicePackageInstalled"> <span>Device Package Installed</span> </a></li>
+  <li><a href="#DevicePackageInstalling" title="https://w3id.org/dmont/ontology#DevicePackageInstalling"> <span>Device Package Installing</span> </a></li>
+  <li><a href="#DevicePackageUninstalled" title="https://w3id.org/dmont/ontology#DevicePackageUninstalled"> <span>Device Package Uninstalled</span> </a></li>
+  <li><a href="#DevicePackageUninstalling" title="https://w3id.org/dmont/ontology#DevicePackageUninstalling"> <span>Device Package Uninstalling</span> </a></li>
+  <li><a href="#DevicePackageValidated" title="https://w3id.org/dmont/ontology#DevicePackageValidated"> <span>Device Package Validated</span> </a></li>
+  <li><a href="#FirmwareInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand"> <span>Firmware Information Retrieval Command</span> </a></li>
+  <li><a href="#FirmwareManagementFunction" title="https://w3id.org/dmont/ontology#FirmwareManagementFunction"> <span>Firmware Management Function</span> </a></li>
+  <li><a href="#FirmwareProperty" title="https://w3id.org/dmont/ontology#FirmwareProperty"> <span>Firmware Property</span> </a></li>
+  <li><a href="#FirmwareUpdateCommand" title="https://w3id.org/dmont/ontology#FirmwareUpdateCommand"> <span>Firmware Update Command</span> </a></li>
+  <li><a href="#FirmwareVersion" title="https://w3id.org/dmont/ontology#FirmwareVersion"> <span>Firmware Version</span> </a></li>
+  <li><a href="#HardwareVersion" title="https://w3id.org/dmont/ontology#HardwareVersion"> <span>Hardware Version</span> </a></li>
+  <li><a href="#Manufacturer" title="https://w3id.org/dmont/ontology#Manufacturer"> <span>Manufacturer</span> </a></li>
+  <li><a href="#ModelName" title="https://w3id.org/dmont/ontology#ModelName"> <span>Model Name</span> </a></li>
+  <li><a href="#ModelNumber" title="https://w3id.org/dmont/ontology#ModelNumber"> <span>Model Number</span> </a></li>
+  <li><a href="#ModuleActivationCommand" title="https://w3id.org/dmont/ontology#ModuleActivationCommand"> <span>Module Activation Command</span> </a></li>
+  <li><a href="#ModuleDeactivationCommand" title="https://w3id.org/dmont/ontology#ModuleDeactivationCommand"> <span>Module Deactivation Command</span> </a></li>
+  <li><a href="#ModuleDiscoveryCommand" title="https://w3id.org/dmont/ontology#ModuleDiscoveryCommand"> <span>Module Discovery Command</span> </a></li>
+  <li><a href="#ModuleInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand"> <span>Module Information Retrieval Command</span> </a></li>
+  <li><a href="#ModuleManagementFunction" title="https://w3id.org/dmont/ontology#ModuleManagementFunction"> <span>Module Management Function</span> </a></li>
+  <li><a href="#ModuleName" title="https://w3id.org/dmont/ontology#ModuleName"> <span>Module Name</span> </a></li>
+  <li><a href="#ModuleProperty" title="https://w3id.org/dmont/ontology#ModuleProperty"> <span>Module Property</span> </a></li>
+  <li><a href="#ModuleVersion" title="https://w3id.org/dmont/ontology#ModuleVersion"> <span>Module Version</span> </a></li>
+  <li><a href="#PackageCreationCommand" title="https://w3id.org/dmont/ontology#PackageCreationCommand"> <span>Package Creation Command</span> </a></li>
+  <li><a href="#PackageDeletionCommand" title="https://w3id.org/dmont/ontology#PackageDeletionCommand"> <span>Package Deletion Command</span> </a></li>
+  <li><a href="#PackageDiscoveryCommand" title="https://w3id.org/dmont/ontology#PackageDiscoveryCommand"> <span>Package Discovery Command</span> </a></li>
+  <li><a href="#PackageInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand"> <span>Package Information Retrieval Command</span> </a></li>
+  <li><a href="#PackageInstallCommand" title="https://w3id.org/dmont/ontology#PackageInstallCommand"> <span>Package Install Command</span> </a></li>
+  <li><a href="#PackageManagementFunction" title="https://w3id.org/dmont/ontology#PackageManagementFunction"> <span>Package Management Function</span> </a></li>
+  <li><a href="#PackageName" title="https://w3id.org/dmont/ontology#PackageName"> <span>Package Name</span> </a></li>
+  <li><a href="#PackageProperty" title="https://w3id.org/dmont/ontology#PackageProperty"> <span>Package Property</span> </a></li>
+  <li><a href="#PackageUninstallCommand" title="https://w3id.org/dmont/ontology#PackageUninstallCommand"> <span>Package Uninstall Command</span> </a></li>
+  <li><a href="#PackageUpdateCommand" title="https://w3id.org/dmont/ontology#PackageUpdateCommand"> <span>Package Update Command</span> </a></li>
+  <li><a href="#PackageVersion" title="https://w3id.org/dmont/ontology#PackageVersion"> <span>Package Version</span> </a></li>
+  <li><a href="#RebootCommand" title="https://w3id.org/dmont/ontology#RebootCommand"> <span>Reboot Command</span> </a></li>
+  <li><a href="#ResetCommand" title="https://w3id.org/dmont/ontology#ResetCommand"> <span>Reset Command</span> </a></li>
+  <li><a href="#SerialNumber" title="https://w3id.org/dmont/ontology#SerialNumber"> <span>Serial Number</span> </a></li>
+  <li><a href="#SupportedDatamodelFunction" title="https://w3id.org/dmont/ontology#SupportedDatamodelFunction"> <span>Supported Datamodel Function</span> </a></li>
+  <li><a href="#SupportedDatamodelParameterName" title="https://w3id.org/dmont/ontology#SupportedDatamodelParameterName"> <span>Supported Datamodel Parameter Name</span> </a></li>
+  <li><a href="#SupportedDatamodelParameterProperty" title="https://w3id.org/dmont/ontology#SupportedDatamodelParameterProperty"> <span>Supported Datamodel Parameter Property</span> </a></li>
+  <li><a href="#SupportedDatamodelParameterType" title="https://w3id.org/dmont/ontology#SupportedDatamodelParameterType"> <span>Supported Datamodel Parameter Type</span> </a></li>
+  <li><a href="#SupportedDatamodelRetrievalCommand" title="https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand"> <span>Supported Datamodel Retrieval Command</span> </a></li>
  </ul>
  <div class="entity" id="DatamodelParameterCreationCommand">
   <h3>Datamodel Parameter Creation Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DatamodelParameterCreationCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterDeletionCommand">
   <h3>Datamodel Parameter Deletion Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DatamodelParameterDeletionCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterFunction">
   <h3>Datamodel Parameter Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DatamodelParameterFunction</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterFunction</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DeviceManagementFunctionCategory" title="http://orange.com/research/dm#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementFunctionCategory" title="https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterCreationCommand" title="http://orange.com/research/dm#DatamodelParameterCreationCommand">Datamodel Parameter Creation Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterCreationCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand">Datamodel Parameter Creation Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterDeletionCommand" title="http://orange.com/research/dm#DatamodelParameterDeletionCommand">Datamodel Parameter Deletion Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterDeletionCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand">Datamodel Parameter Deletion Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterOperateCommand" title="http://orange.com/research/dm#DatamodelParameterOperateCommand">Datamodel Parameter Operate Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterOperateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand">Datamodel Parameter Operate Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterUpdateCommand" title="http://orange.com/research/dm#DatamodelParameterUpdateCommand">Datamodel Parameter Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterUpdateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand">Datamodel Parameter Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterInstanceName">
   <h3>Datamodel Parameter Instance Name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DatamodelParameterInstanceName</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterInstanceName</p>
   <dl class="description">
    <dt>
     belongs to
@@ -736,13 +736,13 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterInstanceProperty" title="http://orange.com/research/dm#DatamodelParameterInstanceProperty">Datamodel Parameter Instance Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterInstanceProperty" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty">Datamodel Parameter Instance Property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterInstanceProperty">
   <h3>Datamodel Parameter Instance Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DatamodelParameterInstanceProperty</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty</p>
   <div class="comment">
    <span class="markdown">Property kind that represents the properties of a Datamodel Parameter Instance. These parameter instances represent the actionable capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client. It should not be confused with the Supported Datamodel Parameter, which represents the abstract capabilities of the Device.</span>
   </div>
@@ -757,7 +757,7 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="DatamodelParameterInstanceValue">
   <h3>Datamodel Parameter Instance Value<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DatamodelParameterInstanceValue</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterInstanceValue</p>
   <dl class="description">
    <dt>
     belongs to
@@ -769,88 +769,88 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterInstanceProperty" title="http://orange.com/research/dm#DatamodelParameterInstanceProperty">Datamodel Parameter Instance Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterInstanceProperty" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty">Datamodel Parameter Instance Property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterOperateCommand">
   <h3>Datamodel Parameter Operate Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DatamodelParameterOperateCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterRetrievalCommand">
   <h3>Datamodel Parameter Retrieval Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DatamodelParameterRetrievalCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterUpdateCommand">
   <h3>Datamodel Parameter Update Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DatamodelParameterUpdateCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DatamodelParameterCommandCategory" title="http://orange.com/research/dm#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceControlFunction">
   <h3>Device Control Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceControlFunction</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceControlFunction</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DeviceManagementFunctionCategory" title="http://orange.com/research/dm#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementFunctionCategory" title="https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#RebootCommand" title="http://orange.com/research/dm#RebootCommand">Reboot Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#RebootCommand" title="https://w3id.org/dmont/ontology#RebootCommand">Reboot Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ResetCommand" title="http://orange.com/research/dm#ResetCommand">Reset Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ResetCommand" title="https://w3id.org/dmont/ontology#ResetCommand">Reset Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceIdentityFunction">
   <h3>Device Identity Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceIdentityFunction</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceIdentityFunction</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DeviceManagementFunctionCategory" title="http://orange.com/research/dm#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementFunctionCategory" title="https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceInfoRetrievalCommand" title="http://orange.com/research/dm#DeviceInfoRetrievalCommand">Device Info Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceInfoRetrievalCommand" title="https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand">Device Info Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceIdentityProperty">
   <h3>Device Identity Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceIdentityProperty</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceIdentityProperty</p>
   <div class="comment">
    <span class="markdown">Property kind that represents the properties of a Device Identity.</span>
   </div>
@@ -865,160 +865,160 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="DeviceInfoRetrievalCommand">
   <h3>Device Info Retrieval Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceInfoRetrievalCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DeviceIdentityCommandCategory" title="http://orange.com/research/dm#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceIdentityCommandCategory" title="https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory">Device Identity Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceModuleActivated">
   <h3>Device Module Activated<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceModuleActivated</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceModuleActivated</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DeviceModuleState" title="http://orange.com/research/dm#DeviceModuleState">Device Module State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceModuleState" title="https://w3id.org/dmont/ontology#DeviceModuleState">Device Module State</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceModuleDeactivated">
   <h3>Device Module Deactivated<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DeviceModuleDeactivated</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceModuleDeactivated</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DeviceModuleState" title="http://orange.com/research/dm#DeviceModuleState">Device Module State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceModuleState" title="https://w3id.org/dmont/ontology#DeviceModuleState">Device Module State</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DevicePackageDownloaded">
   <h3>Device Package Downloaded<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DevicePackageDownloaded</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageDownloaded</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DevicePackageState" title="http://orange.com/research/dm#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DevicePackageState" title="https://w3id.org/dmont/ontology#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DevicePackageDownloading">
   <h3>Device Package Downloading<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DevicePackageDownloading</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageDownloading</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DevicePackageState" title="http://orange.com/research/dm#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DevicePackageState" title="https://w3id.org/dmont/ontology#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DevicePackageInstalled">
   <h3>Device Package Installed<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DevicePackageInstalled</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageInstalled</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DevicePackageState" title="http://orange.com/research/dm#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DevicePackageState" title="https://w3id.org/dmont/ontology#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DevicePackageInstalling">
   <h3>Device Package Installing<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DevicePackageInstalling</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageInstalling</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DevicePackageState" title="http://orange.com/research/dm#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DevicePackageState" title="https://w3id.org/dmont/ontology#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DevicePackageUninstalled">
   <h3>Device Package Uninstalled<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DevicePackageUninstalled</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageUninstalled</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DevicePackageState" title="http://orange.com/research/dm#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DevicePackageState" title="https://w3id.org/dmont/ontology#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DevicePackageUninstalling">
   <h3>Device Package Uninstalling<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DevicePackageUninstalling</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageUninstalling</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DevicePackageState" title="http://orange.com/research/dm#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DevicePackageState" title="https://w3id.org/dmont/ontology#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DevicePackageValidated">
   <h3>Device Package Validated<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#DevicePackageValidated</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageValidated</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DevicePackageState" title="http://orange.com/research/dm#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DevicePackageState" title="https://w3id.org/dmont/ontology#DevicePackageState">Device Package State</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="FirmwareInformationRetrievalCommand">
   <h3>Firmware Information Retrieval Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#FirmwareInformationRetrievalCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#FirmwareManagementCommandCategory" title="http://orange.com/research/dm#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#FirmwareManagementCommandCategory" title="https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="FirmwareManagementFunction">
   <h3>Firmware Management Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#FirmwareManagementFunction</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#FirmwareManagementFunction</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DeviceManagementFunctionCategory" title="http://orange.com/research/dm#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementFunctionCategory" title="https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#FirmwareInformationRetrievalCommand" title="http://orange.com/research/dm#FirmwareInformationRetrievalCommand">Firmware Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#FirmwareInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand">Firmware Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#FirmwareUpdateCommand" title="http://orange.com/research/dm#FirmwareUpdateCommand">Firmware Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#FirmwareUpdateCommand" title="https://w3id.org/dmont/ontology#FirmwareUpdateCommand">Firmware Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="FirmwareProperty">
   <h3>Firmware Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#FirmwareProperty</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#FirmwareProperty</p>
   <div class="comment">
    <span class="markdown">Property kind that represents the properties of the firmware of the device. The device firmware is the running base software for the device, which is automatically loaded into memory and executed at boot.</span>
   </div>
@@ -1033,19 +1033,19 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="FirmwareUpdateCommand">
   <h3>Firmware Update Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#FirmwareUpdateCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#FirmwareUpdateCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#FirmwareManagementCommandCategory" title="http://orange.com/research/dm#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#FirmwareManagementCommandCategory" title="https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory">Firmware Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="FirmwareVersion">
   <h3>Firmware Version<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#FirmwareVersion</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#FirmwareVersion</p>
   <dl class="description">
    <dt>
     belongs to
@@ -1057,13 +1057,13 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#FirmwareProperty" title="http://orange.com/research/dm#FirmwareProperty">Firmware Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#FirmwareProperty" title="https://w3id.org/dmont/ontology#FirmwareProperty">Firmware Property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="HardwareVersion">
   <h3>Hardware Version<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#HardwareVersion</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#HardwareVersion</p>
   <dl class="description">
    <dt>
     belongs to
@@ -1075,13 +1075,13 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="http://orange.com/research/dm#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="Manufacturer">
   <h3>Manufacturer<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#Manufacturer</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#Manufacturer</p>
   <dl class="description">
    <dt>
     belongs to
@@ -1093,13 +1093,13 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="http://orange.com/research/dm#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModelName">
   <h3>Model Name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ModelName</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModelName</p>
   <dl class="description">
    <dt>
     belongs to
@@ -1111,13 +1111,13 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="http://orange.com/research/dm#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModelNumber">
   <h3>Model Number<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ModelNumber</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModelNumber</p>
   <dl class="description">
    <dt>
     belongs to
@@ -1129,88 +1129,88 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="http://orange.com/research/dm#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModuleActivationCommand">
   <h3>Module Activation Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ModuleActivationCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleActivationCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#ModuleManagementCommandCategory" title="http://orange.com/research/dm#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModuleDeactivationCommand">
   <h3>Module Deactivation Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ModuleDeactivationCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleDeactivationCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#ModuleManagementCommandCategory" title="http://orange.com/research/dm#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModuleDiscoveryCommand">
   <h3>Module Discovery Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ModuleDiscoveryCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleDiscoveryCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#ModuleManagementCommandCategory" title="http://orange.com/research/dm#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModuleInformationRetrievalCommand">
   <h3>Module Information Retrieval Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ModuleInformationRetrievalCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#ModuleManagementCommandCategory" title="http://orange.com/research/dm#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModuleManagementFunction">
   <h3>Module Management Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ModuleManagementFunction</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleManagementFunction</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DeviceManagementFunctionCategory" title="http://orange.com/research/dm#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementFunctionCategory" title="https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleActivationCommand" title="http://orange.com/research/dm#ModuleActivationCommand">Module Activation Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleActivationCommand" title="https://w3id.org/dmont/ontology#ModuleActivationCommand">Module Activation Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleDeactivationCommand" title="http://orange.com/research/dm#ModuleDeactivationCommand">Module Deactivation Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleDeactivationCommand" title="https://w3id.org/dmont/ontology#ModuleDeactivationCommand">Module Deactivation Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleDiscoveryCommand" title="http://orange.com/research/dm#ModuleDiscoveryCommand">Module Discovery Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleDiscoveryCommand" title="https://w3id.org/dmont/ontology#ModuleDiscoveryCommand">Module Discovery Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleInformationRetrievalCommand" title="http://orange.com/research/dm#ModuleInformationRetrievalCommand">Module Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand">Module Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModuleName">
   <h3>Module Name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ModuleName</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleName</p>
   <dl class="description">
    <dt>
     belongs to
@@ -1222,13 +1222,13 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleProperty" title="http://orange.com/research/dm#ModuleProperty">Module Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleProperty" title="https://w3id.org/dmont/ontology#ModuleProperty">Module Property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModuleProperty">
   <h3>Module Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ModuleProperty</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleProperty</p>
   <div class="comment">
    <span class="markdown">Property kind that represents the properties of a DeviceModule</span>
   </div>
@@ -1243,7 +1243,7 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="ModuleVersion">
   <h3>Module Version<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ModuleVersion</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleVersion</p>
   <dl class="description">
    <dt>
     belongs to
@@ -1255,109 +1255,109 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleProperty" title="http://orange.com/research/dm#ModuleProperty">Module Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleProperty" title="https://w3id.org/dmont/ontology#ModuleProperty">Module Property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="PackageCreationCommand">
   <h3>Package Creation Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#PackageCreationCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageCreationCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="PackageDeletionCommand">
   <h3>Package Deletion Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#PackageDeletionCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageDeletionCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="PackageDiscoveryCommand">
   <h3>Package Discovery Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#PackageDiscoveryCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageDiscoveryCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="PackageInformationRetrievalCommand">
   <h3>Package Information Retrieval Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#PackageInformationRetrievalCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="PackageInstallCommand">
   <h3>Package Install Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#PackageInstallCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageInstallCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="PackageManagementFunction">
   <h3>Package Management Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#PackageManagementFunction</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageManagementFunction</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DeviceManagementFunctionCategory" title="http://orange.com/research/dm#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementFunctionCategory" title="https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageCreationCommand" title="http://orange.com/research/dm#PackageCreationCommand">Package Creation Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageCreationCommand" title="https://w3id.org/dmont/ontology#PackageCreationCommand">Package Creation Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageDeletionCommand" title="http://orange.com/research/dm#PackageDeletionCommand">Package Deletion Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageDeletionCommand" title="https://w3id.org/dmont/ontology#PackageDeletionCommand">Package Deletion Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageDiscoveryCommand" title="http://orange.com/research/dm#PackageDiscoveryCommand">Package Discovery Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageDiscoveryCommand" title="https://w3id.org/dmont/ontology#PackageDiscoveryCommand">Package Discovery Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageInformationRetrievalCommand" title="http://orange.com/research/dm#PackageInformationRetrievalCommand">Package Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand">Package Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageInstallCommand" title="http://orange.com/research/dm#PackageInstallCommand">Package Install Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageInstallCommand" title="https://w3id.org/dmont/ontology#PackageInstallCommand">Package Install Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageUninstallCommand" title="http://orange.com/research/dm#PackageUninstallCommand">Package Uninstall Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageUninstallCommand" title="https://w3id.org/dmont/ontology#PackageUninstallCommand">Package Uninstall Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageUpdateCommand" title="http://orange.com/research/dm#PackageUpdateCommand">Package Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageUpdateCommand" title="https://w3id.org/dmont/ontology#PackageUpdateCommand">Package Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="PackageName">
   <h3>Package Name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#PackageName</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageName</p>
   <dl class="description">
    <dt>
     belongs to
@@ -1369,7 +1369,7 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="PackageProperty">
   <h3>Package Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#PackageProperty</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageProperty</p>
   <div class="comment">
    <span class="markdown">Property kind that represents the properties of a DevicePackage</span>
   </div>
@@ -1384,31 +1384,31 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="PackageUninstallCommand">
   <h3>Package Uninstall Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#PackageUninstallCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageUninstallCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="PackageUpdateCommand">
   <h3>Package Update Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#PackageUpdateCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageUpdateCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#PackageManagementCommandCategory" title="http://orange.com/research/dm#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="PackageVersion">
   <h3>Package Version<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#PackageVersion</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageVersion</p>
   <dl class="description">
    <dt>
     belongs to
@@ -1420,31 +1420,31 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="RebootCommand">
   <h3>Reboot Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#RebootCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#RebootCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DeviceControlCommandCategory" title="http://orange.com/research/dm#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceControlCommandCategory" title="https://w3id.org/dmont/ontology#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ResetCommand">
   <h3>Reset Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#ResetCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ResetCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DeviceControlCommandCategory" title="http://orange.com/research/dm#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceControlCommandCategory" title="https://w3id.org/dmont/ontology#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="SerialNumber">
   <h3>Serial Number<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#SerialNumber</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SerialNumber</p>
   <dl class="description">
    <dt>
     belongs to
@@ -1456,31 +1456,31 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="http://orange.com/research/dm#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="SupportedDatamodelFunction">
   <h3>Supported Datamodel Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#SupportedDatamodelFunction</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SupportedDatamodelFunction</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#DeviceManagementFunctionCategory" title="http://orange.com/research/dm#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#DeviceManagementFunctionCategory" title="https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory">Device Management Function Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#SupportedDatamodelRetrievalCommand" title="http://orange.com/research/dm#SupportedDatamodelRetrievalCommand">Supported Datamodel Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#SupportedDatamodelRetrievalCommand" title="https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand">Supported Datamodel Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="SupportedDatamodelParameterName">
   <h3>Supported Datamodel Parameter Name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#SupportedDatamodelParameterName</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SupportedDatamodelParameterName</p>
   <dl class="description">
    <dt>
     belongs to
@@ -1492,7 +1492,7 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="SupportedDatamodelParameterProperty">
   <h3>Supported Datamodel Parameter Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#SupportedDatamodelParameterProperty</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SupportedDatamodelParameterProperty</p>
   <div class="comment">
    <span class="markdown">Property kind that represents the properties of a Supported Datamodel Parameter. These parameters represent the capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client. It should not be confused with the Datamodel Parameter Instance, which represents the actionable capabilities of the Device.</span>
   </div>
@@ -1507,7 +1507,7 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="SupportedDatamodelParameterType">
   <h3>Supported Datamodel Parameter Type<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#SupportedDatamodelParameterType</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SupportedDatamodelParameterType</p>
   <dl class="description">
    <dt>
     belongs to
@@ -1519,13 +1519,13 @@ This section provides details for each class and property defined by DMOnt : Dev
  </div>
  <div class="entity" id="SupportedDatamodelRetrievalCommand">
   <h3>Supported Datamodel Retrieval Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://orange.com/research/dm#SupportedDatamodelRetrievalCommand</p>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand</p>
   <dl class="description">
    <dt>
     belongs to
    </dt>
    <dd>
-    <a href="#SupportedDatamodelCommandCategory" title="http://orange.com/research/dm#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
+    <a href="#SupportedDatamodelCommandCategory" title="https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>

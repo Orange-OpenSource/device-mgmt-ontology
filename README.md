@@ -7,7 +7,22 @@ Aïssaoui, F., Berlemont, S., Douet, M., Mezghani, E. (2020). A Semantic Model T
 
 ## Usage
 
-W3ID : pull request + add line with name
+We provide a direct access to the DM-Ont resources with the **dmont** [w3id.org](https://w3id.org/) identifier:
+> [https://w3id.org/dmont/](https://w3id.org/dmont/)
+
+Based on this identifier, the following links apply for direct access to the DM-Ont featured topics:
+
+| DM-Ont | Link |
+| --- | --- |
+| Ontologies | https://w3id.org/dmont/ontology/ |
+| Documentation | https://w3id.org/dmont/doc/ |
+
+See also the *Repository Structure* for navigating into this repository:
+```
+DM-Ont
+├───docs <documentation>
+└───ontology <the DM-Ont implementation>
+```
 
 ## Copyright
 
