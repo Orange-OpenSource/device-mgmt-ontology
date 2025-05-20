@@ -232,12 +232,14 @@ dm:SupportedDatamodelCommandCategory rdf:type owl:Class ;
 ###  https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand
 dm:DatamodelParameterCreationCommand rdf:type owl:NamedIndividual ,
                                               dm:DatamodelParameterCommandCategory ;
+                                     rdfs:comment "Command to create a datamodel parameter instance."@en ;
                                      rdfs:label "Datamodel parameter creation command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand
 dm:DatamodelParameterDeletionCommand rdf:type owl:NamedIndividual ,
                                               dm:DatamodelParameterCommandCategory ;
+                                     rdfs:comment "Command to delete a datamodel parameter instance."@en ;
                                      rdfs:label "Datamodel parameter deletion command"@en .
 
 
@@ -248,6 +250,7 @@ dm:DatamodelParameterFunction rdf:type owl:NamedIndividual ,
                                                dm:DatamodelParameterDeletionCommand ,
                                                dm:DatamodelParameterOperateCommand ,
                                                dm:DatamodelParameterUpdateCommand ;
+                              rdfs:comment "Function kind for the manipulation of datamodel parameters."@en ;
                               rdfs:label "Datamodel parameter function"@en .
 
 
@@ -255,6 +258,7 @@ dm:DatamodelParameterFunction rdf:type owl:NamedIndividual ,
 dm:DatamodelParameterInstanceName rdf:type owl:NamedIndividual ,
                                            saref:Property ;
                                   <http://www.w3.org/2004/02/skos/core#narrower> dm:DatamodelParameterInstanceProperty ;
+                                  rdfs:comment "Name for an  instance of a datamodel parameter."@en ;
                                   rdfs:label "Datamodel parameter instance name"@en .
 
 
@@ -273,24 +277,28 @@ It should not be confused with the Supported Datamodel Parameter, which represen
 dm:DatamodelParameterInstanceValue rdf:type owl:NamedIndividual ,
                                             saref:Property ;
                                    <http://www.w3.org/2004/02/skos/core#narrower> dm:DatamodelParameterInstanceProperty ;
+                                   rdfs:comment "Value of a datamodel parameter instance, obtained as the result of the execution of a Datamodel parameter retrieval command."@en ;
                                    rdfs:label "Datamodel parameter instance value"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand
 dm:DatamodelParameterOperateCommand rdf:type owl:NamedIndividual ,
                                              dm:DatamodelParameterCommandCategory ;
+                                    rdfs:comment "Command to trigger the execution of a datamodel parameter instance that corresponds to an executable process on a device."@en ;
                                     rdfs:label "Datamodel parameter operate command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand
 dm:DatamodelParameterRetrievalCommand rdf:type owl:NamedIndividual ,
                                                dm:DatamodelParameterCommandCategory ;
+                                      rdfs:comment "Command to retrieve the value of a Datamodel parameter instance."@en ;
                                       rdfs:label "Datamodel parameter retrieval command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand
 dm:DatamodelParameterUpdateCommand rdf:type owl:NamedIndividual ,
                                             dm:DatamodelParameterCommandCategory ;
+                                   rdfs:comment "Command to update the value of a Datamodel parameter instance."@en ;
                                    rdfs:label "Datamodel parameter update command"@en .
 
 
@@ -299,6 +307,7 @@ dm:DeviceControlFunction rdf:type owl:NamedIndividual ,
                                   dm:DeviceManagementFunctionCategory ;
                          saref:hasCommand dm:RebootCommand ,
                                           dm:ResetCommand ;
+                         rdfs:comment "Function kind to control the global state of the device, e.g., its power state through the Reboot function, or the global configuration through the Reset function."@en ;
                          rdfs:label "Device control function"@en .
 
 
@@ -306,75 +315,84 @@ dm:DeviceControlFunction rdf:type owl:NamedIndividual ,
 dm:DeviceIdentityFunction rdf:type owl:NamedIndividual ,
                                    dm:DeviceManagementFunctionCategory ;
                           saref:hasCommand dm:DeviceInfoRetrievalCommand ;
-                          rdfs:comment "Represents the capability for a device to expose properties related to its identity."@en ;
+                          rdfs:comment "Function kind that represents the capabilities of a device to expose its own identity."@en ;
                           rdfs:label "Device identity function"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DeviceIdentityProperty
 dm:DeviceIdentityProperty rdf:type owl:NamedIndividual ,
                                    saref:Property ;
-                          rdfs:comment "Property kind that represents the properties of a Device Identity."@en ;
+                          rdfs:comment "Set of properties that constitutes a Device Identity."@en ;
                           rdfs:label "Device identity property"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand
 dm:DeviceInfoRetrievalCommand rdf:type owl:NamedIndividual ,
                                        dm:DeviceIdentityCommandCategory ;
-                              rdfs:comment "Retrieves a set of values related to the device identity property."@en ;
+                              rdfs:comment "A command to retrieve any Device identity property."@en ;
                               rdfs:label "Device info retrieval command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DeviceModuleActivated
 dm:DeviceModuleActivated rdf:type owl:NamedIndividual ,
                                   dm:DeviceModuleState ;
+                         rdfs:comment "State of a Device Module whose related functions were made available on a device, either automatically after the Device Module installation, or through a Module activation command."@en ;
                          rdfs:label "Device module activated"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DeviceModuleDeactivated
 dm:DeviceModuleDeactivated rdf:type owl:NamedIndividual ,
                                     dm:DeviceModuleState ;
+                           rdfs:comment "State of a Device Module whose related functions were made unavailable through a Module deactivation command."@en ;
                            rdfs:label "Device module deactivated"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DevicePackageDownloaded
 dm:DevicePackageDownloaded rdf:type owl:NamedIndividual ,
                                     dm:DevicePackageState ;
+                           rdfs:comment "State of a Device Package whose set of required files are available of on the device, either through a download process from a Client, or an upload process from a Server."@en ;
                            rdfs:label "Device package downloaded"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DevicePackageDownloading
 dm:DevicePackageDownloading rdf:type owl:NamedIndividual ,
                                      dm:DevicePackageState ;
+                            rdfs:comment "State of a Device Package that represents that the process of transferring the required package files is in progress. This is a transitory state, that changes to either the 'Device package downloaded' or the 'Device package initialized' states."@en ;
                             rdfs:label "Device package downloading"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DevicePackageInstalled
 dm:DevicePackageInstalled rdf:type owl:NamedIndividual ,
                                    dm:DevicePackageState ;
+                          rdfs:comment "State of a Device package whose resources have been made ready for their final purpose, after the download and install processes are completed."@en ;
                           rdfs:label "Device package installed"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DevicePackageInstalling
 dm:DevicePackageInstalling rdf:type owl:NamedIndividual ,
                                     dm:DevicePackageState ;
+                           rdfs:comment "State of a Device Package that represents that the process of readying the required package files is in progress. Thisis a transitory state, that changes to either the 'Device package installed' or the 'Device package validated' states."@en ;
                            rdfs:label "Device package installing"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DevicePackageUninstalled
 dm:DevicePackageUninstalled rdf:type owl:NamedIndividual ,
                                      dm:DevicePackageState ;
+                            rdfs:comment "State of a Device package whose resources have been installed, then removed from the device."@en ;
                             rdfs:label "Device package uninstalled"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DevicePackageUninstalling
 dm:DevicePackageUninstalling rdf:type owl:NamedIndividual ,
                                       dm:DevicePackageState ;
+                             rdfs:comment "State of a Device Package that represents that the process of removing the associated package files is in progress. This is a transitory state, that changes to the 'Device package uninstalled' state."@en ;
                              rdfs:label "Device package uninstalling"@en .
 
 
 ###  https://w3id.org/dmont/ontology#DevicePackageValidated
 dm:DevicePackageValidated rdf:type owl:NamedIndividual ,
                                    dm:DevicePackageState ;
+                          rdfs:comment "State of a Device Package that represents that the required package files are available on the device, and actually correspond to the expected files, without corruption. This state is optional is the Device package lifecycle, and depends on the client and package implementations."@en ;
                           rdfs:label "Device package validated"@en .
 
 
