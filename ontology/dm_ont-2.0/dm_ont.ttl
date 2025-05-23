@@ -258,7 +258,7 @@ dm:DatamodelParameterFunction rdf:type owl:NamedIndividual ,
 dm:DatamodelParameterInstanceName rdf:type owl:NamedIndividual ,
                                            saref:Property ;
                                   <http://www.w3.org/2004/02/skos/core#narrower> dm:DatamodelParameterInstanceProperty ;
-                                  rdfs:comment "Name for an  instance of a datamodel parameter."@en ;
+                                  rdfs:comment "Name for an instance of a datamodel parameter."@en ;
                                   rdfs:label "Datamodel parameter instance name"@en .
 
 
@@ -400,6 +400,7 @@ dm:DevicePackageValidated rdf:type owl:NamedIndividual ,
 dm:FirmwareInformationRetrievalCommand rdf:type owl:NamedIndividual ,
                                                 dm:FirmwareManagementCommandCategory ;
                                        owl:differentFrom dm:FirmwareUpdateCommand ;
+                                       rdfs:comment "Command to retrieve firmware information such as the current firmware version for a device."@en ;
                                        rdfs:label "Firmware information retrieval command"@en .
 
 
@@ -408,21 +409,23 @@ dm:FirmwareManagementFunction rdf:type owl:NamedIndividual ,
                                        dm:DeviceManagementFunctionCategory ;
                               saref:hasCommand dm:FirmwareInformationRetrievalCommand ,
                                                dm:FirmwareUpdateCommand ;
+                              rdfs:comment "Set of functions related to the management of the firmware for a device."@en ;
                               rdfs:label "Firmware management function"@en .
 
 
 ###  https://w3id.org/dmont/ontology#FirmwareProperty
 dm:FirmwareProperty rdf:type owl:NamedIndividual ,
                              saref:Property ;
-                    rdfs:comment """Property kind that represents the properties of the firmware of the device.
+                    rdfs:comment """Property kind that represents the properties of the firmware of a device.
 
-The device firmware is the running base software for the device, which is automatically loaded into memory and executed at boot."""@en ;
+The device firmware is the running base software for a device, which is automatically loaded into memory and executed at boot."""@en ;
                     rdfs:label "Firmware property"@en .
 
 
 ###  https://w3id.org/dmont/ontology#FirmwareUpdateCommand
 dm:FirmwareUpdateCommand rdf:type owl:NamedIndividual ,
                                   dm:FirmwareManagementCommandCategory ;
+                         rdfs:comment "Command to trigger the update of the firmware of a device."@en ;
                          rdfs:label "Firmware update command"@en .
 
 
@@ -430,6 +433,7 @@ dm:FirmwareUpdateCommand rdf:type owl:NamedIndividual ,
 dm:FirmwareVersion rdf:type owl:NamedIndividual ,
                             saref:Property ;
                    <http://www.w3.org/2004/02/skos/core#narrower> dm:FirmwareProperty ;
+                   rdfs:comment "The firmware version of a device."@en ;
                    rdfs:label "Firmware version"@en .
 
 
@@ -437,7 +441,7 @@ dm:FirmwareVersion rdf:type owl:NamedIndividual ,
 dm:HardwareVersion rdf:type owl:NamedIndividual ,
                             saref:Property ;
                    <http://www.w3.org/2004/02/skos/core#narrower> dm:DeviceIdentityProperty ;
-                   rdfs:comment "Device identity property referring to the specific version of the physical components of a device."@en ;
+                   rdfs:comment "Device identity property referring to the specific version of the set of physical components of a device, known as hardware version."@en ;
                    rdfs:label "Hardware version"@en .
 
 
@@ -461,31 +465,35 @@ dm:ModelName rdf:type owl:NamedIndividual ,
 dm:ModelNumber rdf:type owl:NamedIndividual ,
                         saref:Property ;
                <http://www.w3.org/2004/02/skos/core#narrower> dm:DeviceIdentityProperty ;
-               rdfs:comment "Device identity property that represents the unique identifier assigned to a specific device model, used to distinguish it from other models and versions within a manufacturer's product lineup."@en ;
+               rdfs:comment "The unique identifier assigned to a device model, used to distinguish it from other models and versions within a manufacturer's product lineup."@en ;
                rdfs:label "Model number"@en .
 
 
 ###  https://w3id.org/dmont/ontology#ModuleActivationCommand
 dm:ModuleActivationCommand rdf:type owl:NamedIndividual ,
                                     dm:ModuleManagementCommandCategory ;
+                           rdfs:comment "Command to trigger the activation of a Device Module."@en ;
                            rdfs:label "Module activation command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#ModuleDeactivationCommand
 dm:ModuleDeactivationCommand rdf:type owl:NamedIndividual ,
                                       dm:ModuleManagementCommandCategory ;
+                             rdfs:comment "Command to trigger the deactivation of a Device Module."@en ;
                              rdfs:label "Module deactivation command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#ModuleDiscoveryCommand
 dm:ModuleDiscoveryCommand rdf:type owl:NamedIndividual ,
                                    dm:ModuleManagementCommandCategory ;
+                          rdfs:comment "Command to retrieve the list of  Device Modules available on a device."@en ;
                           rdfs:label "Module discovery command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand
 dm:ModuleInformationRetrievalCommand rdf:type owl:NamedIndividual ,
                                               dm:ModuleManagementCommandCategory ;
+                                     rdfs:comment "Command to retrieve device module information such as the name of the module or its version."@en ;
                                      rdfs:label "Module information retrieval command"@en .
 
 
@@ -496,6 +504,7 @@ dm:ModuleManagementFunction rdf:type owl:NamedIndividual ,
                                              dm:ModuleDeactivationCommand ,
                                              dm:ModuleDiscoveryCommand ,
                                              dm:ModuleInformationRetrievalCommand ;
+                            rdfs:comment "Function kind for the management of Device Modules."@en ;
                             rdfs:label "Module management function"@en .
 
 
@@ -503,13 +512,14 @@ dm:ModuleManagementFunction rdf:type owl:NamedIndividual ,
 dm:ModuleName rdf:type owl:NamedIndividual ,
                        saref:Property ;
               <http://www.w3.org/2004/02/skos/core#narrower> dm:ModuleProperty ;
+              rdfs:comment "The name of a device module."@en ;
               rdfs:label "Module name"@en .
 
 
 ###  https://w3id.org/dmont/ontology#ModuleProperty
 dm:ModuleProperty rdf:type owl:NamedIndividual ,
                            saref:Property ;
-                  rdfs:comment "Property kind that represents the properties of a DeviceModule"@en ;
+                  rdfs:comment "Property kind that represents the properties of a Device Module."@en ;
                   rdfs:label "Module property"@en .
 
 
@@ -517,36 +527,42 @@ dm:ModuleProperty rdf:type owl:NamedIndividual ,
 dm:ModuleVersion rdf:type owl:NamedIndividual ,
                           saref:Property ;
                  <http://www.w3.org/2004/02/skos/core#narrower> dm:ModuleProperty ;
+                 rdfs:comment "The version of a Device Module."@en ;
                  rdfs:label "Module version"@en .
 
 
 ###  https://w3id.org/dmont/ontology#PackageCreationCommand
 dm:PackageCreationCommand rdf:type owl:NamedIndividual ,
                                    dm:PackageManagementCommandCategory ;
+                          rdfs:comment "Command to trigger the creation of a Device Package on a device."@en ;
                           rdfs:label "Package creation command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#PackageDeletionCommand
 dm:PackageDeletionCommand rdf:type owl:NamedIndividual ,
                                    dm:PackageManagementCommandCategory ;
+                          rdfs:comment "Command to trigger the deletion of a Device Package on a device."@en ;
                           rdfs:label "Package deletion command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#PackageDiscoveryCommand
 dm:PackageDiscoveryCommand rdf:type owl:NamedIndividual ,
                                     dm:PackageManagementCommandCategory ;
+                           rdfs:comment "Command to retrieve the list of available Device Packages on a device."@en ;
                            rdfs:label "Package discovery command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand
 dm:PackageInformationRetrievalCommand rdf:type owl:NamedIndividual ,
                                                dm:PackageManagementCommandCategory ;
+                                      rdfs:comment "Command to retrieve device package information such as the name of the package or its version."@en ;
                                       rdfs:label "Package information retrieval command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#PackageInstallCommand
 dm:PackageInstallCommand rdf:type owl:NamedIndividual ,
                                   dm:PackageManagementCommandCategory ;
+                         rdfs:comment "Command to trigger the installation of Device Package on a device."@en ;
                          rdfs:label "Package install command"@en .
 
 
@@ -560,12 +576,14 @@ dm:PackageManagementFunction rdf:type owl:NamedIndividual ,
                                               dm:PackageInstallCommand ,
                                               dm:PackageUninstallCommand ,
                                               dm:PackageUpdateCommand ;
+                             rdfs:comment "Function kind related to the management of Device Packages on a device."@en ;
                              rdfs:label "Package management function"@en .
 
 
 ###  https://w3id.org/dmont/ontology#PackageName
 dm:PackageName rdf:type owl:NamedIndividual ,
                         saref:Property ;
+               rdfs:comment "The name of a Device Package."@en ;
                rdfs:label "Package name"@en .
 
 
@@ -579,30 +597,35 @@ dm:PackageProperty rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/dmont/ontology#PackageUninstallCommand
 dm:PackageUninstallCommand rdf:type owl:NamedIndividual ,
                                     dm:PackageManagementCommandCategory ;
+                           rdfs:comment "Command to trigger the uninstallation of a Device Package on a device."@en ;
                            rdfs:label "Package uninstall command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#PackageUpdateCommand
 dm:PackageUpdateCommand rdf:type owl:NamedIndividual ,
                                  dm:PackageManagementCommandCategory ;
+                        rdfs:comment "Command to trigger the update of a Device Package on a device. This corresponds to the action of replacing, on a device, a Device Package by another Device Package with the same name, but a different version."@en ;
                         rdfs:label "Package update command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#PackageVersion
 dm:PackageVersion rdf:type owl:NamedIndividual ,
                            saref:Property ;
+                  rdfs:comment "The version of a device package."@en ;
                   rdfs:label "Package version"@en .
 
 
 ###  https://w3id.org/dmont/ontology#RebootCommand
 dm:RebootCommand rdf:type owl:NamedIndividual ,
                           dm:DeviceControlCommandCategory ;
+                 rdfs:comment "Command to trigger the reboot process of a device."@en ;
                  rdfs:label "Reboot command"@en .
 
 
 ###  https://w3id.org/dmont/ontology#ResetCommand
 dm:ResetCommand rdf:type owl:NamedIndividual ,
                          dm:DeviceControlCommandCategory ;
+                rdfs:comment "Command to change the entire state of a device and its resources to another state as predefined according to the device manufacturer policy."@en ;
                 rdfs:label "Reset command"@en .
 
 
@@ -617,6 +640,7 @@ dm:SerialNumber rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/dmont/ontology#ShutdownCommand
 dm:ShutdownCommand rdf:type owl:NamedIndividual ,
                             dm:DeviceControlCommandCategory ;
+                   rdfs:comment "Command to trigger the shutdown process on a device."@en ;
                    rdfs:label "Shutdown command"@en .
 
 
@@ -624,12 +648,14 @@ dm:ShutdownCommand rdf:type owl:NamedIndividual ,
 dm:SupportedDatamodelFunction rdf:type owl:NamedIndividual ,
                                        dm:DeviceManagementFunctionCategory ;
                               saref:hasCommand dm:SupportedDatamodelRetrievalCommand ;
+                              rdfs:comment "Function kind to manage the supported datamodel of a device."@en ;
                               rdfs:label "Supported datamodel function"@en .
 
 
 ###  https://w3id.org/dmont/ontology#SupportedDatamodelParameterName
 dm:SupportedDatamodelParameterName rdf:type owl:NamedIndividual ,
                                             saref:Property ;
+                                   rdfs:comment "Name of a supported datamodel parameter."@en ;
                                    rdfs:label "Supported datamodel parameter name"@en .
 
 
@@ -647,12 +673,24 @@ It should not be confused with the Datamodel Parameter Instance, which represent
 ###  https://w3id.org/dmont/ontology#SupportedDatamodelParameterType
 dm:SupportedDatamodelParameterType rdf:type owl:NamedIndividual ,
                                             saref:Property ;
+                                   rdfs:comment """Type of a supported datamodel parameter. 
+
+For instance, this type can represent that the supported datamodel parameter is a reference to an executable resource. The corresponding type would be 'command' in the CWMP standard protocol, and its TR-181 technical report.
+
+This type can represent a reference to a measurement process on the device that retrieves a value. In that case, the supported datamodel parameter also describes the unit of that value.
+
+The type 'object' corresponds to a supported datamodel parameter that contains other supported datamodel parameters, creating a hierarchical structure.
+
+A final example would be a 'table', i.e., the corresponding datamodel parameter is a list of instances of the same object.
+
+For more information, we refer the reader to the specification documents of DM protocol standards such as TR-181 from the BroadBand Forum."""@en ;
                                    rdfs:label "Supported datamodel parameter type"@en .
 
 
 ###  https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand
 dm:SupportedDatamodelRetrievalCommand rdf:type owl:NamedIndividual ,
                                                dm:SupportedDatamodelCommandCategory ;
+                                      rdfs:comment "Command to retrieve a supported datamodel parameter, which corresponds to the information required to access a datamodel parameter instance and interpret its value."@en ;
                                       rdfs:label "Supported datamodel retrieval command"@en .
 
 
