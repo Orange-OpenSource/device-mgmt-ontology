@@ -12,8 +12,7 @@
 
 <https://w3id.org/dmont/ontology> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://w3id.org/dmont/ontology/2.0.0> ;
-                                   owl:imports <https://saref.etsi.org/core/v3.2.1/> ,
-                                               <https://saref.etsi.org/saref4syst/v1.1.2/> ;
+                                   owl:imports <https://saref.etsi.org/core/v4.1.1/> ;
                                    terms:creator "Cyrille Bareau (https://dblp.org/pid/52/1343.html)" ,
                                                  "François Aïssaoui (https://orcid.org/0000-0001-6772-2161)" ,
                                                  "Marc Douet (https://www.researchgate.net/profile/Marc-Douet)" ,
@@ -29,8 +28,48 @@ This ontology is developed as a SAREF extension."""@en ;
                                    owl:versionInfo "2.0.0" .
 
 #################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+terms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+terms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+terms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+#################################################################
 #    Object Properties
 #################################################################
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> rdf:type owl:ObjectProperty .
+
+
+###  https://saref.etsi.org/core/hasCommand
+saref:hasCommand rdf:type owl:ObjectProperty .
+
+
+###  https://saref.etsi.org/saref4syst/connectsSystem
+<https://saref.etsi.org/saref4syst/connectsSystem> rdf:type owl:ObjectProperty .
+
 
 ###  https://w3id.org/dmont/ontology#enablesManagementService
 dm:enablesManagementService rdf:type owl:ObjectProperty ;
@@ -52,6 +91,42 @@ dm:hasConnection rdf:type owl:ObjectProperty ;
 #################################################################
 #    Classes
 #################################################################
+
+###  https://saref.etsi.org/core/Command
+saref:Command rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/core/Device
+saref:Device rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/core/FeatureOfInterest
+saref:FeatureOfInterest rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/core/Function
+saref:Function rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/core/Property
+saref:Property rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/core/Service
+saref:Service rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/core/State
+saref:State rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/saref4syst/Connection
+<https://saref.etsi.org/saref4syst/Connection> rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/saref4syst/System
+<https://saref.etsi.org/saref4syst/System> rdf:type owl:Class .
+
 
 ###  https://w3id.org/dmont/ontology#Client
 dm:Client rdf:type owl:Class ;
