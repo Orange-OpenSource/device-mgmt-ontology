@@ -4,6 +4,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix saref: <https://saref.etsi.org/core/> .
@@ -13,10 +14,19 @@
 <https://w3id.org/dmont/ontology> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://w3id.org/dmont/ontology/2.0.0> ;
                                    owl:imports <https://saref.etsi.org/core/v4.1.1/> ;
-                                   terms:creator "Cyrille Bareau (https://dblp.org/pid/52/1343.html)" ,
-                                                 "François Aïssaoui (https://orcid.org/0000-0001-6772-2161)" ,
-                                                 "Marc Douet (https://www.researchgate.net/profile/Marc-Douet)" ,
-                                                 "Samuel Berlemont (https://orcid.org/0000-0003-0788-9837)" ;
+                                   terms:abstract """The Device Management (DM) domain consists in the remote administration of devices for an operator, such as a service provider or device manufacturer. 
+
+The proposal for an ontology for standardization in Device Management is motivated by the need to address challenges arising from the evolution of DM and the emergence of the Internet of Things (IoT).
+
+Initially, DM was introduced by manufacturers and telecommunication operators to ensure the proper functioning of devices like gateways and TV decoders, focusing on firmware management due to the high replacement costs of these devices. Over time, the scope of DM expanded to include configuration and customer care, enabling Telcos to configure value-added services, improve Quality of Service (QoS), and reduce costs. 
+
+With the rise of IoT, the DM landscape has shifted significantly. The proliferation of heterogeneous IoT devices and the temptation to produce disposable devices have highlighted the need for remote management for economic and ecological reasons. However, existing DM solutions face challenges due to the scale and diversity of IoT devices, as well as the prevalence of proprietary protocols and siloed solutions from various manufacturers. This has created issues with heterogeneity in device capabilities, DM protocols, and management solutions. Standardization becomes essential to facilitate common, interoperable protocols for DM, simplifying device integration and benefiting both operators and manufacturers.
+
+The proposed IoT Device Management Ontology provides an abstract semantic model of DM domain-specific concepts, enabling cross-system data interoperability and knowledge enrichment through reasoning. This ontology aims to unify and streamline IoT DM practices, overcoming the limitations of existing approaches."""@en ;
+                                   terms:creator <https://orcid.org/0000-0001-6772-2161> ,
+                                                 <https://dblp.org/pid/52/1343.html> ,
+                                                 <https://orcid.org/0000-0003-0788-9837> ,
+                                                 <https://www.researchgate.net/profile/Marc-Douet> ;
                                    terms:description """The ontology aims to define concepts within the Device Management domain, facilitating the remote administration of devices and ensuring their proper functioning. It addresses challenges related to the heterogeneity of management protocols by representing execution paths for commands and modeling the information exchanged between devices and the management system.
 
 This ontology is developed as a SAREF extension."""@en ;
@@ -25,11 +35,28 @@ This ontology is developed as a SAREF extension."""@en ;
                                    vann:preferredNamespacePrefix "dm" ;
                                    vann:preferredNamespaceUri "https://w3id.org/dmont/ontology#" ;
                                    rdfs:comment "Device Management Ontology"@en ;
+                                   rdfs:label "DMOnt"@en ;
                                    owl:versionInfo "2.0.0" .
+
+<https://dblp.org/pid/52/1343.html> foaf:homepage "https://dblp.org/pid/52/1343.html" ;
+    foaf:name "Cyrille Bareau" .
+
+<https://orcid.org/0000-0001-6772-2161> foaf:homepage "https://orcid.org/0000-0001-6772-2161" ;
+    foaf:name "François Aïssaoui" .
+
+<https://www.researchgate.net/profile/Marc-Douet> foaf:homepage "https://www.researchgate.net/profile/Marc-Douet" ;
+    foaf:name "Marc Douet" .
+
+<https://orcid.org/0000-0003-0788-9837> foaf:homepage "https://orcid.org/0000-0003-0788-9837" ;
+    foaf:name "Samuel Berlemont" .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/terms/abstract
+terms:abstract rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/creator
 terms:creator rdf:type owl:AnnotationProperty .
@@ -53,6 +80,14 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+foaf:homepage rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
 
 
 #################################################################

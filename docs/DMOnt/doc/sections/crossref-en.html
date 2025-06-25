@@ -1,26 +1,26 @@
-<h2 id="crossreference" class="list">Cross-reference for DMOnt : Device Management Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by DMOnt : Device Management Ontology.
+<h2 id="crossreference" class="list">Cross-reference for DMOnt classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by DMOnt.
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
   <li><a href="#Client" title="https://w3id.org/dmont/ontology#Client">Client</a></li>
-  <li><a href="#Connection" title="https://w3id.org/dmont/ontology#Connection"> <span>Connection</span> </a></li>
   <li><a href="#DatamodelParameterCommandCategory" title="https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory">Datamodel Parameter Command Category</a></li>
   <li><a href="#DeviceControlCommandCategory" title="https://w3id.org/dmont/ontology#DeviceControlCommandCategory">Device Control Command Category</a></li>
   <li><a href="#DeviceIdentityCommandCategory" title="https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory">Device Identity Command Category</a></li>
   <li><a href="#DeviceManagementCommandCategory" title="https://w3id.org/dmont/ontology#DeviceManagementCommandCategory">Device Management Command Category</a></li>
   <li><a href="#DeviceManagementFunctionCategory" title="https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory">Device Management Function Category</a></li>
-  <li><a href="#DeviceManagementState" title="https://w3id.org/dmont/ontology#DeviceManagementState"> <span>Device Management State</span> </a></li>
+  <li><a href="#DeviceManagementState" title="https://w3id.org/dmont/ontology#DeviceManagementState">Device Management State</a></li>
   <li><a href="#DeviceModule" title="https://w3id.org/dmont/ontology#DeviceModule">Device Module</a></li>
   <li><a href="#DeviceModuleState" title="https://w3id.org/dmont/ontology#DeviceModuleState">Device Module State</a></li>
   <li><a href="#DevicePackage" title="https://w3id.org/dmont/ontology#DevicePackage">Device Package</a></li>
   <li><a href="#DevicePackageState" title="https://w3id.org/dmont/ontology#DevicePackageState">Device Package State</a></li>
   <li><a href="#FirmwareManagementCommandCategory" title="https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory">Firmware Management Command Category</a></li>
   <li><a href="#ManageableDevice" title="https://w3id.org/dmont/ontology#ManageableDevice">Manageable Device</a></li>
-  <li><a href="#ManagementService" title="https://w3id.org/dmont/ontology#ManagementService"> <span>Management Service</span> </a></li>
+  <li><a href="#ManagementConnection" title="https://w3id.org/dmont/ontology#ManagementConnection">Management Connection</a></li>
+  <li><a href="#ManagementService" title="https://w3id.org/dmont/ontology#ManagementService">Management Service</a></li>
   <li><a href="#ModuleManagementCommandCategory" title="https://w3id.org/dmont/ontology#ModuleManagementCommandCategory">Module Management Command Category</a></li>
   <li><a href="#PackageManagementCommandCategory" title="https://w3id.org/dmont/ontology#PackageManagementCommandCategory">Package Management Command Category</a></li>
-  <li><a href="#Server" title="https://w3id.org/dmont/ontology#Server"> <span>Server</span> </a></li>
+  <li><a href="#Server" title="https://w3id.org/dmont/ontology#Server">Server</a></li>
   <li><a href="#SupportedDatamodelCommandCategory" title="https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory">Supported Datamodel Command Category</a></li>
  </ul>
  <div class="entity" id="Client">
@@ -31,43 +31,19 @@ This section provides details for each class and property defined by DMOnt : Dev
   </div>
   <dl class="description">
    <dt>
-    is in domain of
+    has super-classes
    </dt>
    <dd>
-    <a href="#isClientConnectedThrough" title="https://w3id.org/dmont/ontology#isClientConnectedThrough">is Client Connected Through</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#connectsClient" title="https://w3id.org/dmont/ontology#connectsClient">connects Client</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Connection">
-  <h3>Connection<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#Connection</p>
-  <div class="comment">
-   <span class="markdown">Abstract representation of the connection between a Client and a Server. It does not necessarily imply that a persistent connection is established between the entities - such as a TCP connection. It represents the link and the capability of the Server to interact with the Client. For instance, the Client has been authenticated by the Server with a certificate, and/or the client has received a configuration for access rights to its functions for the Server.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#connectsClient" title="https://w3id.org/dmont/ontology#connectsClient">connects Client</a> <sup class="type-op" title="object property">op</sup>, <a href="#connectsServer" title="https://w3id.org/dmont/ontology#connectsServer">connects Server</a> <sup class="type-op" title="object property">op</sup>, <a href="#enablesManagementService" title="https://w3id.org/dmont/ontology#enablesManagementService">enables Management Service</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#hasConnection" title="https://w3id.org/dmont/ontology#hasConnection">has Connection</a> <sup class="type-op" title="object property">op</sup>, <a href="#isClientConnectedThrough" title="https://w3id.org/dmont/ontology#isClientConnectedThrough">is Client Connected Through</a> <sup class="type-op" title="object property">op</sup>, <a href="#isServerConnectedThrough" title="https://w3id.org/dmont/ontology#isServerConnectedThrough">is Server Connected Through</a> <sup class="type-op" title="object property">op</sup>
+    <a href="https://saref.etsi.org/saref4syst/System" target="_blank" title="https://saref.etsi.org/saref4syst/System">System</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterCommandCategory">
   <h3>Datamodel Parameter Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory</p>
+  <div class="comment">
+   <span class="markdown">Category of commands enabling the manipulation of one or more Datamodel Parameters.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -79,7 +55,7 @@ This section provides details for each class and property defined by DMOnt : Dev
     has members
    </dt>
    <dd>
-    <a href="#DatamodelParameterCreationCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand">Datamodel Parameter Creation Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterDeletionCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand">Datamodel Parameter Deletion Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterOperateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand">Datamodel Parameter Operate Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterRetrievalCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand">Datamodel Parameter Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterUpdateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand">Datamodel Parameter Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#DatamodelParameterCreationCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand">Datamodel parameter creation command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterDeletionCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand">Datamodel parameter deletion command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterOperateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand">Datamodel parameter operate command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterRetrievalCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand">Datamodel parameter retrieval command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatamodelParameterUpdateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand">Datamodel parameter update command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
@@ -92,6 +68,9 @@ This section provides details for each class and property defined by DMOnt : Dev
  <div class="entity" id="DeviceControlCommandCategory">
   <h3>Device Control Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceControlCommandCategory</p>
+  <div class="comment">
+   <span class="markdown">Category of commands enabling the manipulation of the device state, for instance the power state with a Reboot or Shutdown command.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -103,7 +82,7 @@ This section provides details for each class and property defined by DMOnt : Dev
     has members
    </dt>
    <dd>
-    <a href="#RebootCommand" title="https://w3id.org/dmont/ontology#RebootCommand">Reboot Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ResetCommand" title="https://w3id.org/dmont/ontology#ResetCommand">Reset Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#RebootCommand" title="https://w3id.org/dmont/ontology#RebootCommand">Reboot command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ResetCommand" title="https://w3id.org/dmont/ontology#ResetCommand">Reset command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ShutdownCommand" title="https://w3id.org/dmont/ontology#ShutdownCommand">Shutdown command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
@@ -116,6 +95,9 @@ This section provides details for each class and property defined by DMOnt : Dev
  <div class="entity" id="DeviceIdentityCommandCategory">
   <h3>Device Identity Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory</p>
+  <div class="comment">
+   <span class="markdown">Category of commands enabling the manipulation of device identification properties.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -127,7 +109,7 @@ This section provides details for each class and property defined by DMOnt : Dev
     has members
    </dt>
    <dd>
-    <a href="#DeviceInfoRetrievalCommand" title="https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand">Device Info Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#DeviceInfoRetrievalCommand" title="https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand">Device info retrieval command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
@@ -175,7 +157,7 @@ This section provides details for each class and property defined by DMOnt : Dev
     has members
    </dt>
    <dd>
-    <a href="#DatamodelParameterFunction" title="https://w3id.org/dmont/ontology#DatamodelParameterFunction">Datamodel Parameter Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceControlFunction" title="https://w3id.org/dmont/ontology#DeviceControlFunction">Device Control Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceIdentityFunction" title="https://w3id.org/dmont/ontology#DeviceIdentityFunction">Device Identity Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FirmwareManagementFunction" title="https://w3id.org/dmont/ontology#FirmwareManagementFunction">Firmware Management Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleManagementFunction" title="https://w3id.org/dmont/ontology#ModuleManagementFunction">Module Management Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageManagementFunction" title="https://w3id.org/dmont/ontology#PackageManagementFunction">Package Management Function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#SupportedDatamodelFunction" title="https://w3id.org/dmont/ontology#SupportedDatamodelFunction">Supported Datamodel Function</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#DatamodelParameterFunction" title="https://w3id.org/dmont/ontology#DatamodelParameterFunction">Datamodel parameter function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceControlFunction" title="https://w3id.org/dmont/ontology#DeviceControlFunction">Device control function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceIdentityFunction" title="https://w3id.org/dmont/ontology#DeviceIdentityFunction">Device identity function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FirmwareManagementFunction" title="https://w3id.org/dmont/ontology#FirmwareManagementFunction">Firmware management function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleManagementFunction" title="https://w3id.org/dmont/ontology#ModuleManagementFunction">Module management function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageManagementFunction" title="https://w3id.org/dmont/ontology#PackageManagementFunction">Package management function</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#SupportedDatamodelFunction" title="https://w3id.org/dmont/ontology#SupportedDatamodelFunction">Supported datamodel function</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -211,7 +193,7 @@ This section provides details for each class and property defined by DMOnt : Dev
     has super-classes
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/FeatureOfInterest" target="_blank" title="https://saref.etsi.org/core/FeatureOfInterest">Feature of interest</a> <sup class="type-c" title="class">c</sup>
+    <a href="https://saref.etsi.org/core/FeatureOfInterest" target="_blank" title="https://saref.etsi.org/core/FeatureOfInterest">Feature Of Interest</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -232,7 +214,7 @@ This section provides details for each class and property defined by DMOnt : Dev
     has members
    </dt>
    <dd>
-    <a href="#DeviceModuleActivated" title="https://w3id.org/dmont/ontology#DeviceModuleActivated">Device Module Activated</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceModuleDeactivated" title="https://w3id.org/dmont/ontology#DeviceModuleDeactivated">Device Module Deactivated</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#DeviceModuleActivated" title="https://w3id.org/dmont/ontology#DeviceModuleActivated">Device module activated</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceModuleDeactivated" title="https://w3id.org/dmont/ontology#DeviceModuleDeactivated">Device module deactivated</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
@@ -253,7 +235,7 @@ This section provides details for each class and property defined by DMOnt : Dev
     has super-classes
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/FeatureOfInterest" target="_blank" title="https://saref.etsi.org/core/FeatureOfInterest">Feature of interest</a> <sup class="type-c" title="class">c</sup>
+    <a href="https://saref.etsi.org/core/FeatureOfInterest" target="_blank" title="https://saref.etsi.org/core/FeatureOfInterest">Feature Of Interest</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -274,7 +256,7 @@ This section provides details for each class and property defined by DMOnt : Dev
     has members
    </dt>
    <dd>
-    <a href="#DevicePackageDownloaded" title="https://w3id.org/dmont/ontology#DevicePackageDownloaded">Device Package Downloaded</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageDownloading" title="https://w3id.org/dmont/ontology#DevicePackageDownloading">Device Package Downloading</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageInstalled" title="https://w3id.org/dmont/ontology#DevicePackageInstalled">Device Package Installed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageInstalling" title="https://w3id.org/dmont/ontology#DevicePackageInstalling">Device Package Installing</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageUninstalled" title="https://w3id.org/dmont/ontology#DevicePackageUninstalled">Device Package Uninstalled</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageUninstalling" title="https://w3id.org/dmont/ontology#DevicePackageUninstalling">Device Package Uninstalling</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageValidated" title="https://w3id.org/dmont/ontology#DevicePackageValidated">Device Package Validated</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#DevicePackageDownloaded" title="https://w3id.org/dmont/ontology#DevicePackageDownloaded">Device package downloaded</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageDownloading" title="https://w3id.org/dmont/ontology#DevicePackageDownloading">Device package downloading</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageInstalled" title="https://w3id.org/dmont/ontology#DevicePackageInstalled">Device package installed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageInstalling" title="https://w3id.org/dmont/ontology#DevicePackageInstalling">Device package installing</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageUninstalled" title="https://w3id.org/dmont/ontology#DevicePackageUninstalled">Device package uninstalled</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageUninstalling" title="https://w3id.org/dmont/ontology#DevicePackageUninstalling">Device package uninstalling</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DevicePackageValidated" title="https://w3id.org/dmont/ontology#DevicePackageValidated">Device package validated</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
@@ -287,6 +269,9 @@ This section provides details for each class and property defined by DMOnt : Dev
  <div class="entity" id="FirmwareManagementCommandCategory">
   <h3>Firmware Management Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory</p>
+  <div class="comment">
+   <span class="markdown">Category of commands enabling the manipulation of device firmwares.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -298,7 +283,7 @@ This section provides details for each class and property defined by DMOnt : Dev
     has members
    </dt>
    <dd>
-    <a href="#FirmwareInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand">Firmware Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FirmwareUpdateCommand" title="https://w3id.org/dmont/ontology#FirmwareUpdateCommand">Firmware Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#FirmwareInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand">Firmware information retrieval command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FirmwareUpdateCommand" title="https://w3id.org/dmont/ontology#FirmwareUpdateCommand">Firmware update command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
@@ -323,6 +308,31 @@ This section provides details for each class and property defined by DMOnt : Dev
    </dd>
   </dl>
  </div>
+ <div class="entity" id="ManagementConnection">
+  <h3>Management Connection<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ManagementConnection</p>
+  <div class="comment">
+   <span class="markdown">Abstract representation of the connection between a Client and a Server. It does not necessarily imply that a persistent connection is established between the entities - such as a TCP connection. It represents the link and the capability of the Server to interact with the Client. For instance, the Client has been authenticated by the Server with a certificate, and/or the client has received a configuration for access rights to its functions for the Server.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#enablesManagementService" title="https://w3id.org/dmont/ontology#enablesManagementService">enables management service</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasConnection" title="https://w3id.org/dmont/ontology#hasConnection">has connection</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="ManagementService">
   <h3>Management Service<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ManagementService</p>
@@ -340,19 +350,22 @@ This section provides details for each class and property defined by DMOnt : Dev
     is in domain of
    </dt>
    <dd>
-    <a href="#hasConnection" title="https://w3id.org/dmont/ontology#hasConnection">has Connection</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasConnection" title="https://w3id.org/dmont/ontology#hasConnection">has connection</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#enablesManagementService" title="https://w3id.org/dmont/ontology#enablesManagementService">enables Management Service</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#enablesManagementService" title="https://w3id.org/dmont/ontology#enablesManagementService">enables management service</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModuleManagementCommandCategory">
   <h3>Module Management Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleManagementCommandCategory</p>
+  <div class="comment">
+   <span class="markdown">Category of commands enabling the manipulation of device modules.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -364,7 +377,7 @@ This section provides details for each class and property defined by DMOnt : Dev
     has members
    </dt>
    <dd>
-    <a href="#ModuleActivationCommand" title="https://w3id.org/dmont/ontology#ModuleActivationCommand">Module Activation Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleDeactivationCommand" title="https://w3id.org/dmont/ontology#ModuleDeactivationCommand">Module Deactivation Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleDiscoveryCommand" title="https://w3id.org/dmont/ontology#ModuleDiscoveryCommand">Module Discovery Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand">Module Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#ModuleActivationCommand" title="https://w3id.org/dmont/ontology#ModuleActivationCommand">Module activation command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleDeactivationCommand" title="https://w3id.org/dmont/ontology#ModuleDeactivationCommand">Module deactivation command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleDiscoveryCommand" title="https://w3id.org/dmont/ontology#ModuleDiscoveryCommand">Module discovery command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ModuleInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand">Module information retrieval command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
@@ -377,6 +390,9 @@ This section provides details for each class and property defined by DMOnt : Dev
  <div class="entity" id="PackageManagementCommandCategory">
   <h3>Package Management Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageManagementCommandCategory</p>
+  <div class="comment">
+   <span class="markdown">Category of commands enabling the manipulation of device packages.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -388,7 +404,7 @@ This section provides details for each class and property defined by DMOnt : Dev
     has members
    </dt>
    <dd>
-    <a href="#PackageCreationCommand" title="https://w3id.org/dmont/ontology#PackageCreationCommand">Package Creation Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageDeletionCommand" title="https://w3id.org/dmont/ontology#PackageDeletionCommand">Package Deletion Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageDiscoveryCommand" title="https://w3id.org/dmont/ontology#PackageDiscoveryCommand">Package Discovery Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand">Package Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageInstallCommand" title="https://w3id.org/dmont/ontology#PackageInstallCommand">Package Install Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageUninstallCommand" title="https://w3id.org/dmont/ontology#PackageUninstallCommand">Package Uninstall Command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageUpdateCommand" title="https://w3id.org/dmont/ontology#PackageUpdateCommand">Package Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#PackageCreationCommand" title="https://w3id.org/dmont/ontology#PackageCreationCommand">Package creation command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageDeletionCommand" title="https://w3id.org/dmont/ontology#PackageDeletionCommand">Package deletion command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageDiscoveryCommand" title="https://w3id.org/dmont/ontology#PackageDiscoveryCommand">Package discovery command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand">Package information retrieval command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageInstallCommand" title="https://w3id.org/dmont/ontology#PackageInstallCommand">Package install command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageUninstallCommand" title="https://w3id.org/dmont/ontology#PackageUninstallCommand">Package uninstall command</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PackageUpdateCommand" title="https://w3id.org/dmont/ontology#PackageUpdateCommand">Package update command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
@@ -406,22 +422,19 @@ This section provides details for each class and property defined by DMOnt : Dev
   </div>
   <dl class="description">
    <dt>
-    is in domain of
+    has super-classes
    </dt>
    <dd>
-    <a href="#isServerConnectedThrough" title="https://w3id.org/dmont/ontology#isServerConnectedThrough">is Server Connected Through</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#connectsServer" title="https://w3id.org/dmont/ontology#connectsServer">connects Server</a> <sup class="type-op" title="object property">op</sup>
+    <a href="https://saref.etsi.org/saref4syst/System" target="_blank" title="https://saref.etsi.org/saref4syst/System">System</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="SupportedDatamodelCommandCategory">
   <h3>Supported Datamodel Command Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory</p>
+  <div class="comment">
+   <span class="markdown">Category of commands enabling the manipulation of supported datamodels.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -433,7 +446,7 @@ This section provides details for each class and property defined by DMOnt : Dev
     has members
    </dt>
    <dd>
-    <a href="#SupportedDatamodelRetrievalCommand" title="https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand">Supported Datamodel Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#SupportedDatamodelRetrievalCommand" title="https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand">Supported datamodel retrieval command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
@@ -446,75 +459,22 @@ This section provides details for each class and property defined by DMOnt : Dev
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
-  <li><a href="#connectsClient" title="https://w3id.org/dmont/ontology#connectsClient"> <span>connects Client</span> </a></li>
-  <li><a href="#connectsServer" title="https://w3id.org/dmont/ontology#connectsServer"> <span>connects Server</span> </a></li>
-  <li><a href="#enablesManagementService" title="https://w3id.org/dmont/ontology#enablesManagementService"> <span>enables Management Service</span> </a></li>
-  <li><a href="#hasConnection" title="https://w3id.org/dmont/ontology#hasConnection"> <span>has Connection</span> </a></li>
-  <li><a href="#isClientConnectedThrough" title="https://w3id.org/dmont/ontology#isClientConnectedThrough"> <span>is Client Connected Through</span> </a></li>
-  <li><a href="#isServerConnectedThrough" title="https://w3id.org/dmont/ontology#isServerConnectedThrough"> <span>is Server Connected Through</span> </a></li>
+  <li><a href="#enablesManagementService" title="https://w3id.org/dmont/ontology#enablesManagementService">enables management service</a></li>
+  <li><a href="#hasConnection" title="https://w3id.org/dmont/ontology#hasConnection">has connection</a></li>
  </ul>
- <div class="entity" id="connectsClient">
-  <h3>connects Client<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#connectsClient</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Connection" title="https://w3id.org/dmont/ontology#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#Client" title="https://w3id.org/dmont/ontology#Client">Client</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#isClientConnectedThrough" title="https://w3id.org/dmont/ontology#isClientConnectedThrough">is Client Connected Through</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="connectsServer">
-  <h3>connects Server<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#connectsServer</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Connection" title="https://w3id.org/dmont/ontology#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#Server" title="https://w3id.org/dmont/ontology#Server">Server</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#isServerConnectedThrough" title="https://w3id.org/dmont/ontology#isServerConnectedThrough">is Server Connected Through</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="enablesManagementService">
-  <h3>enables Management Service<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>enables management service<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#enablesManagementService</p>
+  <div class="comment">
+   <span class="markdown">A relationship between a Management Service and Management Connection that represents the fact the a Management Service only exists thanks to the Management Connection. If the Management Connection is closed, the Management Service does not exist anymore.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
      has domain
     </dt>
     <dd>
-     <a href="#Connection" title="https://w3id.org/dmont/ontology#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ManagementConnection" title="https://w3id.org/dmont/ontology#ManagementConnection">Management Connection</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -526,14 +486,17 @@ This section provides details for each class and property defined by DMOnt : Dev
      is inverse of
     </dt>
     <dd>
-     <a href="#hasConnection" title="https://w3id.org/dmont/ontology#hasConnection">has Connection</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#hasConnection" title="https://w3id.org/dmont/ontology#hasConnection">has connection</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="hasConnection">
-  <h3>has Connection<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>has connection<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#hasConnection</p>
+  <div class="comment">
+   <span class="markdown">A relationship between a Management Service and a Management Connection, indicating that the Management Service exists solely because of the Management Connection. If the Management Connection ceases to exist, the Management Service will also cease to exist..</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -546,65 +509,13 @@ This section provides details for each class and property defined by DMOnt : Dev
      has range
     </dt>
     <dd>
-     <a href="#Connection" title="https://w3id.org/dmont/ontology#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ManagementConnection" title="https://w3id.org/dmont/ontology#ManagementConnection">Management Connection</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
     </dt>
     <dd>
-     <a href="#enablesManagementService" title="https://w3id.org/dmont/ontology#enablesManagementService">enables Management Service</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="isClientConnectedThrough">
-  <h3>is Client Connected Through<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#isClientConnectedThrough</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Client" title="https://w3id.org/dmont/ontology#Client">Client</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#Connection" title="https://w3id.org/dmont/ontology#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#connectsClient" title="https://w3id.org/dmont/ontology#connectsClient">connects Client</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="isServerConnectedThrough">
-  <h3>is Server Connected Through<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#isServerConnectedThrough</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Server" title="https://w3id.org/dmont/ontology#Server">Server</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#Connection" title="https://w3id.org/dmont/ontology#Connection">Connection</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#connectsServer" title="https://w3id.org/dmont/ontology#connectsServer">connects Server</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#enablesManagementService" title="https://w3id.org/dmont/ontology#enablesManagementService">enables management service</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -612,68 +523,72 @@ This section provides details for each class and property defined by DMOnt : Dev
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
  <h3 id="namedindividuals" class="list">Named Individuals</h3>
  <ul class="hlist">
-  <li><a href="#DatamodelParameterCreationCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand"> <span>Datamodel Parameter Creation Command</span> </a></li>
-  <li><a href="#DatamodelParameterDeletionCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand"> <span>Datamodel Parameter Deletion Command</span> </a></li>
-  <li><a href="#DatamodelParameterFunction" title="https://w3id.org/dmont/ontology#DatamodelParameterFunction"> <span>Datamodel Parameter Function</span> </a></li>
-  <li><a href="#DatamodelParameterInstanceName" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceName"> <span>Datamodel Parameter Instance Name</span> </a></li>
-  <li><a href="#DatamodelParameterInstanceProperty" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty"> <span>Datamodel Parameter Instance Property</span> </a></li>
-  <li><a href="#DatamodelParameterInstanceValue" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceValue"> <span>Datamodel Parameter Instance Value</span> </a></li>
-  <li><a href="#DatamodelParameterOperateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand"> <span>Datamodel Parameter Operate Command</span> </a></li>
-  <li><a href="#DatamodelParameterRetrievalCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand"> <span>Datamodel Parameter Retrieval Command</span> </a></li>
-  <li><a href="#DatamodelParameterUpdateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand"> <span>Datamodel Parameter Update Command</span> </a></li>
-  <li><a href="#DeviceControlFunction" title="https://w3id.org/dmont/ontology#DeviceControlFunction"> <span>Device Control Function</span> </a></li>
-  <li><a href="#DeviceIdentityFunction" title="https://w3id.org/dmont/ontology#DeviceIdentityFunction"> <span>Device Identity Function</span> </a></li>
-  <li><a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty"> <span>Device Identity Property</span> </a></li>
-  <li><a href="#DeviceInfoRetrievalCommand" title="https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand"> <span>Device Info Retrieval Command</span> </a></li>
-  <li><a href="#DeviceModuleActivated" title="https://w3id.org/dmont/ontology#DeviceModuleActivated"> <span>Device Module Activated</span> </a></li>
-  <li><a href="#DeviceModuleDeactivated" title="https://w3id.org/dmont/ontology#DeviceModuleDeactivated"> <span>Device Module Deactivated</span> </a></li>
-  <li><a href="#DevicePackageDownloaded" title="https://w3id.org/dmont/ontology#DevicePackageDownloaded"> <span>Device Package Downloaded</span> </a></li>
-  <li><a href="#DevicePackageDownloading" title="https://w3id.org/dmont/ontology#DevicePackageDownloading"> <span>Device Package Downloading</span> </a></li>
-  <li><a href="#DevicePackageInstalled" title="https://w3id.org/dmont/ontology#DevicePackageInstalled"> <span>Device Package Installed</span> </a></li>
-  <li><a href="#DevicePackageInstalling" title="https://w3id.org/dmont/ontology#DevicePackageInstalling"> <span>Device Package Installing</span> </a></li>
-  <li><a href="#DevicePackageUninstalled" title="https://w3id.org/dmont/ontology#DevicePackageUninstalled"> <span>Device Package Uninstalled</span> </a></li>
-  <li><a href="#DevicePackageUninstalling" title="https://w3id.org/dmont/ontology#DevicePackageUninstalling"> <span>Device Package Uninstalling</span> </a></li>
-  <li><a href="#DevicePackageValidated" title="https://w3id.org/dmont/ontology#DevicePackageValidated"> <span>Device Package Validated</span> </a></li>
-  <li><a href="#FirmwareInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand"> <span>Firmware Information Retrieval Command</span> </a></li>
-  <li><a href="#FirmwareManagementFunction" title="https://w3id.org/dmont/ontology#FirmwareManagementFunction"> <span>Firmware Management Function</span> </a></li>
-  <li><a href="#FirmwareProperty" title="https://w3id.org/dmont/ontology#FirmwareProperty"> <span>Firmware Property</span> </a></li>
-  <li><a href="#FirmwareUpdateCommand" title="https://w3id.org/dmont/ontology#FirmwareUpdateCommand"> <span>Firmware Update Command</span> </a></li>
-  <li><a href="#FirmwareVersion" title="https://w3id.org/dmont/ontology#FirmwareVersion"> <span>Firmware Version</span> </a></li>
-  <li><a href="#HardwareVersion" title="https://w3id.org/dmont/ontology#HardwareVersion"> <span>Hardware Version</span> </a></li>
-  <li><a href="#Manufacturer" title="https://w3id.org/dmont/ontology#Manufacturer"> <span>Manufacturer</span> </a></li>
-  <li><a href="#ModelName" title="https://w3id.org/dmont/ontology#ModelName"> <span>Model Name</span> </a></li>
-  <li><a href="#ModelNumber" title="https://w3id.org/dmont/ontology#ModelNumber"> <span>Model Number</span> </a></li>
-  <li><a href="#ModuleActivationCommand" title="https://w3id.org/dmont/ontology#ModuleActivationCommand"> <span>Module Activation Command</span> </a></li>
-  <li><a href="#ModuleDeactivationCommand" title="https://w3id.org/dmont/ontology#ModuleDeactivationCommand"> <span>Module Deactivation Command</span> </a></li>
-  <li><a href="#ModuleDiscoveryCommand" title="https://w3id.org/dmont/ontology#ModuleDiscoveryCommand"> <span>Module Discovery Command</span> </a></li>
-  <li><a href="#ModuleInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand"> <span>Module Information Retrieval Command</span> </a></li>
-  <li><a href="#ModuleManagementFunction" title="https://w3id.org/dmont/ontology#ModuleManagementFunction"> <span>Module Management Function</span> </a></li>
-  <li><a href="#ModuleName" title="https://w3id.org/dmont/ontology#ModuleName"> <span>Module Name</span> </a></li>
-  <li><a href="#ModuleProperty" title="https://w3id.org/dmont/ontology#ModuleProperty"> <span>Module Property</span> </a></li>
-  <li><a href="#ModuleVersion" title="https://w3id.org/dmont/ontology#ModuleVersion"> <span>Module Version</span> </a></li>
-  <li><a href="#PackageCreationCommand" title="https://w3id.org/dmont/ontology#PackageCreationCommand"> <span>Package Creation Command</span> </a></li>
-  <li><a href="#PackageDeletionCommand" title="https://w3id.org/dmont/ontology#PackageDeletionCommand"> <span>Package Deletion Command</span> </a></li>
-  <li><a href="#PackageDiscoveryCommand" title="https://w3id.org/dmont/ontology#PackageDiscoveryCommand"> <span>Package Discovery Command</span> </a></li>
-  <li><a href="#PackageInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand"> <span>Package Information Retrieval Command</span> </a></li>
-  <li><a href="#PackageInstallCommand" title="https://w3id.org/dmont/ontology#PackageInstallCommand"> <span>Package Install Command</span> </a></li>
-  <li><a href="#PackageManagementFunction" title="https://w3id.org/dmont/ontology#PackageManagementFunction"> <span>Package Management Function</span> </a></li>
-  <li><a href="#PackageName" title="https://w3id.org/dmont/ontology#PackageName"> <span>Package Name</span> </a></li>
-  <li><a href="#PackageProperty" title="https://w3id.org/dmont/ontology#PackageProperty"> <span>Package Property</span> </a></li>
-  <li><a href="#PackageUninstallCommand" title="https://w3id.org/dmont/ontology#PackageUninstallCommand"> <span>Package Uninstall Command</span> </a></li>
-  <li><a href="#PackageUpdateCommand" title="https://w3id.org/dmont/ontology#PackageUpdateCommand"> <span>Package Update Command</span> </a></li>
-  <li><a href="#PackageVersion" title="https://w3id.org/dmont/ontology#PackageVersion"> <span>Package Version</span> </a></li>
-  <li><a href="#RebootCommand" title="https://w3id.org/dmont/ontology#RebootCommand"> <span>Reboot Command</span> </a></li>
-  <li><a href="#ResetCommand" title="https://w3id.org/dmont/ontology#ResetCommand"> <span>Reset Command</span> </a></li>
-  <li><a href="#SerialNumber" title="https://w3id.org/dmont/ontology#SerialNumber"> <span>Serial Number</span> </a></li>
-  <li><a href="#SupportedDatamodelFunction" title="https://w3id.org/dmont/ontology#SupportedDatamodelFunction"> <span>Supported Datamodel Function</span> </a></li>
-  <li><a href="#SupportedDatamodelParameterName" title="https://w3id.org/dmont/ontology#SupportedDatamodelParameterName"> <span>Supported Datamodel Parameter Name</span> </a></li>
-  <li><a href="#SupportedDatamodelParameterProperty" title="https://w3id.org/dmont/ontology#SupportedDatamodelParameterProperty"> <span>Supported Datamodel Parameter Property</span> </a></li>
-  <li><a href="#SupportedDatamodelParameterType" title="https://w3id.org/dmont/ontology#SupportedDatamodelParameterType"> <span>Supported Datamodel Parameter Type</span> </a></li>
-  <li><a href="#SupportedDatamodelRetrievalCommand" title="https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand"> <span>Supported Datamodel Retrieval Command</span> </a></li>
+  <li><a href="#DatamodelParameterCreationCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand">Datamodel parameter creation command</a></li>
+  <li><a href="#DatamodelParameterDeletionCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand">Datamodel parameter deletion command</a></li>
+  <li><a href="#DatamodelParameterFunction" title="https://w3id.org/dmont/ontology#DatamodelParameterFunction">Datamodel parameter function</a></li>
+  <li><a href="#DatamodelParameterInstanceName" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceName">Datamodel parameter instance name</a></li>
+  <li><a href="#DatamodelParameterInstanceProperty" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty">Datamodel parameter instance property</a></li>
+  <li><a href="#DatamodelParameterInstanceValue" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceValue">Datamodel parameter instance value</a></li>
+  <li><a href="#DatamodelParameterOperateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand">Datamodel parameter operate command</a></li>
+  <li><a href="#DatamodelParameterRetrievalCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand">Datamodel parameter retrieval command</a></li>
+  <li><a href="#DatamodelParameterUpdateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand">Datamodel parameter update command</a></li>
+  <li><a href="#DeviceControlFunction" title="https://w3id.org/dmont/ontology#DeviceControlFunction">Device control function</a></li>
+  <li><a href="#DeviceIdentityFunction" title="https://w3id.org/dmont/ontology#DeviceIdentityFunction">Device identity function</a></li>
+  <li><a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device identity property</a></li>
+  <li><a href="#DeviceInfoRetrievalCommand" title="https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand">Device info retrieval command</a></li>
+  <li><a href="#DeviceModuleActivated" title="https://w3id.org/dmont/ontology#DeviceModuleActivated">Device module activated</a></li>
+  <li><a href="#DeviceModuleDeactivated" title="https://w3id.org/dmont/ontology#DeviceModuleDeactivated">Device module deactivated</a></li>
+  <li><a href="#DevicePackageDownloaded" title="https://w3id.org/dmont/ontology#DevicePackageDownloaded">Device package downloaded</a></li>
+  <li><a href="#DevicePackageDownloading" title="https://w3id.org/dmont/ontology#DevicePackageDownloading">Device package downloading</a></li>
+  <li><a href="#DevicePackageInstalled" title="https://w3id.org/dmont/ontology#DevicePackageInstalled">Device package installed</a></li>
+  <li><a href="#DevicePackageInstalling" title="https://w3id.org/dmont/ontology#DevicePackageInstalling">Device package installing</a></li>
+  <li><a href="#DevicePackageUninstalled" title="https://w3id.org/dmont/ontology#DevicePackageUninstalled">Device package uninstalled</a></li>
+  <li><a href="#DevicePackageUninstalling" title="https://w3id.org/dmont/ontology#DevicePackageUninstalling">Device package uninstalling</a></li>
+  <li><a href="#DevicePackageValidated" title="https://w3id.org/dmont/ontology#DevicePackageValidated">Device package validated</a></li>
+  <li><a href="#FirmwareInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand">Firmware information retrieval command</a></li>
+  <li><a href="#FirmwareManagementFunction" title="https://w3id.org/dmont/ontology#FirmwareManagementFunction">Firmware management function</a></li>
+  <li><a href="#FirmwareProperty" title="https://w3id.org/dmont/ontology#FirmwareProperty">Firmware property</a></li>
+  <li><a href="#FirmwareUpdateCommand" title="https://w3id.org/dmont/ontology#FirmwareUpdateCommand">Firmware update command</a></li>
+  <li><a href="#FirmwareVersion" title="https://w3id.org/dmont/ontology#FirmwareVersion">Firmware version</a></li>
+  <li><a href="#HardwareVersion" title="https://w3id.org/dmont/ontology#HardwareVersion">Hardware version</a></li>
+  <li><a href="#Manufacturer" title="https://w3id.org/dmont/ontology#Manufacturer">Manufacturer</a></li>
+  <li><a href="#ModelName" title="https://w3id.org/dmont/ontology#ModelName">Model name</a></li>
+  <li><a href="#ModelNumber" title="https://w3id.org/dmont/ontology#ModelNumber">Model number</a></li>
+  <li><a href="#ModuleActivationCommand" title="https://w3id.org/dmont/ontology#ModuleActivationCommand">Module activation command</a></li>
+  <li><a href="#ModuleDeactivationCommand" title="https://w3id.org/dmont/ontology#ModuleDeactivationCommand">Module deactivation command</a></li>
+  <li><a href="#ModuleDiscoveryCommand" title="https://w3id.org/dmont/ontology#ModuleDiscoveryCommand">Module discovery command</a></li>
+  <li><a href="#ModuleInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand">Module information retrieval command</a></li>
+  <li><a href="#ModuleManagementFunction" title="https://w3id.org/dmont/ontology#ModuleManagementFunction">Module management function</a></li>
+  <li><a href="#ModuleName" title="https://w3id.org/dmont/ontology#ModuleName">Module name</a></li>
+  <li><a href="#ModuleProperty" title="https://w3id.org/dmont/ontology#ModuleProperty">Module property</a></li>
+  <li><a href="#ModuleVersion" title="https://w3id.org/dmont/ontology#ModuleVersion">Module version</a></li>
+  <li><a href="#PackageCreationCommand" title="https://w3id.org/dmont/ontology#PackageCreationCommand">Package creation command</a></li>
+  <li><a href="#PackageDeletionCommand" title="https://w3id.org/dmont/ontology#PackageDeletionCommand">Package deletion command</a></li>
+  <li><a href="#PackageDiscoveryCommand" title="https://w3id.org/dmont/ontology#PackageDiscoveryCommand">Package discovery command</a></li>
+  <li><a href="#PackageInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand">Package information retrieval command</a></li>
+  <li><a href="#PackageInstallCommand" title="https://w3id.org/dmont/ontology#PackageInstallCommand">Package install command</a></li>
+  <li><a href="#PackageManagementFunction" title="https://w3id.org/dmont/ontology#PackageManagementFunction">Package management function</a></li>
+  <li><a href="#PackageName" title="https://w3id.org/dmont/ontology#PackageName">Package name</a></li>
+  <li><a href="#PackageProperty" title="https://w3id.org/dmont/ontology#PackageProperty">Package property</a></li>
+  <li><a href="#PackageUninstallCommand" title="https://w3id.org/dmont/ontology#PackageUninstallCommand">Package uninstall command</a></li>
+  <li><a href="#PackageUpdateCommand" title="https://w3id.org/dmont/ontology#PackageUpdateCommand">Package update command</a></li>
+  <li><a href="#PackageVersion" title="https://w3id.org/dmont/ontology#PackageVersion">Package version</a></li>
+  <li><a href="#RebootCommand" title="https://w3id.org/dmont/ontology#RebootCommand">Reboot command</a></li>
+  <li><a href="#ResetCommand" title="https://w3id.org/dmont/ontology#ResetCommand">Reset command</a></li>
+  <li><a href="#SerialNumber" title="https://w3id.org/dmont/ontology#SerialNumber">Serial number</a></li>
+  <li><a href="#ShutdownCommand" title="https://w3id.org/dmont/ontology#ShutdownCommand">Shutdown command</a></li>
+  <li><a href="#SupportedDatamodelFunction" title="https://w3id.org/dmont/ontology#SupportedDatamodelFunction">Supported datamodel function</a></li>
+  <li><a href="#SupportedDatamodelParameterName" title="https://w3id.org/dmont/ontology#SupportedDatamodelParameterName">Supported datamodel parameter name</a></li>
+  <li><a href="#SupportedDatamodelParameterProperty" title="https://w3id.org/dmont/ontology#SupportedDatamodelParameterProperty">Supported datamodel parameter property</a></li>
+  <li><a href="#SupportedDatamodelParameterType" title="https://w3id.org/dmont/ontology#SupportedDatamodelParameterType">Supported datamodel parameter type</a></li>
+  <li><a href="#SupportedDatamodelRetrievalCommand" title="https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand">Supported datamodel retrieval command</a></li>
  </ul>
  <div class="entity" id="DatamodelParameterCreationCommand">
-  <h3>Datamodel Parameter Creation Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Datamodel parameter creation command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to create a datamodel parameter instance.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -684,8 +599,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterDeletionCommand">
-  <h3>Datamodel Parameter Deletion Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Datamodel parameter deletion command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to delete a datamodel parameter instance.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -696,8 +614,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterFunction">
-  <h3>Datamodel Parameter Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Datamodel parameter function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterFunction</p>
+  <div class="comment">
+   <span class="markdown">Function kind for the manipulation of datamodel parameters.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -709,22 +630,25 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterCreationCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand">Datamodel Parameter Creation Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterCreationCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand">Datamodel parameter creation command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterDeletionCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand">Datamodel Parameter Deletion Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterDeletionCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand">Datamodel parameter deletion command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterOperateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand">Datamodel Parameter Operate Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterOperateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand">Datamodel parameter operate command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterUpdateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand">Datamodel Parameter Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterUpdateCommand" title="https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand">Datamodel parameter update command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterInstanceName">
-  <h3>Datamodel Parameter Instance Name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Datamodel parameter instance name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterInstanceName</p>
+  <div class="comment">
+   <span class="markdown">Name for an instance of a datamodel parameter.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -736,12 +660,12 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterInstanceProperty" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty">Datamodel Parameter Instance Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterInstanceProperty" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty">Datamodel parameter instance property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterInstanceProperty">
-  <h3>Datamodel Parameter Instance Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Datamodel parameter instance property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty</p>
   <div class="comment">
    <span class="markdown">Property kind that represents the properties of a Datamodel Parameter Instance. These parameter instances represent the actionable capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client. It should not be confused with the Supported Datamodel Parameter, which represents the abstract capabilities of the Device.</span>
@@ -756,8 +680,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterInstanceValue">
-  <h3>Datamodel Parameter Instance Value<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Datamodel parameter instance value<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterInstanceValue</p>
+  <div class="comment">
+   <span class="markdown">Value of a datamodel parameter instance, obtained as the result of the execution of a Datamodel parameter retrieval command.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -769,13 +696,16 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterInstanceProperty" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty">Datamodel Parameter Instance Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DatamodelParameterInstanceProperty" title="https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty">Datamodel parameter instance property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterOperateCommand">
-  <h3>Datamodel Parameter Operate Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Datamodel parameter operate command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to trigger the execution of a datamodel parameter instance that corresponds to an executable process on a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -786,8 +716,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterRetrievalCommand">
-  <h3>Datamodel Parameter Retrieval Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Datamodel parameter retrieval command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to retrieve the value of a Datamodel parameter instance.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -798,8 +731,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DatamodelParameterUpdateCommand">
-  <h3>Datamodel Parameter Update Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Datamodel parameter update command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to update the value of a Datamodel parameter instance.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -810,8 +746,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DeviceControlFunction">
-  <h3>Device Control Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device control function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceControlFunction</p>
+  <div class="comment">
+   <span class="markdown">Function kind to control the global state of the device, e.g., its power state through the Reboot function, or the global configuration through the Reset function.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -823,16 +762,19 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#RebootCommand" title="https://w3id.org/dmont/ontology#RebootCommand">Reboot Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#RebootCommand" title="https://w3id.org/dmont/ontology#RebootCommand">Reboot command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ResetCommand" title="https://w3id.org/dmont/ontology#ResetCommand">Reset Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#ResetCommand" title="https://w3id.org/dmont/ontology#ResetCommand">Reset command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceIdentityFunction">
-  <h3>Device Identity Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device identity function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceIdentityFunction</p>
+  <div class="comment">
+   <span class="markdown">Function kind that represents the capabilities of a device to expose its own identity.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -844,15 +786,15 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceInfoRetrievalCommand" title="https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand">Device Info Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceInfoRetrievalCommand" title="https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand">Device info retrieval command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="DeviceIdentityProperty">
-  <h3>Device Identity Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device identity property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceIdentityProperty</p>
   <div class="comment">
-   <span class="markdown">Property kind that represents the properties of a Device Identity.</span>
+   <span class="markdown">Set of properties that constitutes a Device Identity.</span>
   </div>
   <dl class="description">
    <dt>
@@ -864,8 +806,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DeviceInfoRetrievalCommand">
-  <h3>Device Info Retrieval Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device info retrieval command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand</p>
+  <div class="comment">
+   <span class="markdown">A command to retrieve any Device identity property.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -876,8 +821,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DeviceModuleActivated">
-  <h3>Device Module Activated<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device module activated<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceModuleActivated</p>
+  <div class="comment">
+   <span class="markdown">State of a Device Module whose related functions were made available on a device, either automatically after the Device Module installation, or through a Module activation command.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -888,8 +836,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DeviceModuleDeactivated">
-  <h3>Device Module Deactivated<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device module deactivated<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DeviceModuleDeactivated</p>
+  <div class="comment">
+   <span class="markdown">State of a Device Module whose related functions were made unavailable through a Module deactivation command.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -900,8 +851,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DevicePackageDownloaded">
-  <h3>Device Package Downloaded<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device package downloaded<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageDownloaded</p>
+  <div class="comment">
+   <span class="markdown">State of a Device Package whose set of required files are available of on the device, either through a download process from a Client, or an upload process from a Server.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -912,8 +866,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DevicePackageDownloading">
-  <h3>Device Package Downloading<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device package downloading<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageDownloading</p>
+  <div class="comment">
+   <span class="markdown">State of a Device Package that represents that the process of transferring the required package files is in progress. This is a transitory state, that changes to either the 'Device package downloaded' or the 'Device package initialized' states.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -924,8 +881,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DevicePackageInstalled">
-  <h3>Device Package Installed<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device package installed<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageInstalled</p>
+  <div class="comment">
+   <span class="markdown">State of a Device package whose resources have been made ready for their final purpose, after the download and install processes are completed.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -936,8 +896,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DevicePackageInstalling">
-  <h3>Device Package Installing<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device package installing<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageInstalling</p>
+  <div class="comment">
+   <span class="markdown">State of a Device Package that represents that the process of readying the required package files is in progress. Thisis a transitory state, that changes to either the 'Device package installed' or the 'Device package validated' states.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -948,8 +911,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DevicePackageUninstalled">
-  <h3>Device Package Uninstalled<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device package uninstalled<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageUninstalled</p>
+  <div class="comment">
+   <span class="markdown">State of a Device package whose resources have been installed, then removed from the device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -960,8 +926,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DevicePackageUninstalling">
-  <h3>Device Package Uninstalling<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device package uninstalling<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageUninstalling</p>
+  <div class="comment">
+   <span class="markdown">State of a Device Package that represents that the process of removing the associated package files is in progress. This is a transitory state, that changes to the 'Device package uninstalled' state.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -972,8 +941,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="DevicePackageValidated">
-  <h3>Device Package Validated<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Device package validated<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#DevicePackageValidated</p>
+  <div class="comment">
+   <span class="markdown">State of a Device Package that represents that the required package files are available on the device, and actually correspond to the expected files, without corruption. This state is optional is the Device package lifecycle, and depends on the client and package implementations.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -984,8 +956,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="FirmwareInformationRetrievalCommand">
-  <h3>Firmware Information Retrieval Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Firmware information retrieval command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to retrieve firmware information such as the current firmware version for a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -996,8 +971,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="FirmwareManagementFunction">
-  <h3>Firmware Management Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Firmware management function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#FirmwareManagementFunction</p>
+  <div class="comment">
+   <span class="markdown">Set of functions related to the management of the firmware for a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1009,18 +987,18 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#FirmwareInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand">Firmware Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#FirmwareInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand">Firmware information retrieval command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#FirmwareUpdateCommand" title="https://w3id.org/dmont/ontology#FirmwareUpdateCommand">Firmware Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#FirmwareUpdateCommand" title="https://w3id.org/dmont/ontology#FirmwareUpdateCommand">Firmware update command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="FirmwareProperty">
-  <h3>Firmware Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Firmware property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#FirmwareProperty</p>
   <div class="comment">
-   <span class="markdown">Property kind that represents the properties of the firmware of the device. The device firmware is the running base software for the device, which is automatically loaded into memory and executed at boot.</span>
+   <span class="markdown">Property kind that represents the properties of the firmware of a device. The device firmware is the running base software for a device, which is automatically loaded into memory and executed at boot.</span>
   </div>
   <dl class="description">
    <dt>
@@ -1032,8 +1010,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="FirmwareUpdateCommand">
-  <h3>Firmware Update Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Firmware update command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#FirmwareUpdateCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to trigger the update of the firmware of a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1044,8 +1025,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="FirmwareVersion">
-  <h3>Firmware Version<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Firmware version<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#FirmwareVersion</p>
+  <div class="comment">
+   <span class="markdown">The firmware version of a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1057,13 +1041,16 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#FirmwareProperty" title="https://w3id.org/dmont/ontology#FirmwareProperty">Firmware Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#FirmwareProperty" title="https://w3id.org/dmont/ontology#FirmwareProperty">Firmware property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="HardwareVersion">
-  <h3>Hardware Version<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Hardware version<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#HardwareVersion</p>
+  <div class="comment">
+   <span class="markdown">Device identity property referring to the specific version of the set of physical components of a device, known as hardware version.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1075,13 +1062,16 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device identity property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="Manufacturer">
   <h3>Manufacturer<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#Manufacturer</p>
+  <div class="comment">
+   <span class="markdown">Device identity property representing the manufacturer of the device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1093,13 +1083,16 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device identity property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModelName">
-  <h3>Model Name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Model name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModelName</p>
+  <div class="comment">
+   <span class="markdown">Device identity property that represents the device model, i.e., the denomination for a specific hardware design for this device, in a human-readable format.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1111,13 +1104,16 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device identity property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModelNumber">
-  <h3>Model Number<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Model number<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModelNumber</p>
+  <div class="comment">
+   <span class="markdown">The unique identifier assigned to a device model, used to distinguish it from other models and versions within a manufacturer's product lineup.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1129,13 +1125,16 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device identity property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModuleActivationCommand">
-  <h3>Module Activation Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Module activation command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleActivationCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to trigger the activation of a Device Module.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1146,8 +1145,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="ModuleDeactivationCommand">
-  <h3>Module Deactivation Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Module deactivation command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleDeactivationCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to trigger the deactivation of a Device Module.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1158,8 +1160,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="ModuleDiscoveryCommand">
-  <h3>Module Discovery Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Module discovery command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleDiscoveryCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to retrieve the list of Device Modules available on a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1170,8 +1175,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="ModuleInformationRetrievalCommand">
-  <h3>Module Information Retrieval Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Module information retrieval command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to retrieve device module information such as the name of the module or its version.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1182,8 +1190,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="ModuleManagementFunction">
-  <h3>Module Management Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Module management function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleManagementFunction</p>
+  <div class="comment">
+   <span class="markdown">Function kind for the management of Device Modules.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1195,22 +1206,25 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleActivationCommand" title="https://w3id.org/dmont/ontology#ModuleActivationCommand">Module Activation Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleActivationCommand" title="https://w3id.org/dmont/ontology#ModuleActivationCommand">Module activation command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleDeactivationCommand" title="https://w3id.org/dmont/ontology#ModuleDeactivationCommand">Module Deactivation Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleDeactivationCommand" title="https://w3id.org/dmont/ontology#ModuleDeactivationCommand">Module deactivation command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleDiscoveryCommand" title="https://w3id.org/dmont/ontology#ModuleDiscoveryCommand">Module Discovery Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleDiscoveryCommand" title="https://w3id.org/dmont/ontology#ModuleDiscoveryCommand">Module discovery command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand">Module Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand">Module information retrieval command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModuleName">
-  <h3>Module Name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Module name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleName</p>
+  <div class="comment">
+   <span class="markdown">The name of a device module.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1222,15 +1236,15 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleProperty" title="https://w3id.org/dmont/ontology#ModuleProperty">Module Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleProperty" title="https://w3id.org/dmont/ontology#ModuleProperty">Module property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ModuleProperty">
-  <h3>Module Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Module property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleProperty</p>
   <div class="comment">
-   <span class="markdown">Property kind that represents the properties of a DeviceModule</span>
+   <span class="markdown">Property kind that represents the properties of a Device Module.</span>
   </div>
   <dl class="description">
    <dt>
@@ -1242,8 +1256,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="ModuleVersion">
-  <h3>Module Version<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Module version<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ModuleVersion</p>
+  <div class="comment">
+   <span class="markdown">The version of a Device Module.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1255,13 +1272,16 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleProperty" title="https://w3id.org/dmont/ontology#ModuleProperty">Module Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#ModuleProperty" title="https://w3id.org/dmont/ontology#ModuleProperty">Module property</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="PackageCreationCommand">
-  <h3>Package Creation Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Package creation command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageCreationCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to trigger the creation of a Device Package on a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1272,8 +1292,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="PackageDeletionCommand">
-  <h3>Package Deletion Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Package deletion command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageDeletionCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to trigger the deletion of a Device Package on a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1284,8 +1307,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="PackageDiscoveryCommand">
-  <h3>Package Discovery Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Package discovery command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageDiscoveryCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to retrieve the list of available Device Packages on a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1296,8 +1322,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="PackageInformationRetrievalCommand">
-  <h3>Package Information Retrieval Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Package information retrieval command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to retrieve device package information such as the name of the package or its version.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1308,8 +1337,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="PackageInstallCommand">
-  <h3>Package Install Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Package install command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageInstallCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to trigger the installation of Device Package on a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1320,8 +1352,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="PackageManagementFunction">
-  <h3>Package Management Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Package management function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageManagementFunction</p>
+  <div class="comment">
+   <span class="markdown">Function kind related to the management of Device Packages on a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1333,31 +1368,34 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageCreationCommand" title="https://w3id.org/dmont/ontology#PackageCreationCommand">Package Creation Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageCreationCommand" title="https://w3id.org/dmont/ontology#PackageCreationCommand">Package creation command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageDeletionCommand" title="https://w3id.org/dmont/ontology#PackageDeletionCommand">Package Deletion Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageDeletionCommand" title="https://w3id.org/dmont/ontology#PackageDeletionCommand">Package deletion command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageDiscoveryCommand" title="https://w3id.org/dmont/ontology#PackageDiscoveryCommand">Package Discovery Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageDiscoveryCommand" title="https://w3id.org/dmont/ontology#PackageDiscoveryCommand">Package discovery command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand">Package Information Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageInformationRetrievalCommand" title="https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand">Package information retrieval command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageInstallCommand" title="https://w3id.org/dmont/ontology#PackageInstallCommand">Package Install Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageInstallCommand" title="https://w3id.org/dmont/ontology#PackageInstallCommand">Package install command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageUninstallCommand" title="https://w3id.org/dmont/ontology#PackageUninstallCommand">Package Uninstall Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageUninstallCommand" title="https://w3id.org/dmont/ontology#PackageUninstallCommand">Package uninstall command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageUpdateCommand" title="https://w3id.org/dmont/ontology#PackageUpdateCommand">Package Update Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#PackageUpdateCommand" title="https://w3id.org/dmont/ontology#PackageUpdateCommand">Package update command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="PackageName">
-  <h3>Package Name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Package name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageName</p>
+  <div class="comment">
+   <span class="markdown">The name of a Device Package.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1368,7 +1406,7 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="PackageProperty">
-  <h3>Package Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Package property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageProperty</p>
   <div class="comment">
    <span class="markdown">Property kind that represents the properties of a DevicePackage</span>
@@ -1383,8 +1421,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="PackageUninstallCommand">
-  <h3>Package Uninstall Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Package uninstall command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageUninstallCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to trigger the uninstallation of a Device Package on a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1395,8 +1436,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="PackageUpdateCommand">
-  <h3>Package Update Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Package update command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageUpdateCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to trigger the update of a Device Package on a device. This corresponds to the action of replacing, on a device, a Device Package by another Device Package with the same name, but a different version.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1407,8 +1451,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="PackageVersion">
-  <h3>Package Version<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Package version<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#PackageVersion</p>
+  <div class="comment">
+   <span class="markdown">The version of a device package.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1419,8 +1466,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="RebootCommand">
-  <h3>Reboot Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Reboot command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#RebootCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to trigger the reboot process of a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1431,8 +1481,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="ResetCommand">
-  <h3>Reset Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Reset command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ResetCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to change the entire state of a device and its resources to another state as predefined according to the device manufacturer policy.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1443,8 +1496,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="SerialNumber">
-  <h3>Serial Number<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Serial number<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SerialNumber</p>
+  <div class="comment">
+   <span class="markdown">Device identity property referring to the unique identifier assigned to an individual device, used for tracking, warranty, and support purposes, distinguishing it from all other units produced.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1456,13 +1512,31 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device Identity Property</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/2004/02/skos/core#narrower" target="_blank" title="http://www.w3.org/2004/02/skos/core#narrower">narrower</a> <sup class="type-op" title="object property">op</sup> <a href="#DeviceIdentityProperty" title="https://w3id.org/dmont/ontology#DeviceIdentityProperty">Device identity property</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ShutdownCommand">
+  <h3>Shutdown command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#ShutdownCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to trigger the shutdown process on a device.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#DeviceControlCommandCategory" title="https://w3id.org/dmont/ontology#DeviceControlCommandCategory">Device Control Command Category</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="SupportedDatamodelFunction">
-  <h3>Supported Datamodel Function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Supported datamodel function<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SupportedDatamodelFunction</p>
+  <div class="comment">
+   <span class="markdown">Function kind to manage the supported datamodel of a device.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1474,13 +1548,16 @@ This section provides details for each class and property defined by DMOnt : Dev
     has facts
    </dt>
    <dd>
-    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has command</a> <sup class="type-op" title="object property">op</sup> <a href="#SupportedDatamodelRetrievalCommand" title="https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand">Supported Datamodel Retrieval Command</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://saref.etsi.org/core/hasCommand" target="_blank" title="https://saref.etsi.org/core/hasCommand">has Command</a> <sup class="type-op" title="object property">op</sup> <a href="#SupportedDatamodelRetrievalCommand" title="https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand">Supported datamodel retrieval command</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="SupportedDatamodelParameterName">
-  <h3>Supported Datamodel Parameter Name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Supported datamodel parameter name<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SupportedDatamodelParameterName</p>
+  <div class="comment">
+   <span class="markdown">Name of a supported datamodel parameter.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1491,7 +1568,7 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="SupportedDatamodelParameterProperty">
-  <h3>Supported Datamodel Parameter Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Supported datamodel parameter property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SupportedDatamodelParameterProperty</p>
   <div class="comment">
    <span class="markdown">Property kind that represents the properties of a Supported Datamodel Parameter. These parameters represent the capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client. It should not be confused with the Datamodel Parameter Instance, which represents the actionable capabilities of the Device.</span>
@@ -1506,8 +1583,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="SupportedDatamodelParameterType">
-  <h3>Supported Datamodel Parameter Type<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Supported datamodel parameter type<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SupportedDatamodelParameterType</p>
+  <div class="comment">
+   <span class="markdown">Type of a supported datamodel parameter. For instance, this type can represent that the supported datamodel parameter is a reference to an executable resource. The corresponding type would be 'command' in the CWMP standard protocol, and its TR-181 technical report. This type can represent a reference to a measurement process on the device that retrieves a value. In that case, the supported datamodel parameter also describes the unit of that value. The type 'object' corresponds to a supported datamodel parameter that contains other supported datamodel parameters, creating a hierarchical structure. A final example would be a 'table', i.e., the corresponding datamodel parameter is a list of instances of the same object. For more information, we refer the reader to the specification documents of DM protocol standards such as TR-181 from the BroadBand Forum.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -1518,8 +1598,11 @@ This section provides details for each class and property defined by DMOnt : Dev
   </dl>
  </div>
  <div class="entity" id="SupportedDatamodelRetrievalCommand">
-  <h3>Supported Datamodel Retrieval Command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <h3>Supported datamodel retrieval command<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand</p>
+  <div class="comment">
+   <span class="markdown">Command to retrieve a supported datamodel parameter, which corresponds to the information required to access a datamodel parameter instance and interpret its value.</span>
+  </div>
   <dl class="description">
    <dt>
     belongs to

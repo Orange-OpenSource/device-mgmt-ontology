@@ -1,17 +1,55 @@
 <https://w3id.org/dmont/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/dmont/ontology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/dmont/ontology/2.0.0> .
-<https://w3id.org/dmont/ontology> <http://www.w3.org/2002/07/owl#imports> <https://saref.etsi.org/core/v3.2.1/> .
-<https://w3id.org/dmont/ontology> <http://purl.org/dc/terms/creator> "Cyrille Bareau (https://dblp.org/pid/52/1343.html)" .
-<https://w3id.org/dmont/ontology> <http://purl.org/dc/terms/creator> "François Aïssaoui (https://orcid.org/0000-0001-6772-2161)" .
-<https://w3id.org/dmont/ontology> <http://purl.org/dc/terms/creator> "Marc Douet (https://www.researchgate.net/profile/Marc-Douet)" .
-<https://w3id.org/dmont/ontology> <http://purl.org/dc/terms/creator> "Samuel Berlemont (https://orcid.org/0000-0003-0788-9837)" .
+<https://w3id.org/dmont/ontology> <http://www.w3.org/2002/07/owl#imports> <https://saref.etsi.org/core/v4.1.1/> .
+<https://w3id.org/dmont/ontology> <http://purl.org/dc/terms/abstract> "The Device Management (DM) domain consists in the remote administration of devices for an operator, such as a service provider or device manufacturer. \n\nThe proposal for an ontology for standardization in Device Management is motivated by the need to address challenges arising from the evolution of DM and the emergence of the Internet of Things (IoT).\n\nInitially, DM was introduced by manufacturers and telecommunication operators to ensure the proper functioning of devices like gateways and TV decoders, focusing on firmware management due to the high replacement costs of these devices. Over time, the scope of DM expanded to include configuration and customer care, enabling Telcos to configure value-added services, improve Quality of Service (QoS), and reduce costs. \n\nWith the rise of IoT, the DM landscape has shifted significantly. The proliferation of heterogeneous IoT devices and the temptation to produce disposable devices have highlighted the need for remote management for economic and ecological reasons. However, existing DM solutions face challenges due to the scale and diversity of IoT devices, as well as the prevalence of proprietary protocols and siloed solutions from various manufacturers. This has created issues with heterogeneity in device capabilities, DM protocols, and management solutions. Standardization becomes essential to facilitate common, interoperable protocols for DM, simplifying device integration and benefiting both operators and manufacturers.\n\nThe proposed IoT Device Management Ontology provides an abstract semantic model of DM domain-specific concepts, enabling cross-system data interoperability and knowledge enrichment through reasoning. This ontology aims to unify and streamline IoT DM practices, overcoming the limitations of existing approaches."@en .
+<https://w3id.org/dmont/ontology> <http://purl.org/dc/terms/creator> <https://dblp.org/pid/52/1343.html> .
+<https://w3id.org/dmont/ontology> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6772-2161> .
+<https://w3id.org/dmont/ontology> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0003-0788-9837> .
+<https://w3id.org/dmont/ontology> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Marc-Douet> .
 <https://w3id.org/dmont/ontology> <http://purl.org/dc/terms/description> "The ontology aims to define concepts within the Device Management domain, facilitating the remote administration of devices and ensuring their proper functioning. It addresses challenges related to the heterogeneity of management protocols by representing execution paths for commands and modeling the information exchanged between devices and the management system.\n\nThis ontology is developed as a SAREF extension."@en .
 <https://w3id.org/dmont/ontology> <http://purl.org/dc/terms/publisher> <https://www.orange.com/> .
 <https://w3id.org/dmont/ontology> <http://purl.org/dc/terms/title> "DMOnt : Device Management Ontology"@en .
 <https://w3id.org/dmont/ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dm" .
 <https://w3id.org/dmont/ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/dmont/ontology#" .
 <https://w3id.org/dmont/ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Device Management Ontology"@en .
+<https://w3id.org/dmont/ontology> <http://www.w3.org/2000/01/rdf-schema#label> "DMOnt"@en .
 <https://w3id.org/dmont/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "2.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -21,38 +59,29 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/dmont/ontology#connectsClient
-<https://w3id.org/dmont/ontology#connectsClient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/dmont/ontology#connectsClient> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/dmont/ontology#isClientConnectedThrough> .
-<https://w3id.org/dmont/ontology#connectsClient> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dmont/ontology#Connection> .
-<https://w3id.org/dmont/ontology#connectsClient> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/dmont/ontology#Client> .
+# http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# https://w3id.org/dmont/ontology#connectsServer
-<https://w3id.org/dmont/ontology#connectsServer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/dmont/ontology#connectsServer> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/dmont/ontology#isServerConnectedThrough> .
-<https://w3id.org/dmont/ontology#connectsServer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dmont/ontology#Connection> .
-<https://w3id.org/dmont/ontology#connectsServer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/dmont/ontology#Server> .
+# https://saref.etsi.org/core/hasCommand
+<https://saref.etsi.org/core/hasCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://saref.etsi.org/saref4syst/connectsSystem
+<https://saref.etsi.org/saref4syst/connectsSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # https://w3id.org/dmont/ontology#enablesManagementService
 <https://w3id.org/dmont/ontology#enablesManagementService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/dmont/ontology#enablesManagementService> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/dmont/ontology#hasConnection> .
-<https://w3id.org/dmont/ontology#enablesManagementService> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dmont/ontology#Connection> .
+<https://w3id.org/dmont/ontology#enablesManagementService> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dmont/ontology#ManagementConnection> .
 <https://w3id.org/dmont/ontology#enablesManagementService> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/dmont/ontology#ManagementService> .
+<https://w3id.org/dmont/ontology#enablesManagementService> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Management Service and Management Connection that represents the fact the a Management Service only exists thanks to the Management Connection. If the Management Connection is closed, the Management Service does not exist anymore."@en .
+<https://w3id.org/dmont/ontology#enablesManagementService> <http://www.w3.org/2000/01/rdf-schema#label> "enables management service"@en .
 # 
 # https://w3id.org/dmont/ontology#hasConnection
 <https://w3id.org/dmont/ontology#hasConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/dmont/ontology#hasConnection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dmont/ontology#ManagementService> .
-<https://w3id.org/dmont/ontology#hasConnection> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/dmont/ontology#Connection> .
-# 
-# https://w3id.org/dmont/ontology#isClientConnectedThrough
-<https://w3id.org/dmont/ontology#isClientConnectedThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/dmont/ontology#isClientConnectedThrough> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dmont/ontology#Client> .
-<https://w3id.org/dmont/ontology#isClientConnectedThrough> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/dmont/ontology#Connection> .
-# 
-# https://w3id.org/dmont/ontology#isServerConnectedThrough
-<https://w3id.org/dmont/ontology#isServerConnectedThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/dmont/ontology#isServerConnectedThrough> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/dmont/ontology#Server> .
-<https://w3id.org/dmont/ontology#isServerConnectedThrough> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/dmont/ontology#Connection> .
+<https://w3id.org/dmont/ontology#hasConnection> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/dmont/ontology#ManagementConnection> .
+<https://w3id.org/dmont/ontology#hasConnection> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Management Service and a Management Connection, indicating that the Management Service exists solely because of the Management Connection. If the Management Connection ceases to exist, the Management Service will also cease to exist.."@en .
+<https://w3id.org/dmont/ontology#hasConnection> <http://www.w3.org/2000/01/rdf-schema#label> "has connection"@en .
 # 
 # 
 # 
@@ -63,28 +92,55 @@
 # #################################################################
 # 
 # 
+# https://saref.etsi.org/core/Command
+<https://saref.etsi.org/core/Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/Device
+<https://saref.etsi.org/core/Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/FeatureOfInterest
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/Function
+<https://saref.etsi.org/core/Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/Property
+<https://saref.etsi.org/core/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/Service
+<https://saref.etsi.org/core/Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/State
+<https://saref.etsi.org/core/State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/saref4syst/Connection
+<https://saref.etsi.org/saref4syst/Connection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/saref4syst/System
+<https://saref.etsi.org/saref4syst/System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://w3id.org/dmont/ontology#Client
 <https://w3id.org/dmont/ontology#Client> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/dmont/ontology#Client> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4syst/System> .
 <https://w3id.org/dmont/ontology#Client> <http://www.w3.org/2000/01/rdf-schema#comment> "Software entity which represents a Device by exposing its DM Functions to one or more DM Server(s). \n\nIt is responsible for the triggering of the DM Functions when a Command targetting the represented Device is received by the Server. The Client is also responsible for the reporting of the results of the Function execution to the Server.\n\nThe Client has an identifier that is unique only relatively to each Server it is connected to."@en .
 <https://w3id.org/dmont/ontology#Client> <http://www.w3.org/2000/01/rdf-schema#label> "Client"@en .
-# 
-# https://w3id.org/dmont/ontology#Connection
-<https://w3id.org/dmont/ontology#Connection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/dmont/ontology#Connection> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract representation of the connection between a Client and a Server. It does not necessarily imply that a persistent connection is established between the entities - such as a TCP connection. It represents the link and the capability of the Server to interact with the Client.\n\nFor instance, the Client has been authenticated by the Server with a certificate, and/or the client has received a configuration for access rights to its functions for the Server."@en .
 # 
 # https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory
 <https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dmont/ontology#DeviceManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of commands enabling the manipulation of one or more Datamodel Parameters."@en .
 <https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Datamodel Parameter Command Category"@en .
 # 
 # https://w3id.org/dmont/ontology#DeviceControlCommandCategory
 <https://w3id.org/dmont/ontology#DeviceControlCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/dmont/ontology#DeviceControlCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dmont/ontology#DeviceManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#DeviceControlCommandCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of commands enabling the manipulation of the device state, for instance the power state with a Reboot or Shutdown command."@en .
 <https://w3id.org/dmont/ontology#DeviceControlCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Device Control Command Category"@en .
 # 
 # https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory
 <https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dmont/ontology#DeviceManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of commands enabling the manipulation of device identification properties."@en .
 <https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Device Identity Command Category"@en .
 # 
 # https://w3id.org/dmont/ontology#DeviceManagementCommandCategory
@@ -103,6 +159,7 @@
 <https://w3id.org/dmont/ontology#DeviceManagementState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/dmont/ontology#DeviceManagementState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/State> .
 <https://w3id.org/dmont/ontology#DeviceManagementState> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a class of states for Device Management."@en .
+<https://w3id.org/dmont/ontology#DeviceManagementState> <http://www.w3.org/2000/01/rdf-schema#label> "Device Management State"@en .
 # 
 # https://w3id.org/dmont/ontology#DeviceModule
 <https://w3id.org/dmont/ontology#DeviceModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -132,6 +189,7 @@
 # https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory
 <https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dmont/ontology#DeviceManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of commands enabling the manipulation of device firmwares."@en .
 <https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Firmware Management Command Category"@en .
 # 
 # https://w3id.org/dmont/ontology#ManageableDevice
@@ -140,28 +198,57 @@
 <https://w3id.org/dmont/ontology#ManageableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible object that has at least one Device Management Function.\n\nThis class extends the saref:Device class, it is a Feature of Interest by definition."@en .
 <https://w3id.org/dmont/ontology#ManageableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Manageable Device"@en .
 # 
+# https://w3id.org/dmont/ontology#ManagementConnection
+<https://w3id.org/dmont/ontology#ManagementConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/dmont/ontology#ManagementConnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/dmont/ontology#Server> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4syst/connectsSystem> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/dmont/ontology#Client> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4syst/connectsSystem> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://saref.etsi.org/saref4syst/Connection> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/dmont/ontology#ManagementConnection> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract representation of the connection between a Client and a Server. It does not necessarily imply that a persistent connection is established between the entities - such as a TCP connection. It represents the link and the capability of the Server to interact with the Client.\n\nFor instance, the Client has been authenticated by the Server with a certificate, and/or the client has received a configuration for access rights to its functions for the Server."@en .
+<https://w3id.org/dmont/ontology#ManagementConnection> <http://www.w3.org/2000/01/rdf-schema#label> "Management Connection"@en .
+# 
 # https://w3id.org/dmont/ontology#ManagementService
 <https://w3id.org/dmont/ontology#ManagementService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/dmont/ontology#ManagementService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Service> .
 <https://w3id.org/dmont/ontology#ManagementService> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Service that represents functions or functions of interest of the Device Management Function Category.\n\nThe ManagementService exposes these functions through a Connection, between a Client and a Server."@en .
+<https://w3id.org/dmont/ontology#ManagementService> <http://www.w3.org/2000/01/rdf-schema#label> "Management Service"@en .
 # 
 # https://w3id.org/dmont/ontology#ModuleManagementCommandCategory
 <https://w3id.org/dmont/ontology#ModuleManagementCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/dmont/ontology#ModuleManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dmont/ontology#DeviceManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#ModuleManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of commands enabling the manipulation of device modules."@en .
 <https://w3id.org/dmont/ontology#ModuleManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Module Management Command Category"@en .
 # 
 # https://w3id.org/dmont/ontology#PackageManagementCommandCategory
 <https://w3id.org/dmont/ontology#PackageManagementCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/dmont/ontology#PackageManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dmont/ontology#DeviceManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#PackageManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of commands enabling the manipulation of device packages."@en .
 <https://w3id.org/dmont/ontology#PackageManagementCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Package Management Command Category"@en .
 # 
 # https://w3id.org/dmont/ontology#Server
 <https://w3id.org/dmont/ontology#Server> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/dmont/ontology#Server> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4syst/System> .
 <https://w3id.org/dmont/ontology#Server> <http://www.w3.org/2000/01/rdf-schema#comment> "A DM Server is the software entity which is responsible for performing DM operations on a fleet of Devices. It exposes the set of available operations to an entity that needs to trigger an operation, such as a manufacturer or a Customer Care service. \n\nThe DM Server is a endpoint, generally secured, with which DM Clients communicate. \n\nThe protocol used between Server and Client is not in the scope of this ontology. It can follow a DM standard such as CWMP or LWM2M, or be completely proprietary."@en .
+<https://w3id.org/dmont/ontology#Server> <http://www.w3.org/2000/01/rdf-schema#label> "Server"@en .
 # 
 # https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory
 <https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dmont/ontology#DeviceManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of commands enabling the manipulation of supported datamodels."@en .
 <https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Supported Datamodel Command Category"@en .
 # 
 # 
@@ -176,10 +263,14 @@
 # https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand
 <https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory> .
+<https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to create a datamodel parameter instance."@en .
+<https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Datamodel parameter creation command"@en .
 # 
 # https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand
 <https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory> .
+<https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to delete a datamodel parameter instance."@en .
+<https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Datamodel parameter deletion command"@en .
 # 
 # https://w3id.org/dmont/ontology#DatamodelParameterFunction
 <https://w3id.org/dmont/ontology#DatamodelParameterFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -188,149 +279,212 @@
 <https://w3id.org/dmont/ontology#DatamodelParameterFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand> .
 <https://w3id.org/dmont/ontology#DatamodelParameterFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand> .
 <https://w3id.org/dmont/ontology#DatamodelParameterFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand> .
+<https://w3id.org/dmont/ontology#DatamodelParameterFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Function kind for the manipulation of datamodel parameters."@en .
+<https://w3id.org/dmont/ontology#DatamodelParameterFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Datamodel parameter function"@en .
 # 
 # https://w3id.org/dmont/ontology#DatamodelParameterInstanceName
 <https://w3id.org/dmont/ontology#DatamodelParameterInstanceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DatamodelParameterInstanceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
 <https://w3id.org/dmont/ontology#DatamodelParameterInstanceName> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty> .
+<https://w3id.org/dmont/ontology#DatamodelParameterInstanceName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name for an instance of a datamodel parameter."@en .
+<https://w3id.org/dmont/ontology#DatamodelParameterInstanceName> <http://www.w3.org/2000/01/rdf-schema#label> "Datamodel parameter instance name"@en .
 # 
 # https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty
 <https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
 <https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of a Datamodel Parameter Instance.\n\nThese parameter instances represent the actionable capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client.\n\nIt should not be confused with the Supported Datamodel Parameter, which represents the abstract capabilities of the Device."@en .
+<https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Datamodel parameter instance property"@en .
 # 
 # https://w3id.org/dmont/ontology#DatamodelParameterInstanceValue
 <https://w3id.org/dmont/ontology#DatamodelParameterInstanceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DatamodelParameterInstanceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
 <https://w3id.org/dmont/ontology#DatamodelParameterInstanceValue> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty> .
+<https://w3id.org/dmont/ontology#DatamodelParameterInstanceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Value of a datamodel parameter instance, obtained as the result of the execution of a Datamodel parameter retrieval command."@en .
+<https://w3id.org/dmont/ontology#DatamodelParameterInstanceValue> <http://www.w3.org/2000/01/rdf-schema#label> "Datamodel parameter instance value"@en .
 # 
 # https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand
 <https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory> .
+<https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to trigger the execution of a datamodel parameter instance that corresponds to an executable process on a device."@en .
+<https://w3id.org/dmont/ontology#DatamodelParameterOperateCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Datamodel parameter operate command"@en .
 # 
 # https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand
 <https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory> .
+<https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to retrieve the value of a Datamodel parameter instance."@en .
+<https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Datamodel parameter retrieval command"@en .
 # 
 # https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand
 <https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory> .
+<https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to update the value of a Datamodel parameter instance."@en .
+<https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Datamodel parameter update command"@en .
 # 
 # https://w3id.org/dmont/ontology#DeviceControlFunction
 <https://w3id.org/dmont/ontology#DeviceControlFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DeviceControlFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory> .
 <https://w3id.org/dmont/ontology#DeviceControlFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#RebootCommand> .
 <https://w3id.org/dmont/ontology#DeviceControlFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#ResetCommand> .
+<https://w3id.org/dmont/ontology#DeviceControlFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Function kind to control the global state of the device, e.g., its power state through the Reboot function, or the global configuration through the Reset function."@en .
+<https://w3id.org/dmont/ontology#DeviceControlFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Device control function"@en .
 # 
 # https://w3id.org/dmont/ontology#DeviceIdentityFunction
 <https://w3id.org/dmont/ontology#DeviceIdentityFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DeviceIdentityFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory> .
 <https://w3id.org/dmont/ontology#DeviceIdentityFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand> .
+<https://w3id.org/dmont/ontology#DeviceIdentityFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Function kind that represents the capabilities of a device to expose its own identity."@en .
+<https://w3id.org/dmont/ontology#DeviceIdentityFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Device identity function"@en .
 # 
 # https://w3id.org/dmont/ontology#DeviceIdentityProperty
 <https://w3id.org/dmont/ontology#DeviceIdentityProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DeviceIdentityProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
-<https://w3id.org/dmont/ontology#DeviceIdentityProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of a Device Identity."@en .
+<https://w3id.org/dmont/ontology#DeviceIdentityProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of properties that constitutes a Device Identity."@en .
+<https://w3id.org/dmont/ontology#DeviceIdentityProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Device identity property"@en .
 # 
 # https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand
 <https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory> .
+<https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A command to retrieve any Device identity property."@en .
+<https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Device info retrieval command"@en .
 # 
 # https://w3id.org/dmont/ontology#DeviceModuleActivated
 <https://w3id.org/dmont/ontology#DeviceModuleActivated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DeviceModuleActivated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DeviceModuleState> .
+<https://w3id.org/dmont/ontology#DeviceModuleActivated> <http://www.w3.org/2000/01/rdf-schema#comment> "State of a Device Module whose related functions were made available on a device, either automatically after the Device Module installation, or through a Module activation command."@en .
+<https://w3id.org/dmont/ontology#DeviceModuleActivated> <http://www.w3.org/2000/01/rdf-schema#label> "Device module activated"@en .
 # 
 # https://w3id.org/dmont/ontology#DeviceModuleDeactivated
 <https://w3id.org/dmont/ontology#DeviceModuleDeactivated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DeviceModuleDeactivated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DeviceModuleState> .
+<https://w3id.org/dmont/ontology#DeviceModuleDeactivated> <http://www.w3.org/2000/01/rdf-schema#comment> "State of a Device Module whose related functions were made unavailable through a Module deactivation command."@en .
+<https://w3id.org/dmont/ontology#DeviceModuleDeactivated> <http://www.w3.org/2000/01/rdf-schema#label> "Device module deactivated"@en .
 # 
 # https://w3id.org/dmont/ontology#DevicePackageDownloaded
 <https://w3id.org/dmont/ontology#DevicePackageDownloaded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DevicePackageDownloaded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DevicePackageState> .
+<https://w3id.org/dmont/ontology#DevicePackageDownloaded> <http://www.w3.org/2000/01/rdf-schema#comment> "State of a Device Package whose set of required files are available of on the device, either through a download process from a Client, or an upload process from a Server."@en .
+<https://w3id.org/dmont/ontology#DevicePackageDownloaded> <http://www.w3.org/2000/01/rdf-schema#label> "Device package downloaded"@en .
 # 
 # https://w3id.org/dmont/ontology#DevicePackageDownloading
 <https://w3id.org/dmont/ontology#DevicePackageDownloading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DevicePackageDownloading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DevicePackageState> .
+<https://w3id.org/dmont/ontology#DevicePackageDownloading> <http://www.w3.org/2000/01/rdf-schema#comment> "State of a Device Package that represents that the process of transferring the required package files is in progress. This is a transitory state, that changes to either the 'Device package downloaded' or the 'Device package initialized' states."@en .
+<https://w3id.org/dmont/ontology#DevicePackageDownloading> <http://www.w3.org/2000/01/rdf-schema#label> "Device package downloading"@en .
 # 
 # https://w3id.org/dmont/ontology#DevicePackageInstalled
 <https://w3id.org/dmont/ontology#DevicePackageInstalled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DevicePackageInstalled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DevicePackageState> .
+<https://w3id.org/dmont/ontology#DevicePackageInstalled> <http://www.w3.org/2000/01/rdf-schema#comment> "State of a Device package whose resources have been made ready for their final purpose, after the download and install processes are completed."@en .
+<https://w3id.org/dmont/ontology#DevicePackageInstalled> <http://www.w3.org/2000/01/rdf-schema#label> "Device package installed"@en .
 # 
 # https://w3id.org/dmont/ontology#DevicePackageInstalling
 <https://w3id.org/dmont/ontology#DevicePackageInstalling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DevicePackageInstalling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DevicePackageState> .
+<https://w3id.org/dmont/ontology#DevicePackageInstalling> <http://www.w3.org/2000/01/rdf-schema#comment> "State of a Device Package that represents that the process of readying the required package files is in progress. Thisis a transitory state, that changes to either the 'Device package installed' or the 'Device package validated' states."@en .
+<https://w3id.org/dmont/ontology#DevicePackageInstalling> <http://www.w3.org/2000/01/rdf-schema#label> "Device package installing"@en .
 # 
 # https://w3id.org/dmont/ontology#DevicePackageUninstalled
 <https://w3id.org/dmont/ontology#DevicePackageUninstalled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DevicePackageUninstalled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DevicePackageState> .
+<https://w3id.org/dmont/ontology#DevicePackageUninstalled> <http://www.w3.org/2000/01/rdf-schema#comment> "State of a Device package whose resources have been installed, then removed from the device."@en .
+<https://w3id.org/dmont/ontology#DevicePackageUninstalled> <http://www.w3.org/2000/01/rdf-schema#label> "Device package uninstalled"@en .
 # 
 # https://w3id.org/dmont/ontology#DevicePackageUninstalling
 <https://w3id.org/dmont/ontology#DevicePackageUninstalling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DevicePackageUninstalling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DevicePackageState> .
+<https://w3id.org/dmont/ontology#DevicePackageUninstalling> <http://www.w3.org/2000/01/rdf-schema#comment> "State of a Device Package that represents that the process of removing the associated package files is in progress. This is a transitory state, that changes to the 'Device package uninstalled' state."@en .
+<https://w3id.org/dmont/ontology#DevicePackageUninstalling> <http://www.w3.org/2000/01/rdf-schema#label> "Device package uninstalling"@en .
 # 
 # https://w3id.org/dmont/ontology#DevicePackageValidated
 <https://w3id.org/dmont/ontology#DevicePackageValidated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#DevicePackageValidated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DevicePackageState> .
+<https://w3id.org/dmont/ontology#DevicePackageValidated> <http://www.w3.org/2000/01/rdf-schema#comment> "State of a Device Package that represents that the required package files are available on the device, and actually correspond to the expected files, without corruption. This state is optional is the Device package lifecycle, and depends on the client and package implementations."@en .
+<https://w3id.org/dmont/ontology#DevicePackageValidated> <http://www.w3.org/2000/01/rdf-schema#label> "Device package validated"@en .
 # 
 # https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand
 <https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to retrieve firmware information such as the current firmware version for a device."@en .
+<https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Firmware information retrieval command"@en .
 # 
 # https://w3id.org/dmont/ontology#FirmwareManagementFunction
 <https://w3id.org/dmont/ontology#FirmwareManagementFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#FirmwareManagementFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory> .
 <https://w3id.org/dmont/ontology#FirmwareManagementFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand> .
 <https://w3id.org/dmont/ontology#FirmwareManagementFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#FirmwareUpdateCommand> .
+<https://w3id.org/dmont/ontology#FirmwareManagementFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of functions related to the management of the firmware for a device."@en .
+<https://w3id.org/dmont/ontology#FirmwareManagementFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Firmware management function"@en .
 # 
 # https://w3id.org/dmont/ontology#FirmwareProperty
 <https://w3id.org/dmont/ontology#FirmwareProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#FirmwareProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
-<https://w3id.org/dmont/ontology#FirmwareProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of the firmware of the device.\n\nThe device firmware is the running base software for the device, which is automatically loaded into memory and executed at boot."@en .
+<https://w3id.org/dmont/ontology#FirmwareProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of the firmware of a device.\n\nThe device firmware is the running base software for a device, which is automatically loaded into memory and executed at boot."@en .
+<https://w3id.org/dmont/ontology#FirmwareProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Firmware property"@en .
 # 
 # https://w3id.org/dmont/ontology#FirmwareUpdateCommand
 <https://w3id.org/dmont/ontology#FirmwareUpdateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#FirmwareUpdateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#FirmwareUpdateCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to trigger the update of the firmware of a device."@en .
+<https://w3id.org/dmont/ontology#FirmwareUpdateCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Firmware update command"@en .
 # 
 # https://w3id.org/dmont/ontology#FirmwareVersion
 <https://w3id.org/dmont/ontology#FirmwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#FirmwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
 <https://w3id.org/dmont/ontology#FirmwareVersion> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/dmont/ontology#FirmwareProperty> .
+<https://w3id.org/dmont/ontology#FirmwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "The firmware version of a device."@en .
+<https://w3id.org/dmont/ontology#FirmwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "Firmware version"@en .
 # 
 # https://w3id.org/dmont/ontology#HardwareVersion
 <https://w3id.org/dmont/ontology#HardwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#HardwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
 <https://w3id.org/dmont/ontology#HardwareVersion> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/dmont/ontology#DeviceIdentityProperty> .
+<https://w3id.org/dmont/ontology#HardwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Device identity property referring to the specific version of the set of physical components of a device, known as hardware version."@en .
+<https://w3id.org/dmont/ontology#HardwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "Hardware version"@en .
 # 
 # https://w3id.org/dmont/ontology#Manufacturer
 <https://w3id.org/dmont/ontology#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
 <https://w3id.org/dmont/ontology#Manufacturer> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/dmont/ontology#DeviceIdentityProperty> .
+<https://w3id.org/dmont/ontology#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Device identity property representing the manufacturer of the device."@en .
+<https://w3id.org/dmont/ontology#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
 # 
 # https://w3id.org/dmont/ontology#ModelName
 <https://w3id.org/dmont/ontology#ModelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#ModelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
 <https://w3id.org/dmont/ontology#ModelName> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/dmont/ontology#DeviceIdentityProperty> .
+<https://w3id.org/dmont/ontology#ModelName> <http://www.w3.org/2000/01/rdf-schema#comment> "Device identity property that represents the device model, i.e., the denomination for a specific hardware design for this device, in a human-readable format."@en .
+<https://w3id.org/dmont/ontology#ModelName> <http://www.w3.org/2000/01/rdf-schema#label> "Model name"@en .
 # 
 # https://w3id.org/dmont/ontology#ModelNumber
 <https://w3id.org/dmont/ontology#ModelNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#ModelNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
 <https://w3id.org/dmont/ontology#ModelNumber> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/dmont/ontology#DeviceIdentityProperty> .
+<https://w3id.org/dmont/ontology#ModelNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier assigned to a device model, used to distinguish it from other models and versions within a manufacturer's product lineup."@en .
+<https://w3id.org/dmont/ontology#ModelNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Model number"@en .
 # 
 # https://w3id.org/dmont/ontology#ModuleActivationCommand
 <https://w3id.org/dmont/ontology#ModuleActivationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#ModuleActivationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#ModuleManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#ModuleActivationCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to trigger the activation of a Device Module."@en .
+<https://w3id.org/dmont/ontology#ModuleActivationCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Module activation command"@en .
 # 
 # https://w3id.org/dmont/ontology#ModuleDeactivationCommand
 <https://w3id.org/dmont/ontology#ModuleDeactivationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#ModuleDeactivationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#ModuleManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#ModuleDeactivationCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to trigger the deactivation of a Device Module."@en .
+<https://w3id.org/dmont/ontology#ModuleDeactivationCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Module deactivation command"@en .
 # 
 # https://w3id.org/dmont/ontology#ModuleDiscoveryCommand
 <https://w3id.org/dmont/ontology#ModuleDiscoveryCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#ModuleDiscoveryCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#ModuleManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#ModuleDiscoveryCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to retrieve the list of  Device Modules available on a device."@en .
+<https://w3id.org/dmont/ontology#ModuleDiscoveryCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Module discovery command"@en .
 # 
 # https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand
 <https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#ModuleManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to retrieve device module information such as the name of the module or its version."@en .
+<https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Module information retrieval command"@en .
 # 
 # https://w3id.org/dmont/ontology#ModuleManagementFunction
 <https://w3id.org/dmont/ontology#ModuleManagementFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -339,41 +493,58 @@
 <https://w3id.org/dmont/ontology#ModuleManagementFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#ModuleDeactivationCommand> .
 <https://w3id.org/dmont/ontology#ModuleManagementFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#ModuleDiscoveryCommand> .
 <https://w3id.org/dmont/ontology#ModuleManagementFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand> .
+<https://w3id.org/dmont/ontology#ModuleManagementFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Function kind for the management of Device Modules."@en .
+<https://w3id.org/dmont/ontology#ModuleManagementFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Module management function"@en .
 # 
 # https://w3id.org/dmont/ontology#ModuleName
 <https://w3id.org/dmont/ontology#ModuleName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#ModuleName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
 <https://w3id.org/dmont/ontology#ModuleName> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/dmont/ontology#ModuleProperty> .
+<https://w3id.org/dmont/ontology#ModuleName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a device module."@en .
+<https://w3id.org/dmont/ontology#ModuleName> <http://www.w3.org/2000/01/rdf-schema#label> "Module name"@en .
 # 
 # https://w3id.org/dmont/ontology#ModuleProperty
 <https://w3id.org/dmont/ontology#ModuleProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#ModuleProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
-<https://w3id.org/dmont/ontology#ModuleProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of a DeviceModule"@en .
+<https://w3id.org/dmont/ontology#ModuleProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of a Device Module."@en .
+<https://w3id.org/dmont/ontology#ModuleProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Module property"@en .
 # 
 # https://w3id.org/dmont/ontology#ModuleVersion
 <https://w3id.org/dmont/ontology#ModuleVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#ModuleVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
 <https://w3id.org/dmont/ontology#ModuleVersion> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/dmont/ontology#ModuleProperty> .
+<https://w3id.org/dmont/ontology#ModuleVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "The version of a Device Module."@en .
+<https://w3id.org/dmont/ontology#ModuleVersion> <http://www.w3.org/2000/01/rdf-schema#label> "Module version"@en .
 # 
 # https://w3id.org/dmont/ontology#PackageCreationCommand
 <https://w3id.org/dmont/ontology#PackageCreationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#PackageCreationCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#PackageManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#PackageCreationCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to trigger the creation of a Device Package on a device."@en .
+<https://w3id.org/dmont/ontology#PackageCreationCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Package creation command"@en .
 # 
 # https://w3id.org/dmont/ontology#PackageDeletionCommand
 <https://w3id.org/dmont/ontology#PackageDeletionCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#PackageDeletionCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#PackageManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#PackageDeletionCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to trigger the deletion of a Device Package on a device."@en .
+<https://w3id.org/dmont/ontology#PackageDeletionCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Package deletion command"@en .
 # 
 # https://w3id.org/dmont/ontology#PackageDiscoveryCommand
 <https://w3id.org/dmont/ontology#PackageDiscoveryCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#PackageDiscoveryCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#PackageManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#PackageDiscoveryCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to retrieve the list of available Device Packages on a device."@en .
+<https://w3id.org/dmont/ontology#PackageDiscoveryCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Package discovery command"@en .
 # 
 # https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand
 <https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#PackageManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to retrieve device package information such as the name of the package or its version."@en .
+<https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Package information retrieval command"@en .
 # 
 # https://w3id.org/dmont/ontology#PackageInstallCommand
 <https://w3id.org/dmont/ontology#PackageInstallCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#PackageInstallCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#PackageManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#PackageInstallCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to trigger the installation of Device Package on a device."@en .
+<https://w3id.org/dmont/ontology#PackageInstallCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Package install command"@en .
 # 
 # https://w3id.org/dmont/ontology#PackageManagementFunction
 <https://w3id.org/dmont/ontology#PackageManagementFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -385,62 +556,115 @@
 <https://w3id.org/dmont/ontology#PackageManagementFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#PackageInstallCommand> .
 <https://w3id.org/dmont/ontology#PackageManagementFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#PackageUninstallCommand> .
 <https://w3id.org/dmont/ontology#PackageManagementFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#PackageUpdateCommand> .
+<https://w3id.org/dmont/ontology#PackageManagementFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Function kind related to the management of Device Packages on a device."@en .
+<https://w3id.org/dmont/ontology#PackageManagementFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Package management function"@en .
 # 
 # https://w3id.org/dmont/ontology#PackageName
 <https://w3id.org/dmont/ontology#PackageName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#PackageName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/dmont/ontology#PackageName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a Device Package."@en .
+<https://w3id.org/dmont/ontology#PackageName> <http://www.w3.org/2000/01/rdf-schema#label> "Package name"@en .
 # 
 # https://w3id.org/dmont/ontology#PackageProperty
 <https://w3id.org/dmont/ontology#PackageProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#PackageProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
 <https://w3id.org/dmont/ontology#PackageProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of a DevicePackage"@en .
+<https://w3id.org/dmont/ontology#PackageProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Package property"@en .
 # 
 # https://w3id.org/dmont/ontology#PackageUninstallCommand
 <https://w3id.org/dmont/ontology#PackageUninstallCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#PackageUninstallCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#PackageManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#PackageUninstallCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to trigger the uninstallation of a Device Package on a device."@en .
+<https://w3id.org/dmont/ontology#PackageUninstallCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Package uninstall command"@en .
 # 
 # https://w3id.org/dmont/ontology#PackageUpdateCommand
 <https://w3id.org/dmont/ontology#PackageUpdateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#PackageUpdateCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#PackageManagementCommandCategory> .
+<https://w3id.org/dmont/ontology#PackageUpdateCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to trigger the update of a Device Package on a device. This corresponds to the action of replacing, on a device, a Device Package by another Device Package with the same name, but a different version."@en .
+<https://w3id.org/dmont/ontology#PackageUpdateCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Package update command"@en .
 # 
 # https://w3id.org/dmont/ontology#PackageVersion
 <https://w3id.org/dmont/ontology#PackageVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#PackageVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/dmont/ontology#PackageVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "The version of a device package."@en .
+<https://w3id.org/dmont/ontology#PackageVersion> <http://www.w3.org/2000/01/rdf-schema#label> "Package version"@en .
 # 
 # https://w3id.org/dmont/ontology#RebootCommand
 <https://w3id.org/dmont/ontology#RebootCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#RebootCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DeviceControlCommandCategory> .
+<https://w3id.org/dmont/ontology#RebootCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to trigger the reboot process of a device."@en .
+<https://w3id.org/dmont/ontology#RebootCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Reboot command"@en .
 # 
 # https://w3id.org/dmont/ontology#ResetCommand
 <https://w3id.org/dmont/ontology#ResetCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#ResetCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DeviceControlCommandCategory> .
+<https://w3id.org/dmont/ontology#ResetCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to change the entire state of a device and its resources to another state as predefined according to the device manufacturer policy."@en .
+<https://w3id.org/dmont/ontology#ResetCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Reset command"@en .
 # 
 # https://w3id.org/dmont/ontology#SerialNumber
 <https://w3id.org/dmont/ontology#SerialNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#SerialNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
 <https://w3id.org/dmont/ontology#SerialNumber> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/dmont/ontology#DeviceIdentityProperty> .
+<https://w3id.org/dmont/ontology#SerialNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Device identity property referring to the unique identifier assigned to an individual device, used for tracking, warranty, and support purposes, distinguishing it from all other units produced."@en .
+<https://w3id.org/dmont/ontology#SerialNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Serial number"@en .
+# 
+# https://w3id.org/dmont/ontology#ShutdownCommand
+<https://w3id.org/dmont/ontology#ShutdownCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dmont/ontology#ShutdownCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DeviceControlCommandCategory> .
+<https://w3id.org/dmont/ontology#ShutdownCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to trigger the shutdown process on a device."@en .
+<https://w3id.org/dmont/ontology#ShutdownCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Shutdown command"@en .
 # 
 # https://w3id.org/dmont/ontology#SupportedDatamodelFunction
 <https://w3id.org/dmont/ontology#SupportedDatamodelFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#SupportedDatamodelFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory> .
 <https://w3id.org/dmont/ontology#SupportedDatamodelFunction> <https://saref.etsi.org/core/hasCommand> <https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand> .
+<https://w3id.org/dmont/ontology#SupportedDatamodelFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Function kind to manage the supported datamodel of a device."@en .
+<https://w3id.org/dmont/ontology#SupportedDatamodelFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Supported datamodel function"@en .
 # 
 # https://w3id.org/dmont/ontology#SupportedDatamodelParameterName
 <https://w3id.org/dmont/ontology#SupportedDatamodelParameterName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#SupportedDatamodelParameterName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/dmont/ontology#SupportedDatamodelParameterName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a supported datamodel parameter."@en .
+<https://w3id.org/dmont/ontology#SupportedDatamodelParameterName> <http://www.w3.org/2000/01/rdf-schema#label> "Supported datamodel parameter name"@en .
 # 
 # https://w3id.org/dmont/ontology#SupportedDatamodelParameterProperty
 <https://w3id.org/dmont/ontology#SupportedDatamodelParameterProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#SupportedDatamodelParameterProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
-<https://w3id.org/dmont/ontology#SupportedDatamodelParameterProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of a Supported Datamodel Parameter.\n\nThese parameters represent the capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client.\n\nIt should not be confused with the Datamodel Parameter Instance, which represents the actionable capabilities of the Device." .
+<https://w3id.org/dmont/ontology#SupportedDatamodelParameterProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property kind that represents the properties of a Supported Datamodel Parameter.\n\nThese parameters represent the capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client.\n\nIt should not be confused with the Datamodel Parameter Instance, which represents the actionable capabilities of the Device."@en .
+<https://w3id.org/dmont/ontology#SupportedDatamodelParameterProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Supported datamodel parameter property"@en .
 # 
 # https://w3id.org/dmont/ontology#SupportedDatamodelParameterType
 <https://w3id.org/dmont/ontology#SupportedDatamodelParameterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#SupportedDatamodelParameterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/dmont/ontology#SupportedDatamodelParameterType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of a supported datamodel parameter. \n\nFor instance, this type can represent that the supported datamodel parameter is a reference to an executable resource. The corresponding type would be 'command' in the CWMP standard protocol, and its TR-181 technical report.\n\nThis type can represent a reference to a measurement process on the device that retrieves a value. In that case, the supported datamodel parameter also describes the unit of that value.\n\nThe type 'object' corresponds to a supported datamodel parameter that contains other supported datamodel parameters, creating a hierarchical structure.\n\nA final example would be a 'table', i.e., the corresponding datamodel parameter is a list of instances of the same object.\n\nFor more information, we refer the reader to the specification documents of DM protocol standards such as TR-181 from the BroadBand Forum."@en .
+<https://w3id.org/dmont/ontology#SupportedDatamodelParameterType> <http://www.w3.org/2000/01/rdf-schema#label> "Supported datamodel parameter type"@en .
 # 
 # https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand
 <https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory> .
+<https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Command to retrieve a supported datamodel parameter, which corresponds to the information required to access a datamodel parameter instance and interpret its value."@en .
+<https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Supported datamodel retrieval command"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://dblp.org/pid/52/1343.html> <http://xmlns.com/foaf/0.1/homepage> "https://dblp.org/pid/52/1343.html" .
+<https://dblp.org/pid/52/1343.html> <http://xmlns.com/foaf/0.1/name> "Cyrille Bareau" .
+# 
+<https://orcid.org/0000-0001-6772-2161> <http://xmlns.com/foaf/0.1/homepage> "https://orcid.org/0000-0001-6772-2161" .
+<https://orcid.org/0000-0001-6772-2161> <http://xmlns.com/foaf/0.1/name> "François Aïssaoui" .
+# 
+<https://orcid.org/0000-0003-0788-9837> <http://xmlns.com/foaf/0.1/homepage> "https://orcid.org/0000-0003-0788-9837" .
+<https://orcid.org/0000-0003-0788-9837> <http://xmlns.com/foaf/0.1/name> "Samuel Berlemont" .
+# 
+<https://www.researchgate.net/profile/Marc-Douet> <http://xmlns.com/foaf/0.1/homepage> "https://www.researchgate.net/profile/Marc-Douet" .
+<https://www.researchgate.net/profile/Marc-Douet> <http://xmlns.com/foaf/0.1/name> "Marc Douet" .
 # 
 # 
 # 
@@ -451,61 +675,61 @@
 # #################################################################
 # 
 # 
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#PackageManagementCommandCategory> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#ModuleManagementCommandCategory> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#DeviceControlCommandCategory> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-# 
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
-_:genid9 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid7 <http://www.w3.org/2002/07/owl#members> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#SupportedDatamodelFunction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#PackageManagementCommandCategory> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#ModuleManagementCommandCategory> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#PackageManagementFunction> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#ModuleManagementFunction> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#FirmwareManagementFunction> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#DeviceControlCommandCategory> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#DeviceIdentityFunction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#DeviceControlFunction> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#DatamodelParameterFunction> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
-_:genid17 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid19 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid15 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#FirmwareUpdateCommand> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#SupportedDatamodelFunction> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#PackageManagementFunction> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#ModuleManagementFunction> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#FirmwareManagementFunction> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#DeviceIdentityFunction> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#DeviceControlFunction> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#DatamodelParameterFunction> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid23 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#FirmwareUpdateCommand> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

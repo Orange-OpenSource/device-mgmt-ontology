@@ -1,35 +1,17 @@
 [ {
   "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory"
+      "@id" : "https://saref.etsi.org/saref4syst/Connection"
     }, {
-      "@id" : "https://w3id.org/dmont/ontology#DeviceControlCommandCategory"
+      "@id" : "_:genid5"
     }, {
-      "@id" : "https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory"
-    }, {
-      "@id" : "https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory"
-    }, {
-      "@id" : "https://w3id.org/dmont/ontology#ModuleManagementCommandCategory"
-    }, {
-      "@id" : "https://w3id.org/dmont/ontology#PackageManagementCommandCategory"
-    }, {
-      "@id" : "https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory"
+      "@id" : "_:genid3"
     } ]
   } ]
 }, {
-  "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
-  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand"
-    }, {
-      "@id" : "https://w3id.org/dmont/ontology#FirmwareUpdateCommand"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
   "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
     "@list" : [ {
@@ -49,16 +31,155 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand"
+    }, {
+      "@id" : "https://w3id.org/dmont/ontology#FirmwareUpdateCommand"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4syst/connectsSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/dmont/ontology#Server"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4syst/connectsSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/dmont/ontology#Client"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory"
+    }, {
+      "@id" : "https://w3id.org/dmont/ontology#DeviceControlCommandCategory"
+    }, {
+      "@id" : "https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory"
+    }, {
+      "@id" : "https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory"
+    }, {
+      "@id" : "https://w3id.org/dmont/ontology#ModuleManagementCommandCategory"
+    }, {
+      "@id" : "https://w3id.org/dmont/ontology#PackageManagementCommandCategory"
+    }, {
+      "@id" : "https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://dblp.org/pid/52/1343.html",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@value" : "https://dblp.org/pid/52/1343.html"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Cyrille Bareau"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0000-0001-6772-2161",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@value" : "https://orcid.org/0000-0001-6772-2161"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "François Aïssaoui"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0000-0003-0788-9837",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@value" : "https://orcid.org/0000-0003-0788-9837"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Samuel Berlemont"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/core/FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/core/State",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4syst/Connection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4syst/System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4syst/connectsSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "https://w3id.org/dmont/ontology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "en",
+    "@value" : "The Device Management (DM) domain consists in the remote administration of devices for an operator, such as a service provider or device manufacturer. \n\nThe proposal for an ontology for standardization in Device Management is motivated by the need to address challenges arising from the evolution of DM and the emergence of the Internet of Things (IoT).\n\nInitially, DM was introduced by manufacturers and telecommunication operators to ensure the proper functioning of devices like gateways and TV decoders, focusing on firmware management due to the high replacement costs of these devices. Over time, the scope of DM expanded to include configuration and customer care, enabling Telcos to configure value-added services, improve Quality of Service (QoS), and reduce costs. \n\nWith the rise of IoT, the DM landscape has shifted significantly. The proliferation of heterogeneous IoT devices and the temptation to produce disposable devices have highlighted the need for remote management for economic and ecological reasons. However, existing DM solutions face challenges due to the scale and diversity of IoT devices, as well as the prevalence of proprietary protocols and siloed solutions from various manufacturers. This has created issues with heterogeneity in device capabilities, DM protocols, and management solutions. Standardization becomes essential to facilitate common, interoperable protocols for DM, simplifying device integration and benefiting both operators and manufacturers.\n\nThe proposed IoT Device Management Ontology provides an abstract semantic model of DM domain-specific concepts, enabling cross-system data interoperability and knowledge enrichment through reasoning. This ontology aims to unify and streamline IoT DM practices, overcoming the limitations of existing approaches."
+  } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Cyrille Bareau (https://dblp.org/pid/52/1343.html)"
+    "@id" : "https://dblp.org/pid/52/1343.html"
   }, {
-    "@value" : "François Aïssaoui (https://orcid.org/0000-0001-6772-2161)"
+    "@id" : "https://orcid.org/0000-0001-6772-2161"
   }, {
-    "@value" : "Marc Douet (https://www.researchgate.net/profile/Marc-Douet)"
+    "@id" : "https://orcid.org/0000-0003-0788-9837"
   }, {
-    "@value" : "Samuel Berlemont (https://orcid.org/0000-0003-0788-9837)"
+    "@id" : "https://www.researchgate.net/profile/Marc-Douet"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -81,8 +202,12 @@
     "@language" : "en",
     "@value" : "Device Management Ontology"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DMOnt"
+  } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://saref.etsi.org/core/v3.2.1/"
+    "@id" : "https://saref.etsi.org/core/v4.1.1/"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/dmont/ontology/2.0.0"
@@ -100,17 +225,17 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Client"
-  } ]
-}, {
-  "@id" : "https://w3id.org/dmont/ontology#Connection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract representation of the connection between a Client and a Server. It does not necessarily imply that a persistent connection is established between the entities - such as a TCP connection. It represents the link and the capability of the Server to interact with the Client.\n\nFor instance, the Client has been authenticated by the Server with a certificate, and/or the client has received a configuration for access rights to its functions for the Server."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4syst/System"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category of commands enabling the manipulation of one or more Datamodel Parameters."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Datamodel Parameter Command Category"
@@ -123,18 +248,42 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to create a datamodel parameter instance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Datamodel parameter creation command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterDeletionCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to delete a datamodel parameter instance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Datamodel parameter deletion command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Function kind for the manipulation of datamodel parameters."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Datamodel parameter function"
   } ],
   "https://saref.etsi.org/core/hasCommand" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterCreationCommand"
@@ -147,20 +296,49 @@
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterInstanceName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name for an instance of a datamodel parameter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Datamodel parameter instance name"
+  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Property kind that represents the properties of a Datamodel Parameter Instance.\n\nThese parameter instances represent the actionable capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client.\n\nIt should not be confused with the Supported Datamodel Parameter, which represents the abstract capabilities of the Device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Datamodel parameter instance property"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterInstanceValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Value of a datamodel parameter instance, obtained as the result of the execution of a Datamodel parameter retrieval command."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Datamodel parameter instance value"
+  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterInstanceProperty"
   } ]
@@ -169,22 +347,50 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to trigger the execution of a datamodel parameter instance that corresponds to an executable process on a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Datamodel parameter operate command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterRetrievalCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to retrieve the value of a Datamodel parameter instance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Datamodel parameter retrieval command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterUpdateCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DatamodelParameterCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to update the value of a Datamodel parameter instance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Datamodel parameter update command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DeviceControlCommandCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category of commands enabling the manipulation of the device state, for instance the power state with a Reboot or Shutdown command."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Device Control Command Category"
@@ -198,6 +404,14 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Function kind to control the global state of the device, e.g., its power state through the Reboot function, or the global configuration through the Reset function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device control function"
+  } ],
   "https://saref.etsi.org/core/hasCommand" : [ {
     "@id" : "https://w3id.org/dmont/ontology#RebootCommand"
   }, {
@@ -206,6 +420,10 @@
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category of commands enabling the manipulation of device identification properties."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Device Identity Command Category"
@@ -219,21 +437,44 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Function kind that represents the capabilities of a device to expose its own identity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device identity function"
+  } ],
   "https://saref.etsi.org/core/hasCommand" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DeviceIdentityProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Property kind that represents the properties of a Device Identity."
+    "@value" : "Set of properties that constitutes a Device Identity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device identity property"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DeviceInfoRetrievalCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceIdentityCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A command to retrieve any Device identity property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device info retrieval command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DeviceManagementCommandCategory",
@@ -270,6 +511,10 @@
     "@language" : "en",
     "@value" : "This is a class of states for Device Management."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device Management State"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/State"
   } ]
@@ -292,12 +537,28 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceModuleState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State of a Device Module whose related functions were made available on a device, either automatically after the Device Module installation, or through a Module activation command."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device module activated"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DeviceModuleDeactivated",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceModuleState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State of a Device Module whose related functions were made unavailable through a Module deactivation command."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device module deactivated"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DeviceModuleState",
@@ -335,24 +596,56 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DevicePackageState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State of a Device Package whose set of required files are available of on the device, either through a download process from a Client, or an upload process from a Server."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device package downloaded"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DevicePackageDownloading",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DevicePackageState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State of a Device Package that represents that the process of transferring the required package files is in progress. This is a transitory state, that changes to either the 'Device package downloaded' or the 'Device package initialized' states."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device package downloading"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DevicePackageInstalled",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DevicePackageState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State of a Device package whose resources have been made ready for their final purpose, after the download and install processes are completed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device package installed"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DevicePackageInstalling",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DevicePackageState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State of a Device Package that represents that the process of readying the required package files is in progress. Thisis a transitory state, that changes to either the 'Device package installed' or the 'Device package validated' states."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device package installing"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DevicePackageState",
@@ -373,28 +666,64 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DevicePackageState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State of a Device package whose resources have been installed, then removed from the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device package uninstalled"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DevicePackageUninstalling",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DevicePackageState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State of a Device Package that represents that the process of removing the associated package files is in progress. This is a transitory state, that changes to the 'Device package uninstalled' state."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device package uninstalling"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#DevicePackageValidated",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DevicePackageState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State of a Device Package that represents that the required package files are available on the device, and actually correspond to the expected files, without corruption. This state is optional is the Device package lifecycle, and depends on the client and package implementations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device package validated"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to retrieve firmware information such as the current firmware version for a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Firmware information retrieval command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category of commands enabling the manipulation of device firmwares."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Firmware Management Command Category"
@@ -408,6 +737,14 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Set of functions related to the management of the firmware for a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Firmware management function"
+  } ],
   "https://saref.etsi.org/core/hasCommand" : [ {
     "@id" : "https://w3id.org/dmont/ontology#FirmwareInformationRetrievalCommand"
   }, {
@@ -415,26 +752,63 @@
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#FirmwareProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Property kind that represents the properties of the firmware of the device.\n\nThe device firmware is the running base software for the device, which is automatically loaded into memory and executed at boot."
+    "@value" : "Property kind that represents the properties of the firmware of a device.\n\nThe device firmware is the running base software for a device, which is automatically loaded into memory and executed at boot."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Firmware property"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#FirmwareUpdateCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#FirmwareManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to trigger the update of the firmware of a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Firmware update command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#FirmwareVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The firmware version of a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Firmware version"
+  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "https://w3id.org/dmont/ontology#FirmwareProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#HardwareVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device identity property referring to the specific version of the set of physical components of a device, known as hardware version."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hardware version"
+  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceIdentityProperty"
   } ]
@@ -453,30 +827,81 @@
     "@id" : "https://saref.etsi.org/core/Device"
   } ]
 }, {
+  "@id" : "https://w3id.org/dmont/ontology#ManagementConnection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract representation of the connection between a Client and a Server. It does not necessarily imply that a persistent connection is established between the entities - such as a TCP connection. It represents the link and the capability of the Server to interact with the Client.\n\nFor instance, the Client has been authenticated by the Server with a certificate, and/or the client has received a configuration for access rights to its functions for the Server."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Management Connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
   "@id" : "https://w3id.org/dmont/ontology#ManagementService",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A saref:Service that represents functions or functions of interest of the Device Management Function Category.\n\nThe ManagementService exposes these functions through a Connection, between a Client and a Server."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Management Service"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/Service"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#Manufacturer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device identity property representing the manufacturer of the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Manufacturer"
+  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceIdentityProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#ModelName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device identity property that represents the device model, i.e., the denomination for a specific hardware design for this device, in a human-readable format."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Model name"
+  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceIdentityProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#ModelNumber",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The unique identifier assigned to a device model, used to distinguish it from other models and versions within a manufacturer's product lineup."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Model number"
+  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceIdentityProperty"
   } ]
@@ -485,28 +910,64 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#ModuleManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to trigger the activation of a Device Module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Module activation command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#ModuleDeactivationCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#ModuleManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to trigger the deactivation of a Device Module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Module deactivation command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#ModuleDiscoveryCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#ModuleManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to retrieve the list of  Device Modules available on a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Module discovery command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#ModuleInformationRetrievalCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#ModuleManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to retrieve device module information such as the name of the module or its version."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Module information retrieval command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#ModuleManagementCommandCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category of commands enabling the manipulation of device modules."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Module Management Command Category"
@@ -520,6 +981,14 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Function kind for the management of Device Modules."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Module management function"
+  } ],
   "https://saref.etsi.org/core/hasCommand" : [ {
     "@id" : "https://w3id.org/dmont/ontology#ModuleActivationCommand"
   }, {
@@ -531,20 +1000,49 @@
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#ModuleName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The name of a device module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Module name"
+  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "https://w3id.org/dmont/ontology#ModuleProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#ModuleProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Property kind that represents the properties of a DeviceModule"
+    "@value" : "Property kind that represents the properties of a Device Module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Module property"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#ModuleVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The version of a Device Module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Module version"
+  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "https://w3id.org/dmont/ontology#ModuleProperty"
   } ]
@@ -553,34 +1051,78 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#PackageManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to trigger the creation of a Device Package on a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package creation command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#PackageDeletionCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#PackageManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to trigger the deletion of a Device Package on a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package deletion command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#PackageDiscoveryCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#PackageManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to retrieve the list of available Device Packages on a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package discovery command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#PackageInformationRetrievalCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#PackageManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to retrieve device package information such as the name of the package or its version."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package information retrieval command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#PackageInstallCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#PackageManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to trigger the installation of Device Package on a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package install command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#PackageManagementCommandCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category of commands enabling the manipulation of device packages."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Package Management Command Category"
@@ -593,6 +1135,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Function kind related to the management of Device Packages on a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package management function"
   } ],
   "https://saref.etsi.org/core/hasCommand" : [ {
     "@id" : "https://w3id.org/dmont/ontology#PackageCreationCommand"
@@ -611,44 +1161,116 @@
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#PackageName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The name of a Device Package."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package name"
+  } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#PackageProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Property kind that represents the properties of a DevicePackage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package property"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#PackageUninstallCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#PackageManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to trigger the uninstallation of a Device Package on a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package uninstall command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#PackageUpdateCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#PackageManagementCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to trigger the update of a Device Package on a device. This corresponds to the action of replacing, on a device, a Device Package by another Device Package with the same name, but a different version."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package update command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#PackageVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The version of a device package."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package version"
+  } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#RebootCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceControlCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to trigger the reboot process of a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reboot command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#ResetCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceControlCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to change the entire state of a device and its resources to another state as predefined according to the device manufacturer policy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reset command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#SerialNumber",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device identity property referring to the unique identifier assigned to an individual device, used for tracking, warranty, and support purposes, distinguishing it from all other units produced."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Serial number"
+  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceIdentityProperty"
   } ]
@@ -658,10 +1280,35 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A DM Server is the software entity which is responsible for performing DM operations on a fleet of Devices. It exposes the set of available operations to an entity that needs to trigger an operation, such as a manufacturer or a Customer Care service. \n\nThe DM Server is a endpoint, generally secured, with which DM Clients communicate. \n\nThe protocol used between Server and Client is not in the scope of this ontology. It can follow a DM standard such as CWMP or LWM2M, or be completely proprietary."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Server"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4syst/System"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dmont/ontology#ShutdownCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/dmont/ontology#DeviceControlCommandCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to trigger the shutdown process on a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Shutdown command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category of commands enabling the manipulation of supported datamodels."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Supported Datamodel Command Category"
@@ -675,56 +1322,86 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#DeviceManagementFunctionCategory"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Function kind to manage the supported datamodel of a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Supported datamodel function"
+  } ],
   "https://saref.etsi.org/core/hasCommand" : [ {
     "@id" : "https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#SupportedDatamodelParameterName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of a supported datamodel parameter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Supported datamodel parameter name"
+  } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#SupportedDatamodelParameterProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
     "@value" : "Property kind that represents the properties of a Supported Datamodel Parameter.\n\nThese parameters represent the capabilities of the Device in a format specific to the datamodel implemented by the Device, and exposed by the Client.\n\nIt should not be confused with the Datamodel Parameter Instance, which represents the actionable capabilities of the Device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Supported datamodel parameter property"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#SupportedDatamodelParameterType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://saref.etsi.org/core/Property" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of a supported datamodel parameter. \n\nFor instance, this type can represent that the supported datamodel parameter is a reference to an executable resource. The corresponding type would be 'command' in the CWMP standard protocol, and its TR-181 technical report.\n\nThis type can represent a reference to a measurement process on the device that retrieves a value. In that case, the supported datamodel parameter also describes the unit of that value.\n\nThe type 'object' corresponds to a supported datamodel parameter that contains other supported datamodel parameters, creating a hierarchical structure.\n\nA final example would be a 'table', i.e., the corresponding datamodel parameter is a list of instances of the same object.\n\nFor more information, we refer the reader to the specification documents of DM protocol standards such as TR-181 from the BroadBand Forum."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Supported datamodel parameter type"
+  } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#SupportedDatamodelRetrievalCommand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/dmont/ontology#SupportedDatamodelCommandCategory"
-  } ]
-}, {
-  "@id" : "https://w3id.org/dmont/ontology#connectsClient",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/dmont/ontology#Connection"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/dmont/ontology#Client"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Command to retrieve a supported datamodel parameter, which corresponds to the information required to access a datamodel parameter instance and interpret its value."
   } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/dmont/ontology#isClientConnectedThrough"
-  } ]
-}, {
-  "@id" : "https://w3id.org/dmont/ontology#connectsServer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/dmont/ontology#Connection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/dmont/ontology#Server"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/dmont/ontology#isServerConnectedThrough"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Supported datamodel retrieval command"
   } ]
 }, {
   "@id" : "https://w3id.org/dmont/ontology#enablesManagementService",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a Management Service and Management Connection that represents the fact the a Management Service only exists thanks to the Management Connection. If the Management Connection is closed, the Management Service does not exist anymore."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/dmont/ontology#Connection"
+    "@id" : "https://w3id.org/dmont/ontology#ManagementConnection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "enables management service"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/dmont/ontology#ManagementService"
@@ -735,28 +1412,26 @@
 }, {
   "@id" : "https://w3id.org/dmont/ontology#hasConnection",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a Management Service and a Management Connection, indicating that the Management Service exists solely because of the Management Connection. If the Management Connection ceases to exist, the Management Service will also cease to exist.."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/dmont/ontology#ManagementService"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/dmont/ontology#Connection"
-  } ]
-}, {
-  "@id" : "https://w3id.org/dmont/ontology#isClientConnectedThrough",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/dmont/ontology#Client"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has connection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/dmont/ontology#Connection"
+    "@id" : "https://w3id.org/dmont/ontology#ManagementConnection"
   } ]
 }, {
-  "@id" : "https://w3id.org/dmont/ontology#isServerConnectedThrough",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/dmont/ontology#Server"
+  "@id" : "https://www.researchgate.net/profile/Marc-Douet",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@value" : "https://www.researchgate.net/profile/Marc-Douet"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/dmont/ontology#Connection"
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Marc Douet"
   } ]
 } ]
